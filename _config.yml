@@ -9,7 +9,7 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-#name: DCgov Guides Template
+name: DCgov Guides Template
 #author:
 #  name: Office of the Chief Technology Officer
 #  url: http://octo.dc.gov
