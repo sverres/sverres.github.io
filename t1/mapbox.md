@@ -7,7 +7,6 @@
 ### Import av javascript-bibliotek og css
 
 ```html
-<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +19,6 @@
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
--->
 ```
 
 script-taggen sørger for å gjøre Mapbox-biblioteket tilgjengelig, mens link-taggen importerer CSS-kode som brukes av Mapbox. Begge disse taggene skal stå i *head*-delen av html-filen.
