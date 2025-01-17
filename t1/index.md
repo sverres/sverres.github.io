@@ -23,7 +23,7 @@ Sentrale navn og begreper:
 
 Fra kommandovindu for Miniconda/Anaconda:
 
-```ini
+```
 cd \                    ; går til rotnivå på c-disken
 md NTNU                 ; lager mappen for programfiler (gjøres bare første gang)
 cd NTNU                 ; går ned i mappen
