@@ -3,6 +3,7 @@ safe: true
 source: [sverres.github.io]
 incremental: false
 highlighter: rouge
+theme: jekyll-theme-minimal
 gist:
   noscript: false
 kramdown:
