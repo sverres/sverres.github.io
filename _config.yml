@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: [t1]
+source: [sverres.github.io]
 incremental: false
 highlighter: rouge
 gist:
@@ -8,3 +8,6 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+defaults:
+  title: My Site Title
+  author: 
