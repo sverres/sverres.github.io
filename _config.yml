@@ -1,14 +1,16 @@
 lsi: false
 safe: true
-source: [sverres.github.io]
+source: [/sverres.github.io]
 incremental: false
 highlighter: rouge
-theme: jekyll-theme-minimal
 gist:
   noscript: false
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-defaults:
-  title: My Site Title
-  author: 
+
+name: DCgov Guides Template
+author:
+  name: Office of the Chief Technology Officer
+  url: http://octo.dc.gov
+theme: jekyll-theme-minimal
