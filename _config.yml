@@ -1,6 +1,7 @@
-#lsi: true
+lsi: true
 safe: true
 source: [/sverres.github.io]
+name: Sverre Stikbakke
 incremental: false
 highlighter: rouge
 gist:
@@ -8,9 +9,3 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-
-name: Sverre Stikbakke
-#author:
-#  name: Office of the Chief Technology Officer
-#  url: http://octo.dc.gov
-#theme: minima
