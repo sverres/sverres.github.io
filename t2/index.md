@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Introduksjon til Mapbox
 ---
 
