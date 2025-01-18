@@ -1,8 +1,3 @@
----
-layout: post
-title: Introduksjon til Mapbox
----
-
 # Introduksjon til Mapbox
 
 ---
