@@ -1,4 +1,4 @@
-lsi: true
+#lsi: true
 safe: true
 source: [/sverres.github.io]
 incremental: false
@@ -9,7 +9,8 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-name: Emanuel Desperados
+#name: Emanuel Desperados
 #author:
 #  name: Office of the Chief Technology Officer
 #  url: http://octo.dc.gov
+#theme: minima
