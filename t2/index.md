@@ -1,7 +1,3 @@
----
-title: Introduksjon til Mapbox
----
-
 # Introduksjon til Mapbox
 
 ## Enkelt webkart
