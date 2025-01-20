@@ -24,7 +24,4 @@ I denne oppgaven skal du spørre om et senterpunkt for bildet, og så ved hjelp 
 - [eksempel 5](wms-5-parameters-dict-bbox-list.html)
 - [eksempel 6](wms-6-image-grid.html)
 
-
-##
-
-*NTNU 10.01.2022 Sverre Stikbakke*<br>
+*NTNU 10.01.2022 Sverre Stikbakke*
