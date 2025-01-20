@@ -52,6 +52,5 @@ Videoene (fra 2017), viser en litt anderledes layout på geonorge.no. Topo2-tjen
 - [N2000 Kartdata](https://kartkatalog.geonorge.no/metadata/uuid/8d52075d-6ef6-4120-8041-d0c0901f21f7)
 - [N5000 Kartdata](https://kartkatalog.geonorge.no/metadata/uuid/c777d53d-8916-4d9d-bae4-6d5140e0c569)
 
-##
 
 *NTNU 20.01.2025 Sverre Stikbakke*

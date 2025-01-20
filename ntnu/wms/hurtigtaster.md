@@ -34,8 +34,4 @@ h1 + Tab |Lag en h1-tag
 ol>li*4>a |Lag en ordnet liste med a-tag som liste-innhold
 
 
-<br><br>
-
-##
-
 *NTNU 19.08.2019 Sverre Stikbakke*

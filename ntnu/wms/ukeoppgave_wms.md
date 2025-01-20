@@ -8,6 +8,4 @@ WMS-tjenester og WMS-kall forutsettes kjent. Denne oppgaven går ut på å foren
 Programmet bruker også en CSS-fil for utforming av siden.
 
 
-##
-
-*NTNU 10.01.2022 Sverre Stikbakke*<br>
+*NTNU 10.01.2022 Sverre Stikbakke*

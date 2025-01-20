@@ -1,5 +1,5 @@
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?SERVICE=WMS
 &VERSION=1.3.0
 &REQUEST=GetCapabilities
@@ -14,7 +14,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 100
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -26,7 +26,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 200
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -38,7 +38,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 500
 
-https://wms.geonorge.no/skwms1/wms.topo4
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -50,7 +50,7 @@ https://wms.geonorge.no/skwms1/wms.topo4
 
 2000
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -62,7 +62,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 6000
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -74,7 +74,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 30000
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -86,7 +86,7 @@ https://openwms.statkart.no/skwms1/wms.topo
 
 60000
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -97,16 +97,16 @@ https://openwms.statkart.no/skwms1/wms.topo
 &FORMAT=image/png
 
 
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592100,6741100&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592200,6741200&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592500,6741500&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,593000,6742000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,598000,6746000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,622000,6771000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
-https://openwms.statkart.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,652000,6801000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592100,6741100&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592200,6741200&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,592500,6741500&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,593000,6742000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,598000,6746000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,622000,6771000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
+https://wms.geonorge.no/skwms1/wms.topo?VERSION=1.3.0&REQUEST=GetMap&CRS=EPSG:25832&BBOX=592000,6741000,652000,6801000&WIDTH=600&HEIGHT=600&LAYERS=topo&FORMAT=image/png
 
 
-https://openwms.statkart.no/skwms1/wms.topo
+https://wms.geonorge.no/skwms1/wms.topo
 ?VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
@@ -116,5 +116,5 @@ https://openwms.statkart.no/skwms1/wms.topo
 &LAYERS=hoydekurver_1m,fkb_samferdsel
 &FORMAT=image/png
 
-http://wms.geonorge.no/skwms1/wms.kartdata2?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Hoydelag&format=image/png&STYLE=default"
+http://wms.geonorge.no/skwms1/wms.topo?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=bygning&format=image/png"
 
