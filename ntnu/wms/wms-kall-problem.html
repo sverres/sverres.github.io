@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WMS-kall</title>
+  <link rel="stylesheet" href="wms.css">
+  <script>
+
+    const compose_wms = function () {
+
+      let x = Number(document.getElementById("x").value);
+      let y = Number(document.getElementById("y").value);
+      let x_size = Number(document.getElementById("x_terreng").value);
+      let y_size = Number(document.getElementById("y_terreng").value);
+
+      console.log("x-verdi: " + x);
+      console.log("x-verdi: " + y);
+      console.log("x_size-verdi: " + x_size);
+      console.log("y_size-verdi: " + y_size);
+
+      /* 
+       * Her må du legge til kode som beregner de fire koordinatverdiene
+       * som inngår i BBOX-parameteren. For å beregne dette trenger du
+       * x, y, x_size og y_size.
+      */
+
+      /*
+       * Linjen nedenfor må forandres slik at du får lagt til de fire
+       * parametrene som du skal beregne ovenfor.
+      */
+      let bbox = "&BBOX="
+
+      return document.getElementById("url").value.trim() + "\n" +
+        document.getElementById("wms_parameters").value.trim() + "\n" +
+        bbox
+    }
+
+    const get_wms_img = function () {
+      window.open(document.getElementById("wms_kall").value);
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="content">
+    <label for="url">URL for WMS-tjeneste: </label>
+    <textarea rows="2" cols=100 id="url"> http://wms.geonorge.no/skwms1/wms.topo </textarea>
+
+    <label for="wms_parameters">Standard-parametre:</label>
+    <textarea rows="9" cols="100" id="wms_parameters">
+?VERSION=1.3.0
+&REQUEST=GetMap
+&CRS=EPSG:25832
+&WIDTH=600
+&HEIGHT=600
+&FORMAT=image/png
+&STYLE=default
+&LAYERS=topo
+    </textarea>
+    <div id="senterpunkt">
+      <p>Koordinatverdier for senterpunkt:</p>
+      <label for="url">x:</label>
+      <input type="number" id="x" value="579350" />
+      <label for="url">y:</label>
+      <input type="number" id="y" value="6777410" />
+    </div>
+    <div id="dekning">
+      <p>Kartbildets bredde og høyde i terrenget i meter:</p>
+      <label for="url">Bredde: </label>
+      <input type="number" id="x_terreng" value="500" />
+      <label for="url">Høyde:</label>
+      <input type="number" id="y_terreng" value="500" />
+    </div>
+    <textarea rows="10" cols="100" id="wms_kall"></textarea>
+    <button id="btn" onclick="document.getElementById('wms_kall').innerHTML = compose_wms()">Lag komplett WMS-kall</button>
+    <button id="btn" onclick="document.getElementById('wms_img').innerHTML = get_wms_img()">Vis WMS-bilde</button>
+  </div>
+</body>
+
+</html>
