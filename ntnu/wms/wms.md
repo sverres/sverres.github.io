@@ -1,4 +1,4 @@
-# Kart som bilder - WMS
+# Kart som bilder - WMS - Web Map Service
 
 ## Målsetting
 
@@ -11,12 +11,13 @@
 - WMS - les innledning i WMS-standard fra OGC - se under ressurser nedenfor
 - Se forelesningene om WMS her:
 
+### Intro til WMS
+
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6a3e363d-405a-4b0f-9c1f-acac01151eba&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 - [wms.pdf](wms.pdf)
 
----
-
+### Hvordan finne og utnytte WMS-tjenester
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=da73c0a4-2297-4844-ae81-acac0122e288&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
