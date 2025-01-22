@@ -23,12 +23,12 @@
 
 Videoene (fra 2017), viser en litt anderledes layout på geonorge.no. Topo2-tjenesten er erstattet av topo4.
 
-- [test ut eksempler på WMS-kall mot topo-tjenesten](wms-kall.txt)
+### Praktiske oppgaver
 
-- gjør [ukeoppgave om WMS - python](ukeoppgave_wms_python.html)
-- gjør [ukeoppgave om WMS - javascript](ukeoppgave_wms.html)
-
-- begynn på Oblig 2
+1. [test ut eksempler på WMS-kall mot topo-tjenesten](wms-kall.txt)
+1. gjør [ukeoppgave om WMS - python](ukeoppgave_wms_python.html)
+1. gjør [ukeoppgave om WMS - javascript](ukeoppgave_wms.html)
+1. begynn på Oblig 2
 
 
 ## Ressurser
