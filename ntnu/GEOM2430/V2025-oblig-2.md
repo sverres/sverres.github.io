@@ -32,7 +32,7 @@ terrenget (antall meter).
 Denne siden har som funksjon å gi tilgang til websidene i de andre delene av oppgaven.
 
 
-### Del 3 - Frivillig - Utregning av målestokk
+### Del 4 - Frivillig - Utregning av målestokk
 
 Under kartbildet på oppgaven i del 2 skal det oppgis målestokk for kartet. Målestokken skal regnes ut automatisk. Dette forutsetter
 at pikselstørrelsen for aktuell skjermtype er kjent. Aktuelle skjermstørrelser kan finnes på
