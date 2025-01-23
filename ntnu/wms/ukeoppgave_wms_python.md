@@ -11,17 +11,14 @@ Tilpass parametrene slik at de viser et kartbilde over et for deg interessant om
 
 Dette kan f.eks. være en utvidelse av området fra oppgave 1.
 
-## Oppgave 3: Lag et notebook-dokument som setter sammen to komplette WMS-kall til et sammenhengende bilde.
+## Oppgave 3: Lag et notebook-dokument som spør bruker etter senterpunkt-koordinater.
 
-I denne oppgaven skal du spørre om et senterpunkt for bildet, og så ved hjelp av python-kode sette opp to komplette WMS-kall automatisk.
+I denne oppgaven skal du spørre om et senterpunkt for bildet, og så ved hjelp av python-kode sette opp et komplette WMS-kall automatisk.
 
 ## Eksempel-programmer
 
-- [eksempel 1](wms-1-minimal.html)
-- [eksempel 2](wms-2-parameters-list.html)
-- [eksempel 3](wms-3-parameters-dict-lesbar.html)
-- [eksempel 4](wms-4-parameters-dict.html)
-- [eksempel 5](wms-5-parameters-dict-bbox-list.html)
-- [eksempel 6](wms-6-image-grid.html)
+- [eksempel 1](wms-1-minimal.html) (bruk som mal for oppgave 1 og 3)
+- [eksempel 2](wms-2-image-grid.html) (bruk som mal for oppgave 2)
 
-*NTNU 10.01.2022 Sverre Stikbakke*
+_NTNU 10.01.2022 Sverre Stikbakke_<br>
+_NTNU 23.01.2025 Endret oppgave 3, og eksempel-filer_
