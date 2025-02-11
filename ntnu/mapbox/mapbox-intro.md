@@ -111,10 +111,9 @@ For å se denne meldingen trykker du *F12* og velger *console*-fanen.
     - [mapbox-mini.html](mapbox-mini.html)
     (bruk Ctrl + U for å se koden for siden i nettleseren) 
 2. Bytt ut eventtypen *load* med en annen type event, og se om det blir skrevet ut noe når eventet inntreffer. Mulige eventtyper finner du under dokumentasjonen for Map-objektet i API-dokumentasjonen.
-3. Se kode-eksempel i forelesningsnotat [Mapbox events som returnerer data-objekt](https://folk.ntnu.no/sverrsti/GEO2311F-H2020/mapbox-events-data.html), og skriv ut avgrensingen av kartet i nord, sør, øst og vest.
+3. Se kode-eksempel i [Mapbox events som returnerer data-objekt](mapbox-events-data.html), og skriv ut avgrensingen av kartet i nord, sør, øst og vest.
 4. Ut fra det du nå har sett, og ved hjelp av API-dokumentasjonen: skriv ut zoom-nivået kartet er på når du er ferdig med å zoome.
 5. Test ut funksjonen både med å scrolle og ved å dobbeltklikke i kartet. Er det noen forskjell på disse to?
 
-##
 
 *NTNU 11.02.2025 Sverre Stikbakke*
