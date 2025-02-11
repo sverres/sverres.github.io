@@ -73,7 +73,7 @@ const map = new mapboxgl.Map({
 ## Events
 
 Evented-objektet har som en "Instance Member" funksjonen *on*. Denne funksjonen gjør følgenede: 
-> Adds a listener to a specified event type (se [on](https://docs.mapbox.com/mapbox-gl-js/api/#evented#on)). 
+> Adds a listener to a specified event type (se [on](https://docs.mapbox.com/mapbox-gl-js/api/events/#evented#on)). 
 
 on-funksjonen har to parametre:
 - _type_, som angir hvilken type event den skal følge med på. 
