@@ -4,10 +4,10 @@ Utgangspunkt: *[Get coordinates of the mouse pointer](https://docs.mapbox.com/ma
 
 Dokumentasjon fra Mapbox API:
 
-- [Map](https://docs.mapbox.com/mapbox-gl-js/api/#map)
-- [mousemove](https://docs.mapbox.com/mapbox-gl-js/api/#map.event:mousemove)
-- [LngLat](https://docs.mapbox.com/mapbox-gl-js/api/#lnglat)
-- [Point](https://docs.mapbox.com/mapbox-gl-js/api/#point)
+- [Map](https://docs.mapbox.com/mapbox-gl-js/api/map)
+- [mousemove](https://docs.mapbox.com/mapbox-gl-js/api/map/#map.event:mousemove)
+- [LngLat](https://docs.mapbox.com/mapbox-gl-js/api/geography/)
+- [Point](https://docs.mapbox.com/mapbox-gl-js/api/geography/)
 - [JSON.stringify()](https://www.w3schools.com/js/js_json_stringify.asp)
 
 ```html
