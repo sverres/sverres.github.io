@@ -90,7 +90,7 @@ map.on('load', function () {
         + '&TileMatrixSet=webmercator'
         + '&TileMatrix={z}'
         + '&TileCol={x}'
-        + 'TileRow={y}'
+        + '&TileRow={y}'
       ],
       'tileSize': 256
     },
