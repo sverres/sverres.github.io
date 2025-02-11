@@ -46,7 +46,7 @@ Script-taggen skal stå i *body*-delen av html-dokumentet.
 
 Les beskrivelsen for Map-objektet her:
 
-- [Map](https://docs.mapbox.com/mapbox-gl-js/api/#map)
+- [Map](https://docs.mapbox.com/mapbox-gl-js/api/map)
 
 Legg merke til setningen *Extends Evented*. Dette betyr at Map-objektet er en utvidelse av objektet *Evented*. Se mer om dette nedenfor.
 
@@ -79,7 +79,7 @@ on-funksjonen har to parametre:
 - _type_, som angir hvilken type event den skal følge med på. 
 - _listener_, som angir en funksjon som skal kalles når eventet oppstår.
 
-Map-objektet har en lang rekke mulige event-typer som kan brukes til å initiere en aktivitet (et funksjonskall). Et av disse mulige eventene er *[load](https://docs.mapbox.com/mapbox-gl-js/api/#map.event:load)*. Load er beskrevet slik:
+Map-objektet har en lang rekke mulige event-typer som kan brukes til å initiere en aktivitet (et funksjonskall). Et av disse mulige eventene er *[load](https://docs.mapbox.com/mapbox-gl-js/api/map/#map.event:load)*. Load er beskrevet slik:
 > Fired immediately after all necessary resources have been downloaded and the first visually complete rendering of the map has occurred.
 
 ### Hvordan skrive kode som kjøres når et *event* inntreffer?
