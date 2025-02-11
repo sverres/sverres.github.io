@@ -74,26 +74,23 @@ Dette er kode som legger til et WMS-lag over basis-kartet i Mapbox. Legg merke t
 
 map.on('load', function () {
 
-  var minZoomThreshold = 5;
-
   map.addLayer({
     'id': 'papermap_bg',
     'type': 'raster',
-    'minzoom': minZoomThreshold,
     'source': {
       'type': 'raster',
       'tiles': [
-        'https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts' + '?' +
-        'Service=WMTS' + '&' +
-        'Version=1.0.0' + '&' +
-        'Request=GetTile' + '&' +
-        'Format=image/png' + '&' +
-        'Style=default' + '&' +
-        'Layer=toporaster3' + '&' +
-        'TileMatrixSet=EPSG:3857' + '&' +
-        'TileMatrix=EPSG:3857:{z}' + '&' +
-        'TileCol={x}' + '&' +
-        'TileRow={y}'
+        'https://cache.kartverket.no/v1/wmts'
+        + '?Service=WMTS'
+        + '&Version=1.0.0'
+        + '&Request=GetTile'
+        + '&Format=image/png'
+        + '&Style=default'
+        + '&Layer=toporaster'
+        + '&TileMatrixSet=EPSG:3857'
+        + '&TileMatrix=EPSG:3857:{z}'
+        + '&TileCol={x}'
+        + 'TileRow={y}'
       ],
       'tileSize': 256
     },
