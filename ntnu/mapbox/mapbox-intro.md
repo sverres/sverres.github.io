@@ -23,10 +23,10 @@ script-taggen sørger for å gjøre Mapbox-biblioteket tilgjengelig, mens link-t
 
 ### accessToken
 
+NB: Fra og med H2024 må man legge inn betalingsinformasjon for å få registrert seg hos Mapbox. Det betyr ikke nødvendigvis at man må betale for å bruke deres tjenester. Pr. februar 2025 kan man ha 50 000 sidevisninger før de tar betalt. Se nærmere info her: [Mapbox Pricing](https://www.mapbox.com/pricing).
+
 Når du har registrert deg hos Mapbox, kan du hente ut et *acessToken* fra denne siden:
 - [Access Tokens](https://account.mapbox.com/access-tokens/)
-
-NB: Fra og med H2024 må man legge inn betalingsinformasjon for å få registrert seg hos Mapbox. Det betyr ikke nødvendigvis at man må betale for å bruke deres tjenester. Pr. februar 2025 kan man ha 50 000 sidevisninger før de tar betalt. Se nærmere info her: [Mapbox Pricing](https://www.mapbox.com/pricing)
 
 Dette settes inn i starten av script-taggen. 
 
