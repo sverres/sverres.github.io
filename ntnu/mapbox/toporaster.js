@@ -20,8 +20,8 @@ map.on('load', function () {
         + '&Format=image/png'
         + '&Style=default'
         + '&Layer=toporaster'
-        + '&TileMatrixSet=EPSG:3857'
-        + '&TileMatrix=EPSG:3857:{z}'
+        + '&TileMatrixSet=webmercator'
+        + '&TileMatrix={z}'
         + '&TileCol={x}'
         + 'TileRow={y}'
       ],
