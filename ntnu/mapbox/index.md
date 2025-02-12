@@ -18,6 +18,5 @@
     - [Høydekurver på satellittkart](koter.html)
 - [Flere eksempler på kartutforming](https://docs.mapbox.com/mapbox-gl-js/example/)
 
-
-##
+\
 *NTNU 12.02.2025 Sverre Stikbakke*
