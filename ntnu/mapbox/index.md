@@ -14,5 +14,7 @@
 - [Add 3D terrain to a map](https://docs.mapbox.com/mapbox-gl-js/example/add-terrain/)
     - [Eksempel: Raubergstulen, Vågå](raubergstulen.html)
     - [Eksempel: Lygna-Totenvika](lygna-totenvika.html)
+- [Add a vector tile source](https://docs.mapbox.com/mapbox-gl-js/example/vector-source/)
+    - [Høydekurver på satellittkart](koter.html)
 
-*NTNU 11.02.2025 Sverre Stikbakke*
+*NTNU 12.02.2025 Sverre Stikbakke*
