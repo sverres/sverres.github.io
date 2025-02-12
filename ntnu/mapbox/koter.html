@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Koter</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic3ZlcnJlc3QiLCJhIjoiY2l1Y2VqcmRzMDAxMTJ0cGl6c3ZteGozMyJ9.ieY0kEubUisIWVVwjZiuBg';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        zoom: 12,
+        center: [10.9353212, 60.5710826]
+    });
+
+    map.on('load', () => {
+        map.addSource('mapbox-terrain', {
+            type: 'vector',
+            // Use any Mapbox-hosted tileset using its tileset id.
+            // Learn more about where to find a tileset id:
+            // https://docs.mapbox.com/help/glossary/tileset-id/
+            url: 'mapbox://mapbox.mapbox-terrain-v2'
+        });
+        map.addLayer(
+            {
+                'id': 'terrain-data',
+                'type': 'line',
+                'source': 'mapbox-terrain',
+                'source-layer': 'contour',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': '#8f5f13',
+                    'line-width': 1
+                }
+            },
+        );
+    });
+</script>
+
+</body>
+</html>
