@@ -19,3 +19,5 @@ Mapbox sin ordbok
 
 - [vector tiles](https://www.mapbox.com/help/define-vector-tiles/)
 - [tileset](https://www.mapbox.com/help/define-tileset/)
+
+*NTNU 12.02.2025 Sverre Stikbakke*
