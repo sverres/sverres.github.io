@@ -3,7 +3,7 @@
 ## Introduksjon - hvordan lage enkle webkart
 
 - [Intro til Mapbox, med oppgave](mapbox-intro.html)
-- [Enkelt Mapxox-kart](mapbox-mini.html)
+- [Enkelt Mapbox-kart](mapbox-mini.html)
 - [Mapbox events som returnerer data-objekt](mapbox-events-data.html)
 - [Flere kartlag i Mapbox](mapbox-layers.html)
 - [Mapbox Styles](https://docs.mapbox.com/api/maps/styles/#mapbox-styles)
