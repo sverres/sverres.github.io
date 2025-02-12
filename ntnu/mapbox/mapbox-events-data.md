@@ -70,4 +70,5 @@ map.on('mousemove', function (e) {
 </html>
 ```
 
+\
 *NTNU 11.02.2025 Sverre Stikbakke*

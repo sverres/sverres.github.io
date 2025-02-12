@@ -115,5 +115,5 @@ For å se denne meldingen trykker du *F12* og velger *console*-fanen.
 4. Ut fra det du nå har sett, og ved hjelp av API-dokumentasjonen: skriv ut zoom-nivået kartet er på når du er ferdig med å zoome.
 5. Test ut funksjonen både med å scrolle og ved å dobbeltklikke i kartet. Er det noen forskjell på disse to?
 
-
+\
 *NTNU 11.02.2025 Sverre Stikbakke*

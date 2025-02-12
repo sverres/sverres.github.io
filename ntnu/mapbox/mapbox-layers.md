@@ -214,5 +214,5 @@ map.on('load', function () {
 
 Legg merke til *data*-parameteren under *source*. Her er det ikke henvist til en ekstern fil, men det ligger GeoJSON-kode som beskriver kartobjektet, her et punkt, direkte i javascript-koden.
 
-
+\
 *NTNU 11.02.2025 Sverre Stikbakke*
