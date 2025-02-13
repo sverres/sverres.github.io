@@ -25,9 +25,7 @@ map.on('load', function () {
         }]
       }
     },
-    'layout': {
-      'visibility': 'none'
-    },
+    'layout': {},
     "paint": {
       "circle-radius": 14,
       "circle-color": "rgba(0,51,255,0.8)"

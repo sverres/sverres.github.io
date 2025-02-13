@@ -16,8 +16,7 @@ map.on('load', function () {
     },
     'layout': {
       "line-join": "round",
-      "line-cap": "round",
-      "visibility": "none"
+      "line-cap": "round"
     },
     'paint': {
       "line-color": "rgba(204,0,153,0.8)",

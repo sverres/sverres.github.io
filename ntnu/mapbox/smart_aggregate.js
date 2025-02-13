@@ -14,9 +14,7 @@ map.on('load', function () {
       'type': 'geojson',
       'data': 'smart_aggregate.geojson'
     },
-    'layout': {
-      "visibility": "none"
-    },
+    'layout': {},
     'paint': {
       'fill-color': '#088',
       'fill-opacity': 0.6
