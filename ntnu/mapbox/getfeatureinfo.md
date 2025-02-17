@@ -110,7 +110,7 @@ map.on('mouseleave', () => {
 });
 ```
 
-[Komplett vei-eksempel](veier.html)
+[veier.html](veier.html)
 
 ## Noen momenter vedrørende getfeatureinfo-kall
 
