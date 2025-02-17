@@ -110,6 +110,23 @@ map.on('mouseleave', () => {
 
 [Komplett eksempel](veier.html)
 
+## Noen momenter vedrørende getfeatureinfo-kall
+
+- Selv om getfeatureinfo-kallet deler parametre med WMS-kall, trenger man ikke å vise kartbildet for dette WMS-kallet. I eksemplet her er det brukt Mapbox vector tiles for  å vise et kartbilde som inneholder veier.
+- I vei-eksemplet er det brukt geografiske koordinater. Fordelen med det er at man slipper å transformere koordinater til f.eks. Web Mercator (EPSG:3857), Mapbox-funksjonen getBounds() viser geografiske koordinater, og da kan disse brukes direkte i GetFeatureInfo-kallet.
+- WMS-tjenester leverer GetfeatureInfo-svaret i de formatene som tjenesten er satt opp med. Disse er dokumentert i GetCapabilities-dokumentet, f.eks. slik:
+
+```xml
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>text/xml</Format>
+```
+
+- Andre mulige formater er
+    - HTML
+    - GeoJSON
+
 
 ## Referanser
 
