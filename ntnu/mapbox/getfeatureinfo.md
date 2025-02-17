@@ -1,6 +1,6 @@
 # WMS GetFeatureInfo
 
-Getfeatureinfo er et mulig kall mot en WMS-tjeneste. I kallet benyttes bilde-koordinater i et fiktivt bilde. Dersom det finnes kartobjekter av den etterpurte typen på dette stedet vil WMS-tjenesten returnere egenskapsdata for disse.
+Getfeatureinfo er et mulig kall mot en WMS-tjeneste. I kallet benyttes bilde-koordinater i et fiktivt bilde. Dersom det finnes kartobjekter av den etterspurte objekttypen på dette stedet vil WMS-tjenesten returnere egenskapsdata for disse.
 
 Getfeatureinfo-kallet har alle parametrene som et WMS-kall i tillegg til et sett med bilde-koordinater og informasjon om hvilket kartlag det ønskes egenskapsdata om.
 
@@ -132,3 +132,6 @@ map.on('mouseleave', () => {
 
 - [6.7.4 Bounding boxes i WMS-spesifikasjonen fra OGC](https://www.ogc.org/standard/wms/)
 - [7.4 GetFeatureInfo i WMS-spesifikasjonen fra OGC](https://www.ogc.org/standard/wms/)
+
+\
+*NTNU 17.02.2025 Sverre Stikbakke*
