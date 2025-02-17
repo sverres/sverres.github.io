@@ -22,5 +22,10 @@
 
 - [Polygon-kartografi](mapbox-polygon-kartografi.md)
 
+## WMS GetfeatureInfo-kall fra Mapbox
+
+- [Om GetFeatureInfo-kallet](getfeatureinfo.md)
+    - [Eksempel: Egenskapsdata for veier](veier.html)
+
 \
 *NTNU 12.02.2025 Sverre Stikbakke*
