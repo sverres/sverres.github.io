@@ -48,6 +48,8 @@ https://wms.geonorge.no/skwms1/wms.topo
 [Test kallet her](https://wms.geonorge.no/skwms1/wms.topo?bbox=1185691.1827596538,8576234.573596776,1186302.6789859347,8576846.069823056&format=image/png&service=WMS&version=1.3.0&request=GetFeatureInfo&crs=EPSG:3857&width=256&height=256&layers=topo&styles=default&transparent=false&QUERY_LAYERS=fkb_samferdsel&INFO_FORMAT=text/plain&I=256&J=128)
 
 
+## Mapbox-eksempel med geografiske koordinater
+
 ```js
 /**
  * veier.js
@@ -108,12 +110,12 @@ map.on('mouseleave', () => {
 });
 ```
 
-[Komplett eksempel](veier.html)
+[Komplett vei-eksempel](veier.html)
 
 ## Noen momenter vedrørende getfeatureinfo-kall
 
 - Selv om getfeatureinfo-kallet deler parametre med WMS-kall, trenger man ikke å vise kartbildet for dette WMS-kallet. I eksemplet her er det brukt Mapbox vector tiles for  å vise et kartbilde som inneholder veier.
-- I vei-eksemplet er det brukt geografiske koordinater. Fordelen med det er at man slipper å transformere koordinater til f.eks. Web Mercator (EPSG:3857), Mapbox-funksjonen getBounds() viser geografiske koordinater, og da kan disse brukes direkte i GetFeatureInfo-kallet.
+- I vei-eksemplet er det brukt geografiske koordinater. Fordelen med det er at man slipper å transformere koordinater til f.eks. Web Mercator (EPSG:3857), Mapbox-funksjonen getBounds() viser geografiske koordinater, og disse kan da brukes direkte i GetFeatureInfo-kallet.
 - WMS-tjenester leverer GetfeatureInfo-svaret i de formatene som tjenesten er satt opp med. Disse er dokumentert i GetCapabilities-dokumentet, f.eks. slik:
 
 ```xml
