@@ -107,3 +107,11 @@ map.on('mouseleave', () => {
     map.getCanvas().style.cursor = '';
 });
 ```
+
+[Komplett eksempel](veier.html)
+
+
+## Referanser
+
+- [6.7.4 Bounding boxes i WMS-spesifikasjonen fra OGC](https://www.ogc.org/standard/wms/)
+- [7.4 GetFeatureInfo i WMS-spesifikasjonen fra OGC](https://www.ogc.org/standard/wms/)
