@@ -28,7 +28,7 @@ Kartet skal vise et "passe" stort område ved oppstart over et område du velger
 
 Kartet skal ha en målstokklinjal.
 
-## Del 3 - Egenskapsdata for naturvern-områder i popup-vinduer<br/>fra WMS GetFeatureInfo-kall
+## Del 3 - Egenskapsdata for naturvern-områder fra WMS GetFeatureInfo-kall<br/>i popup-vinduer
 
 Løsningen på denne del-oppgaven skal integreres i webkartet for deloppgave 2.
 
