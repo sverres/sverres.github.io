@@ -22,7 +22,7 @@
 
 - [Polygon-kartografi](mapbox-polygon-kartografi.md)
     - [naturtap.html](naturtap.html)
-    - [naturtap_info.html](naturtap_info.html)
+    - [naturtap_info.html](naturtap-info.html)
 
 ## WMS GetfeatureInfo-kall fra Mapbox
 
