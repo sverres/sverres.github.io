@@ -65,7 +65,8 @@ På denne oblig'en skal alle levere hver for seg, men vi oppfordrer til samarbei
 
 ### WMS og WMTS
 - [WMS-veileder fra Norge Digitalt](https://www.geonorge.no/Geodataarbeid/veiledere/)
-- [WMS-spesifikasjonen fra OGC](https://www.ogc.org/publications/standard/wms/)
+- [WMS-spesifikasjonen fra OGC](https://www.ogc.org/publications/standard/wms/
+)
 
 
 ### Javascript Fetch API
