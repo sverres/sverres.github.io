@@ -134,6 +134,10 @@ map.addLayer({
 });
 ```
 
+Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke fra 2013-2023:
+
+[naturtap.html](naturtap.html)
+
 ## Ressurser
 
 - [get](https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions/#get)
