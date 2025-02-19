@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>yr API</title>
+    <style>
+        #content {
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="content">
+
+        <h1><a href="https://hogevarde.no/se-og-gjore/hogevarde-skisenter/">Høgevarde Fjellpark</a></h1>
+        <h2>Værmelding fra Yr</h2>
+
+        <form class="pure-form" action="javascript:void(0);">
+            <fieldset>
+                <input type="text" value="9.4968" id="longitude" />
+                <input type="text" value="60.3433" id="latitude" />
+                <button type="submit" class="pure-button pure-button-primary" id="ok-button">OK</button>
+            </fieldset>
+        </form>
+
+        <table class="pure-table pure-table-bordered pure-table-striped">
+            <thead>
+                <tr>
+                    <th>dato</th>
+                    <th>kl</th>
+                    <th>temperatur</th>
+                    <th>nedbør</th>
+                    <th>vind</th>
+                </tr>
+            </thead>
+            <tbody id="yr-tabell-body">
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        const createTempTable = async() => {
+
+            longitude = Number(document.getElementById("longitude").value);
+            latitude = Number(document.getElementById("latitude").value);
+
+            const url = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${latitude}&lon=${longitude}`;
+            //console.log(url);
+
+            response = await fetch(url);
+
+            if (response.ok) {
+
+                const apiData = await response.json();
+                console.log(JSON.stringify(apiData, null, 2));
+                //console.log(JSON.stringify(apiData));
+
+                // resten av koden i denne funksjonen handler om å plukke ut data fra 
+                // apiData og å lage og fylle ut en tabell
+
+                const timeSeries = apiData.properties.timeseries;
+                //console.log(timeSeries);
+
+                const yrTableBody = document.getElementById('yr-tabell-body');
+
+                // fjerne eventuelle eksisterende rader i tabell
+                while (yrTableBody.lastChild) {
+                    yrTableBody.removeChild(yrTableBody.lastChild);
+                };
+
+                for (const data of timeSeries) {
+
+                    const dateTime = data.time.split('T');
+                    const date = dateTime[0];
+                    const hour = dateTime[1].substr(0, 2);
+                    const temperature = parseFloat(data.data.instant.details.air_temperature).toFixed(1);
+                    const windSpeed = parseFloat(data.data.instant.details.wind_speed).toFixed(1);
+
+                    // litt komplisert her fordi vær-prognosen skifter fra
+                    // 1-times til 6-timers intervall etter to dager
+
+                    let precipitation = '--';
+
+                    let precipitation_1h = '--';
+                    try {
+                        precipitation_1h = parseFloat(data.data.next_1_hours.details.precipitation_amount).toFixed(1);
+                        //console.log(data.time, precipitation_1h, '1_hours: ', data.data.next_1_hours.details);
+                    } catch {
+                        precipitation_1h = false;
+                        //console.log(data.time, 'precipitation_1h', precipitation_1h);
+                    };
+
+                    let precipitation_6h = '--';
+                    try {
+                        precipitation_6h = parseFloat(data.data.next_6_hours.details.precipitation_amount).toFixed(1);
+                        //console.log(data.time, precipitation_6h, '6_hours: ', data.data.next_6_hours.details);
+                    } catch {
+                        precipitation_6h = false;
+                        //console.log(data.time, 'precipitation_6h', precipitation_6h);
+                    };
+
+                    if (precipitation_6h) {
+                        precipitation = precipitation_6h;
+                    };
+
+                    if (precipitation_1h) {
+                        precipitation = precipitation_1h;
+                    };
+
+                    if (precipitation == 0.0) {
+                        precipitation = '';
+                    };
+
+                    //console.log(date, hour, temperature, precipitation, windSpeed);
+                    const rowData = [date, hour, temperature, precipitation, windSpeed];
+                    var newtRow = yrTableBody.insertRow();
+                    for (let i = 0; i < rowData.length; i++) {
+                        const cell = newtRow.insertCell(i);
+                        cell.innerHTML = rowData[i];
+                    };
+                };
+            };
+        };
+
+        const addOkButtonEventListener = () => {
+
+            const okButton = document.getElementById('ok-button');
+            okButton.addEventListener('click', () => {
+                createTempTable();
+            });
+        };
+
+        addOkButtonEventListener();
+    </script>
+</body>
+
+</html>
