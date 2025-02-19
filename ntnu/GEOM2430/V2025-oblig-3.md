@@ -1,5 +1,5 @@
 
-# GEOM2430 Vår 2025 Oblig 3 - Webkart med Mapbox, WMTS og GeoJSON
+# GEOM2430 Vår 2025 Oblig 3<br/>Webkart med Mapbox, WMTS og GeoJSON
 
 
 ## Målsetting
@@ -7,7 +7,7 @@
 - lære om Mapbox GL JS og kunne bruke dette til å lage webkart
 - lære mer om WMS og WMTS (Web Map Tile Service) og bruk av slike tjenester
 - lære å utnytte dokumentasjon for API'er og tjeneste-spesifikasjoner
-- lære om bruk av ulike kartlag-type på webkart
+- lære om bruk av ulike kartlag-typer på webkart
 - lære å utnytte getcapabilities-kall mot WMS-tjenester for å vise egenskapsdata
 
 
@@ -21,10 +21,14 @@ Frivillig, men anbefalt: Webkartet kan gjerne ha et WMTS-kartlag med et godt top
 
 Oppgaven går også her ut på å lage et Mapbox-basert webkart.
 
-På geonorge.no kan du finne informasjon om en WMS-tjeneste som viser naturvern-områder for hele Norge. Ved å analysere innholdet i denne WMS-tjenesten ved hjelp av GetCapabilities-kall, kan du finne nødvendig informasjon for å legge til et kartlag fra denne tjenesten som viser naturvernområder som polygoner.
-Kartet skal vise et "passe" stort område ved oppstart over et område du velger selv. Du velger selv om du vil bruke en av de medfølgende Mapbox-stilene, eller om du vil bruke et WMTS-kart som bakgrunn for naturvern-ploygonene. Kartet skal ha en målstokklinjal.
+På geonorge.no kan du finne informasjon om en WMS-tjeneste som viser naturvern-områder for hele Norge.
 
-## Del 3 - Egenskapsdata for naturvern-områder i popup-vinduer fra WMS GetFeatureInfo-kall
+Ved å analysere innholdet i denne WMS-tjenesten ved hjelp av GetCapabilities-kall, kan du finne nødvendig informasjon for å legge til et kartlag fra denne tjenesten som viser naturvernområder som polygoner.
+Kartet skal vise et "passe" stort område ved oppstart over et område du velger selv. Du velger selv om du vil bruke en av de medfølgende Mapbox-stilene, eller om du vil bruke et WMTS-kart som bakgrunn for naturvern-polygonene. 
+
+Kartet skal ha en målstokklinjal.
+
+## Del 3 - Egenskapsdata for naturvern-områder i popup-vinduer<br/>fra WMS GetFeatureInfo-kall
 
 Løsningen på denne del-oppgaven skal integreres i webkartet for deloppgave 2.
 
@@ -61,7 +65,7 @@ På denne oblig'en skal alle levere hver for seg, men vi oppfordrer til samarbei
 
 ### WMS og WMTS
 - [WMS-veileder fra Norge Digitalt](https://www.geonorge.no/Geodataarbeid/veiledere/)
-- [WMS-spesifikasjonen fra OGC](http://portal.opengeospatial.org/files/?artifact_id=14416)
+- [WMS-spesifikasjonen fra OGC](https://www.ogc.org/publications/standard/wms/)
 
 
 ### Javascript Fetch API
