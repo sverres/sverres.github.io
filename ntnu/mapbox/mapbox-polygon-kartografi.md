@@ -90,11 +90,11 @@ map.addLayer({
 
 >Interpolation types:
 
->- ["linear"]: Interpolates linearly between the pair of stops just less than and just greater than the input.
->- ["exponential", base]: Interpolates exponentially between the stops just less than and just greater than the input. base controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.
->- ["cubic-bezier", x1, y1, x2, y2]: Interpolates using the cubic bezier curve defined by the given control points.
+> - ["linear"]: Interpolates linearly between the pair of stops just less than and just greater than the input.
+> - ["exponential", base]: Interpolates exponentially between the stops just less than and just greater than the input. base controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.
+> - ["cubic-bezier", x1, y1, x2, y2]: Interpolates using the cubic bezier curve defined by the given control points.
 
-Kilde: [https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions/#interpolate](https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions/#interpolate)
+Kilde: [https://docs.mapbox.com/style-spec/reference/expressions/#ramps-scales-curves](https://docs.mapbox.com/style-spec/reference/expressions/#ramps-scales-curves)
 
 Med _interpolate_ er det nok å oppgi to fargeverdier, knyttet til to egenskapsverdier. Mapbox vil da beregne fargeverdier for alle aktuelle egenskapsverdier basert på den valgte interpolasjonsmetoden. Man kan også ha flere mellomliggende "knekkpunkter" for interpolasjonen.
 
