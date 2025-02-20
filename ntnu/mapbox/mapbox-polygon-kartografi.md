@@ -62,25 +62,32 @@ Get-funksjonen henter egenskapsverdien fra datasettet og bruker denne som input-
 ]
 ```
 
-Komplett eksempel for ett kartlag basert på vektor-tiles.
+Komplett eksempel for ett kartlag basert på geojson-fil:
+
 ```
 map.addLayer({
-    "id": "kommuner",
-    "type": "fill",
-    "source": "kommuner-tiles",
-    "source-layer": "sysselsetting",
-    "layout": {},
-    "paint": {
-        'fill-color': [
-            'step',
-            ['get', 'Prosentendringkvinne'],
-            'red',
-            0, 'yellow',
-            25, 'green'
-        ],
-        "fill-outline-color": "#000",
-        "fill-opacity": 0.7,
-    }
+'id': 'naturtap',
+'type': 'fill',
+'source': {
+    'type': 'geojson',
+    'data': 'naturtap.geojson'
+},
+'layout': {},
+"paint": {
+    'fill-color': [
+        'step',
+        ['get', 'endring_natur'],
+        '#b10026',
+        -1.5, '#e31a1c',
+        -1.0, '#fc4e2a',
+        -0.5, '#fd8d3c',
+        -0.0, '#feb24c',
+        0.5, '#fed976',
+        1.0, '#ffffb2',
+    ],
+    "fill-outline-color": "#000",
+    "fill-opacity": 0.75,
+}
 });
 ```
 
@@ -111,31 +118,34 @@ I eksemplet nedenfor interpoleres fargeverdier mellom fargenavnene _darkslategre
 [
     'interpolate',
     ['linear'],
-    ['get', 'Prosentendringkvinne'],
-    -100, 'darkslategrey',
-    60, 'whitesmoke'
+    ['get', 'endring_natur'],
+    -2, 'darkslategrey',
+    2, 'whitesmoke'
 ],
 ```
 
-Komplett eksempel for ett kartlag basert på vektor-tiles.
+Komplett eksempel for ett kartlag basert på geojson-fil:
+
 ```
 map.addLayer({
-    "id": "kommuner",
-    "type": "fill",
-    "source": "kommuner-tiles",
-    "source-layer": "sysselsetting",
-    "layout": {},
-    "paint": {
-        'fill-color': [
-            'interpolate',
-            ['linear'],
-            ['get', 'Prosentendringkvinne'],
-            -100, 'darkslategrey',
-            60, 'whitesmoke'
-        ],
-        "fill-outline-color": "#000",
-        "fill-opacity": 0.7,
-    }
+"id": "naturtap",
+"type": "fill",
+'source': {
+    'type': 'geojson',
+    'data': 'naturtap.geojson'
+},
+"layout": {},
+"paint": {
+    'fill-color': [
+    'interpolate',
+    ['linear'],
+    ['get', 'endring_natur'],
+    -2, 'darkslategrey',
+    2, 'whitesmoke'
+    ],
+    "fill-outline-color": "#000",
+    "fill-opacity": 0.7,
+}
 });
 ```
 
@@ -156,4 +166,4 @@ Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke 
 
 
 \
-*Sverre Stikbakke 14.11.2020*
+*Sverre Stikbakke 20.02.2025*
