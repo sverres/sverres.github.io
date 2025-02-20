@@ -22,6 +22,8 @@
 
 - [Polygon-kartografi](mapbox-polygon-kartografi.md)
     - [naturtap.html](naturtap.html)
+    - [naturtap-interpolert.html](naturtap0interpolert.html)
+- Eksempel på bruk av tekst på kart, og informasjon i popup-dialoger
     - [naturtap-info.html](naturtap-info.html)
 
 ## WMS GetfeatureInfo-kall fra Mapbox
@@ -30,4 +32,4 @@
     - [Eksempel: Egenskapsdata for veier](veier.html)
 
 \
-*NTNU 12.02.2025 Sverre Stikbakke*
+*NTNU 20.02.2025 Sverre Stikbakke*
