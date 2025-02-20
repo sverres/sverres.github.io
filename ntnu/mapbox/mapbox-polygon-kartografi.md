@@ -84,6 +84,11 @@ map.addLayer({
 });
 ```
 
+Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke fra 2013-2023:
+
+[naturtap.html](naturtap.html)
+
+
 ## Beregning av fargeverdi basert på interpolate-funksjonen
 
 >Produces continuous, smooth results by interpolating between pairs of input and output values ("stops"). The input may be any numeric expression (e.g., ["get", "population"]). Stop inputs must be numeric literals in strictly ascending order. The output type must be number, array, or color.
@@ -133,10 +138,6 @@ map.addLayer({
     }
 });
 ```
-
-Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke fra 2013-2023:
-
-[naturtap.html](naturtap.html)
 
 ## Ressurser
 
