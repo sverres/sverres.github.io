@@ -7,6 +7,7 @@
 - [Mapbox events som returnerer data-objekt](mapbox-events-data.html)
 - [Flere kartlag i Mapbox](mapbox-layers.html)
 - [Mapbox Styles](https://docs.mapbox.com/api/maps/styles/#mapbox-styles)
+- [Projeksjoner i Mapbox](mapbox-projeksjoner.md)
 
 ## Teori - og mer avanserte kart-løsninger
 
@@ -22,7 +23,7 @@
 
 - [Polygon-kartografi](mapbox-polygon-kartografi.md)
     - [naturtap.html](naturtap.html)
-    - [naturtap-interpolert.html](naturtap0interpolert.html)
+    - [naturtap-interpolert.html](naturtap-interpolert.html)
 - Eksempel på bruk av tekst på kart, og informasjon i popup-dialoger
     - [naturtap-info.html](naturtap-info.html)
 
