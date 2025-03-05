@@ -7,7 +7,7 @@
 
  map.on('load', function () {
 
-    var minZoomThreshold = 5;
+    var minZoomThreshold = 4;
   
     map.addLayer({
       'id': 'papermap_bg',
