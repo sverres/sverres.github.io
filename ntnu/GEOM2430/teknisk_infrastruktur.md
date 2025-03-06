@@ -8,6 +8,7 @@
 
 
 - [internett.pdf](docs/internett.pdf)
+- [Notat om IPV4 og IPV6](docs/ipv4-ipv6.html)
 
 Video-serie om internett-teknologi - tematisk oppdelt:
 - [How The Internet Works - 7 videoer fra Code.org (5-7 min pr. video)](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
