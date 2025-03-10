@@ -11,6 +11,8 @@ Se mer om hvordan Mapserver-prosjektet presenterer seg selv her:
 
 Mapserver brukes av mange aktører innen den norske geografiske infrastrukturen, bl. a. for WMS-tjenester fra Geonorge/Kartverket.
 
+- [Anatomy of a MapServer Application](https://mapserver.org/introduction.html#anatomy-of-a-mapserver-application)
+
 
 ## Hva er MS4W?
 
@@ -114,6 +116,8 @@ Med GetCapabilities-parametre:
 
 
 #### Open Layers webkart som viser tjeneste under _apps/openlayers-6.6.1/examples/map_
+
+Dette krever at CORS-oppsettet er lagt inn og at Apache er startet på nytt.
 
 - [Open Layers verdenskart](http://localhost/openlayers/examples/mapserver-wms.html)
 
