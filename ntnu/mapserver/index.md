@@ -30,19 +30,14 @@ Et avsnitt på denne siden forklarer hvordan caching (WMTS) kan aktiveres med ma
 Vi skal ikke bruke WMTS med Mapserver i GEOM2430.
 
 
-## Installasjon på Windows 10
+## Installasjon på Windows 10/11
 
 Her følger detaljert beskrivelse av installasjonsprosedyre. Det er viktig å følge denne nøye.
 
 - Last ned installasjonsfil, ms4w-5.0.0-setup.exe, fra denne siden: [https://www.ms4w.com/index.html](https://www.ms4w.com/index.html)
 
-Start installasjon, aksepter sikkerhetsadvarsel (_More info_):
-
-![Image](img/ms4w/ms4w-protect.png)
-
-Velg _Run anyway_
-
-![Image](img/ms4w/ms4w-protect.png)
+Start installasjon
+(Bildene nedenfor er fra versjon 4.x, men er ellers like med versjon 5.x)
 
 Kryss av for OpenLayers - la resten stå urørt
 
@@ -85,6 +80,9 @@ mapserv(): Web application error. Traditional BROWSE mode requires a TEMPLATE in
 
 Med GetCapabilities-parametre:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
+
+Open Layers webkart som viser denne WMS-tjenesten:
+-[Open Layers](docs/openlayers)
 
 
 
