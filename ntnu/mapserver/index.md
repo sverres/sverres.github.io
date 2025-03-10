@@ -1,4 +1,5 @@
-# Ukeoppgave: Installasjon av Mapserver på egen PC
+# Introduksjon til Mapserver - installasjon på egen PC
+
 
 ## Hva er mapserver?
 
@@ -97,7 +98,7 @@ Hvis alt har gått bra gjennom installasjonen, skal du nå ha en Apache Web-serv
 - [http://127.0.0.1](http://127.0.0.1)
 
 
-### WMS-tjeneste under _apps/local-demo_
+#### WMS-tjeneste under _apps/local-demo_
 
 En WMS-tjeneste er installert på denne adressen:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map)
@@ -112,7 +113,7 @@ Med GetCapabilities-parametre:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
 
 
-### Open Layers webkart som viser tjeneste under _apps/openlayers-6.6.1/examples/map_
+#### Open Layers webkart som viser tjeneste under _apps/openlayers-6.6.1/examples/map_
 
 
 Open Layers webkart som viser denne WMS-tjenesten:
@@ -120,18 +121,9 @@ Open Layers webkart som viser denne WMS-tjenesten:
 -[Open Layers](http://localhost/openlayers/examples/mapserver-wms.html)
 
 
-## Lage en egen WMS-tjeneste
+## Neste steg - sette opp en egen WMS-tjeneste med egne data
 
-1. Hent ned et datasett med kommuneinndeling innenfor et fylke fra Geonorge. Datasettet skal bestå av polygoner. Datasettet lastes ned på FGDB-format.
-2. Lag mappe for tjenesten under _C:\ms4w\apps_, f.eks. _C:\ms4w\apps\innlandet_
-3. Legg inn FGDB-fil (mappe) i denne mappen igjen, f.eks. *C:\ms4w\apps\innlandet\Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb*
-4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i følgende mal: [innlandet.map](innlandet-mapfile.md).
-5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist ovenfor.
-5. Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som som vist eh ....
-
-## Lage webkart for egen WMS-tjeneste
-
-Ta utgangspunkt i lærestoffet under Open Layers, og lag et webkart som viser fram din egen WMS-tjeneste.
+- [Ukeoppgave med Mapserver](mapserver-ukeoppgave.md)
 
 \
 _NTNU 10.03.2025 Sverre Stikbakke_
