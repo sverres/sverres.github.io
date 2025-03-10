@@ -1,4 +1,4 @@
-# Eksempel på minimal mapfile for WMS-tjeneste
+# Eksempel pÃ¥ minimal mapfile for WMS-tjeneste
 
 ```c
 /*
