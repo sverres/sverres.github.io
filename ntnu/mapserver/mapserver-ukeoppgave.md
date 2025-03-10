@@ -14,6 +14,23 @@ Ta utgangspunkt i lærestoffet under Open Layers, og lag et webkart som viser fr
 # Eksempel på minimal mapfile for WMS-tjeneste
 
 ```c
+/*
+ Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost ( http://127.0.0.1 )
+ Author:       sverre.stikbakke@ntnu.no
+ Last updated: 2025-03-10
+*/
+
+MAP
+NAME "innlandet"
+STATUS ON
+EXTENT -180 -90 180 90
+UNITS DD
+
+WEB
+  METADATA
+    "wms_title"                     "NTNU Demo WMS Server"
+    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/apps/innlandet/wms.map"
+    "wms_srs"                       "EPSG:4326 EPSG:4269 EPSG:3857 EPSG:25832"
     "wms_feature_info_mime_type"    "text/plain"
     "wms_abstract"                  "Demo-WMS for NTNU, GEOM2430"
     "ows_enable_request"            "*"
@@ -44,7 +61,6 @@ LAYER
 END ## Layer
 
 END ## Mapfile
-
 ```
 
 \
