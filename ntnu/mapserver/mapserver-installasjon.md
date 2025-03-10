@@ -76,7 +76,9 @@ Hvis alt har gått bra gjennom installasjonen, skal du nå ha en Apache Web-serv
 
 En WMS-tjeneste er installert på denne adressen:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map)
+
 Uten noen ekstra parametre vil WMS-url'en gi en feilmelding:
+
 ```HTML
 mapserv(): Web application error. Traditional BROWSE mode requires a TEMPLATE in the WEB section, but none was provided. 
 ```
@@ -88,8 +90,11 @@ Med GetCapabilities-parametre:
 
 ## Lage en egen WMS-tjeneste
 
-- Hent ned et datasett med kommuneinndeling innenfor et fylke fra Geonorge. Datasettet skal bestå av polygoner. Datasettet lastes ned på FGDB-format.
-- Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som du nå skal ha i mappen 'C:\ntnugeo\apps\ntnustudent\innlandet'.
+1. Hent ned et datasett med kommuneinndeling innenfor et fylke fra Geonorge. Datasettet skal bestå av polygoner. Datasettet lastes ned på FGDB-format.
+2. Lag mappe for tjenesten under _C:\ms4w\apps_, f.eks. _C:\ms4w\apps\innlandet_
+3. Legg inn FGDB-fil (mappe) i denne mappen igjen, f.eks. *C:\ms4w\apps\innlandet\Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb*
+4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i følgende mal: [innlandet.map](docs/innlandet.map).
+5. Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som du nå skal ha i mappen 'C:\ntnugeo\apps\ntnustudent\innlandet'.
 
 ## Lage webkart for egen WMS-tjeneste
 
