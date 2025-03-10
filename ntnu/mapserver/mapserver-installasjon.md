@@ -74,9 +74,16 @@ Hvis alt har gått bra gjennom installasjonen, skal du nå ha en Apache Web-serv
 - [http://localhost](http://localhost)
 - [http://127.0.0.1](http://127.0.0.1)
 
-Open-Layers-eksempel kan testes her:
-- [MapServer WMS Example](http://127.0.0.1/openlayers/examples/mapserver-wms.html)
-- [GetCapabilities-kall til tilhørende WMS-tjeneste](http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ms4w/apps/openlayers-6.6.1/examples/map/wms-server.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
+En WMS-tjeneste er installert på denne adressen:
+- [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map)
+Uten noen ekstra parametre vil WMS-url'en gi en feilmelding:
+```HTML
+mapserv(): Web application error. Traditional BROWSE mode requires a TEMPLATE in the WEB section, but none was provided. 
+```
+
+Med GetCapabilities-parametre:
+- [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
+
 
 
 ## Lage en egen WMS-tjeneste
@@ -87,7 +94,6 @@ Open-Layers-eksempel kan testes her:
 ## Lage webkart for egen WMS-tjeneste
 
 Ta utgangspunkt i lærestoffet under Open Layers, og lag et webkart som viser fram din egen WMS-tjeneste.
-
 
 \
 _NTNU 10.03.2025 Sverre Stikbakke_
