@@ -52,14 +52,17 @@ Installasjonen (inkluderer nedlasting) kan ta litt tid
 
 ![Image](img/ms4w/ms4w-download.png)
 
-Du vil sannsynligvis få spørsmål om å installere ekstra programbibliotek for Visual C++.
-Det trengs for å kjøre Mapserver. (Ved 2. gangs installsjon fikk jeg opp disse valgene - det stod antageligvis install i stedet for repair første gang).
-
-![Image](img/ms4w/ms4w-vcpp-install.png)
-
 Forhåpentligvis kommer dette bildet opp til slutt.
 
 ![Image](img/ms4w/ms4w-install_complete.png)
+
+## Hva er Apache?
+
+En sentral del av Mapserver-installasjonen er Apache webserver. Webserveren tar imot forepørsler fra klientene og leverer filer og kartbilder. Kartbildene generereres i en egen mapserver-modul som kalles ved hjelp av CGI. 
+
+Fra Wikipedia:
+
+> In computing, Common Gateway Interface (CGI) is an interface specification that enables web servers to execute an external program to process HTTP or HTTPS user requests. 
 
 
 ## CORS-oppsett for Apache
