@@ -115,10 +115,7 @@ Med GetCapabilities-parametre:
 
 #### Open Layers webkart som viser tjeneste under _apps/openlayers-6.6.1/examples/map_
 
-
-Open Layers webkart som viser denne WMS-tjenesten:
-
--[Open Layers](http://localhost/openlayers/examples/mapserver-wms.html)
+- [Open Layers verdenskart](http://localhost/openlayers/examples/mapserver-wms.html)
 
 
 ## Neste steg - sette opp en egen WMS-tjeneste med egne data
