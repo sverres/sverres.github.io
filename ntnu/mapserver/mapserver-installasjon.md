@@ -94,6 +94,7 @@ Med GetCapabilities-parametre:
 2. Lag mappe for tjenesten under _C:\ms4w\apps_, f.eks. _C:\ms4w\apps\innlandet_
 3. Legg inn FGDB-fil (mappe) i denne mappen igjen, f.eks. *C:\ms4w\apps\innlandet\Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb*
 4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i følgende mal: [innlandet.map](docs/innlandet.map).
+5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist ovenfor.
 5. Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som du nå skal ha i mappen 'C:\ntnugeo\apps\ntnustudent\innlandet'.
 
 ## Lage webkart for egen WMS-tjeneste
