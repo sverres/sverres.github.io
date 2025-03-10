@@ -71,7 +71,7 @@ I vår sammenheng er dette aktuelt hvis html-fila ligger i en mappe og hentes in
 Løsningen på dette er å få Apache til å legge inn en melding i sine HTTP Headers, som forteller vår nettleser at det er trygt å hente ressurser derfra likevel.
 Legg inn denne linjen i _C:\ms4w\Apache\conf\httpd.conf_, gjerne til slutt i fila.
 
-```ini
+```html
 Header set Access-Control-Allow-Origin "*"
 ```
 Ta deretter en omstart av Apache.
@@ -83,7 +83,7 @@ Hvis du vil vite mer kan du lese om CORS her: [developer.mozilla.org](https://de
 
 Apache kan startes på nytt ved hjelp av _MS4W-Apache-Monitor_ (Windows startmeny, under MS4W). Programmet legger seg på oppgavelinjen i Windows ved oppstart.
 
-![Apache Monitor](img/apache-monitor.png)
+![Apache Monitor](img/ms4w/apache-monitor.png)
 
 
 ## Kontrollere at installasjonen er vellykket
