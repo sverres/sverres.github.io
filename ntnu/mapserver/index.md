@@ -62,12 +62,39 @@ Forhåpentligvis kommer dette bildet opp til slutt.
 ![Image](img/ms4w/ms4w-install_complete.png)
 
 
+## CORS-oppsett for Apache
+
+CORS (Cross-Origin Resource Sharing) er en mekanisme som tillater en nettleser å hente inn ressurser fra flere kilder, til scriptene som kjøres på en nettside.
+
+I vår sammenheng er dette aktuelt hvis html-fila ligger i en mappe og hentes inn enten via direkte klikk i en mappe eller startes via en annen webserver enn der WMS/WMTS-tjenesten ligger. Scriptene, f.eks. Open Layers web-kart-script, vil da bli hentet fra der vi har html- og javascript-kodefilene. Når vi deretter kontakter WMS- eller WMTS-tjenestene som ligger under Apache web-serveren, vil vår nettleser merke at scriptene våre vil kontakte et annet nettsted enn der kodefilene ligger. Dette er i utgangspunktet ikke tillatt - av sikkerhets-hensyn. 
+
+Løsningen på dette er å få Apache til å legge inn en melding i sine HTTP Headers, som forteller vår nettleser at det er trygt å hente ressurser derfra likevel.
+Legg inn denne linjen i _C:\ms4w\Apache\conf\httpd.conf_, gjerne til slutt i fila.
+
+```ini
+Header set Access-Control-Allow-Origin "*"
+```
+Ta deretter en omstart av Apache.
+
+Hvis du vil vite mer kan du lese om CORS her: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+
+## Omstart av Apache
+
+Apache kan startes på nytt ved hjelp av _MS4W-Apache-Monitor_ (Windows startmeny, under MS4W). Programmet legger seg på oppgavelinjen i Windows ved oppstart.
+
+![Apache Monitor](img/apache-monitor.png)
+
+
 ## Kontrollere at installasjonen er vellykket
 
 Hvis alt har gått bra gjennom installasjonen, skal du nå ha en Apache Web-server kjørende på PC'en. Du kan teste dette ved å gå til en av disse url'ene i nettleseren:
 
 - [http://localhost](http://localhost)
 - [http://127.0.0.1](http://127.0.0.1)
+
+
+### WMS-tjeneste under _apps/local-demo_
 
 En WMS-tjeneste er installert på denne adressen:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map)
@@ -81,9 +108,13 @@ mapserv(): Web application error. Traditional BROWSE mode requires a TEMPLATE in
 Med GetCapabilities-parametre:
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/local-demo/local.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
 
-Open Layers webkart som viser denne WMS-tjenesten:
--[Open Layers](docs/openlayers)
 
+### Open Layers webkart som viser tjeneste under _apps/openlayers-6.6.1/examples/map_
+
+
+Open Layers webkart som viser denne WMS-tjenesten:
+
+-[Open Layers](http://localhost/openlayers/examples/mapserver-wms.html)
 
 
 ## Lage en egen WMS-tjeneste
