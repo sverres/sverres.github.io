@@ -93,7 +93,7 @@ Med GetCapabilities-parametre:
 1. Hent ned et datasett med kommuneinndeling innenfor et fylke fra Geonorge. Datasettet skal bestå av polygoner. Datasettet lastes ned på FGDB-format.
 2. Lag mappe for tjenesten under _C:\ms4w\apps_, f.eks. _C:\ms4w\apps\innlandet_
 3. Legg inn FGDB-fil (mappe) i denne mappen igjen, f.eks. *C:\ms4w\apps\innlandet\Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb*
-4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i følgende mal: [innlandet.map](docs/innlandet.map).
+4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i følgende mal: [innlandet.map](docs/innlandet.map.txt).
 5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist ovenfor.
 5. Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som du nå skal ha i mappen 'C:\ntnugeo\apps\ntnustudent\innlandet'.
 
