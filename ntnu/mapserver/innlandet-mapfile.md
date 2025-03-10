@@ -1,3 +1,6 @@
+# Eksempel på minimal mapfile for WMS-tjeneste
+
+```c
 /*
  Description:  Simple WMS service to display on MS4W localhost ( http://127.0.0.1 )
  Data source:  NaturalEarth dataset, in SpatiaLite format.
@@ -64,3 +67,7 @@ END # layer
 
 END # Map File
 
+```
+
+\
+_NTNU 10.03.2025 Sverre Stikbakke_
