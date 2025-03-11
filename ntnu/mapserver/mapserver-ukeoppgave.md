@@ -28,7 +28,7 @@ DEBUG 5
 WEB
   METADATA
     "wms_title"                     "NTNU Demo WMS Server"
-    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/apps/innlandet/wms.map"
+    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ms4w/apps/innlandet/wms.map"
     "wms_srs"                       "EPSG:4326 EPSG:4269 EPSG:3857 EPSG:25832"
     "wms_feature_info_mime_type"    "text/plain"
     "wms_abstract"                  "Demo-WMS for NTNU, GEOM2430"
@@ -138,3 +138,5 @@ Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten insta
 
 \
 _NTNU 11.03.2025 Sverre Stikbakke_
+
+_11.03.2025 Rettet feil i url i mapfile-eksempel - manglet /ms4w/_
