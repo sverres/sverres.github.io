@@ -137,5 +137,5 @@ Open Layers webkart for denne tjenesten  (Virker bare hvis du har tjenesten inst
 ```
 
 \
-_NTNU 11.03.2025 Sverre Stikbakke_
+_NTNU 11.03.2025 Sverre Stikbakke_\
 _11.03.2025 Rettet feil i url i mapfile-eksempel - manglet /ms4w/_
