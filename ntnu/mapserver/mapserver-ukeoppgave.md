@@ -70,14 +70,14 @@ END
 
 ```
 
-WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
+WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten installert på samme måte på egen PC)
 
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
 
 
 ## Webkart med Open Layers
 
-Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
+Open Layers webkart for denne tjenesten  (Virker bare hvis du har tjenesten installert på samme måte på egen PC)
 
 - [Innlandet kommuner](docs/innlandet.html)
 
