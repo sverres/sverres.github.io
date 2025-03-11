@@ -43,8 +43,8 @@ END
 LAYER
   NAME "kommune"
   METADATA
-    "wms_title"     "Innlandet kommuner"
-    "wms_include_items" "all"
+    "wms_title"           "Innlandet kommuner"
+    "wms_include_items"   "all"
   END
   
   TYPE POLYGON
@@ -92,7 +92,7 @@ Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten insta
     .map {
         height: 800px;
         width: 100%;
-        border:1px solid DarkSlateGray;
+        border: 1px solid DarkSlateGray;
     }
     </style>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
