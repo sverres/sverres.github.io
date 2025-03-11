@@ -7,11 +7,11 @@
 5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist nedenfor.
 6. Lag webkart for WMS-tjenesten med Open Layers. Et eksempel er vist nednefor.
 
-# Eksempel på minimal mapfile for WMS-tjeneste
+## Eksempel på minimal mapfile for WMS-tjeneste
 
 ```c
 /*
- Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost ( http://127.0.0.1 )
+ Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost (http://127.0.0.1)
  Author:       sverre.stikbakke@ntnu.no
  Last updated: 2025-03-10
 */
@@ -74,11 +74,14 @@ WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten 
 
 - [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
 
+
+## Webkart med Open Layers
+
 Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
 
 - [Innlandet kommuner](docs/innlandet.html)
 
-```js
+```html
 <!doctype html>
 <html lang="en">
 
