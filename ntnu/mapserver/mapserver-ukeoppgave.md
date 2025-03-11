@@ -4,12 +4,8 @@
 2. Lag mappe for tjenesten under _C:\ms4w\apps_, f.eks. _C:\ms4w\apps\innlandet_
 3. Legg inn FGDB-fil (mappe) i denne mappen igjen, f.eks. *C:\ms4w\apps\innlandet\Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb*
 4. Legg inn og tilpass en mapfile i mappen for tjenesten. Ta utgangspunkt i malen vist nedenfor.
-5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist ovenfor.
-5. Lag en WMS-tjeneste for disse kartdatene med utgangspunkt i oppsettet som som vist eh ....
-
-## Lage webkart for egen WMS-tjeneste
-
-Ta utgangspunkt i lærestoffet under Open Layers, og lag et webkart som viser fram din egen WMS-tjeneste.
+5. Test tjenesten ved å lage en url med GetCapabilities-parametre som vist nedenfor.
+6. Lag webkart for WMS-tjenesten med Open Layers. Et eksempel er vist nednefor.
 
 # Eksempel på minimal mapfile for WMS-tjeneste
 
@@ -81,6 +77,61 @@ WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten 
 Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
 
 - [Innlandet kommuner](docs/innlandet.html)
+
+```js
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css"
+    type="text/css">
+    <style>
+    .map {
+        height: 800px;
+        width: 100%;
+        border:1px solid DarkSlateGray;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <title>Innlandet</title>
+</head>
+
+<body>
+    <h2>Innlandet</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+    var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
+
+    var projection = new ol.proj.Projection({
+        code: 'EPSG:25832',
+        extent: extentKartverketWMS25832
+    });
+
+    var kommune = new ol.layer.Tile({
+        extent: extentKartverketWMS25832,
+        source: new ol.source.TileWMS({
+        url: 'http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map?',
+        params: {
+            'LAYERS': 'kommune',
+            'STYLES': 'default'
+        },
+        })
+    });
+
+    var map = new ol.Map({
+        layers: [kommune],
+        target: 'map',
+        view: new ol.View({
+        projection: projection,
+        center: [591500, 6740500],
+        zoom: 3
+        })
+    });
+    </script>
+</body>
+
+</html>
+```
 
 \
 _NTNU 11.03.2025 Sverre Stikbakke_
