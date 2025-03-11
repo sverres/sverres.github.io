@@ -67,10 +67,10 @@ LAYER
       COLOR 200 255 0
       OUTLINECOLOR 120 120 120
     END
-  END ## Class
-END ## Layer
+  END
+END
 
-END ## Mapfile
+END
 
 ```
 
