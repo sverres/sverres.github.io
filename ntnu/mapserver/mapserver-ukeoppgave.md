@@ -76,11 +76,11 @@ END ## Mapfile
 
 WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
 
-- [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map)
+- [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES)
 
 Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
 
 - [Innlandet kommuner](docs/innlandet.html)
 
 \
-_NTNU 10.03.2025 Sverre Stikbakke_
+_NTNU 11.03.2025 Sverre Stikbakke_

@@ -127,4 +127,4 @@ Dette krever at CORS-oppsettet er lagt inn og at Apache er startet på nytt.
 - [Ukeoppgave med Mapserver](mapserver-ukeoppgave.md)
 
 \
-_NTNU 10.03.2025 Sverre Stikbakke_
+_NTNU 11.03.2025 Sverre Stikbakke_
