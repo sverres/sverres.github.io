@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css"
+    type="text/css">
+    <style>
+    .map {
+        height: 800px;
+        width: 100%;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <title>Innlandet</title>
+</head>
+
+<body>
+    <h2>My Map</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+    var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
+
+    var projection = new ol.proj.Projection({
+        code: 'EPSG:25832',
+        extent: extentKartverketWMS25832
+    });
+
+    var kommune = new ol.layer.Tile({
+        extent: extentKartverketWMS25832,
+        source: new ol.source.TileWMS({
+        url: 'http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map?',
+        params: {
+            'LAYERS': 'kommune',
+            'STYLES': 'default'
+        },
+        })
+    });
+
+    var map = new ol.Map({
+        layers: [kommune],
+        target: 'map',
+        view: new ol.View({
+        projection: projection,
+        center: [591500, 6740500],
+        zoom: 3
+        })
+    });
+    </script>
+</body>
+
+</html>

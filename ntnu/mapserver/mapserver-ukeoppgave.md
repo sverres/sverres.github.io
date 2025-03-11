@@ -26,6 +26,9 @@ STATUS ON
 EXTENT -180 -90 180 90
 UNITS DD
 
+CONFIG "MS_ERRORFILE" "/ms4w/tmp/ms_error.txt"
+DEBUG 5
+
 WEB
   METADATA
     "wms_title"                     "NTNU Demo WMS Server"
@@ -44,24 +47,40 @@ END
 LAYER
   NAME "kommune"
   METADATA
-    "wms_title"     "Innlandet"
+    "wms_title"     "Innlandet kommuner"
     "wms_include_items" "all"
   END
+  
   TYPE POLYGON
   STATUS ON
-  CONNECTIONTYPE OGR
-  CONNECTION "/ms4w/apps/innlandet/data/filegdb/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
+  CONNECTIONTYPE ogr
+  CONNECTION "/ms4w/apps/innlandet/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
   DATA "kommune"
+
   PROJECTION
     "init=epsg:25832"
   END
+
   CLASS
     NAME "kommune"
-  END
+    STYLE
+      COLOR 200 255 0
+      OUTLINECOLOR 120 120 120
+    END
+  END ## Class
 END ## Layer
 
 END ## Mapfile
+
 ```
+
+WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
+
+- [http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map](http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map)
+
+Open Layers webkart for denne tjenesten (Virker bare hvis du har tjenesten installert påegen PC)
+
+- [Innlandet kommuner](docs/innlandet.html)
 
 \
 _NTNU 10.03.2025 Sverre Stikbakke_
