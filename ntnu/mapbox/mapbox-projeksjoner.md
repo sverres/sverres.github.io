@@ -6,6 +6,8 @@ Mapbox, Google Maps med flere har tidligere brukt Web Mercator som projeksjon. M
 
 Se [Mapbox GL JS v2.6 lanseringsinformasjon](https://www.mapbox.com/blog/mapbox-gl-js-v2-6).
 
+- [Se Mapbox verdenskart](docs/verden)
+
 ## Bruk
 
 Fra og med versjon 2.6 av Mapbox GL JS, er _globe_ standard projeksjon. Hvis man ønsker en annen projeksjon kan det settes når map-objektet initialiseres, slik:

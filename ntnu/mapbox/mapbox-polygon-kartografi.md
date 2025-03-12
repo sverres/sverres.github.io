@@ -93,7 +93,7 @@ map.addLayer({
 
 Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke fra 2013-2023:
 
-[naturtap.html](naturtap.html)
+[naturtap.html](docs/naturtap.html)
 
 
 ## Beregning av fargeverdi basert på interpolate-funksjonen
@@ -151,7 +151,7 @@ map.addLayer({
 
 Komplett eksempel som viser endring i arealkategorien natur for Innlandet fylke fra 2013-2023:
 
-[naturtap-interpolert.html](naturtap-interpolert.html)
+[naturtap-interpolert.html](docs/naturtap-interpolert.html)
 
 ## Ressurser
 

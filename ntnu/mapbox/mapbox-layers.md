@@ -56,7 +56,7 @@ Dette er kode som legger til et WMS-lag over basis-kartet i Mapbox. Legg merke t
 - WMS-kallet ligger som et javascript array
     - bbox={bbox-epsg-3857}' - dette er ikke standard WMS-verdi for BBOX, men det er Mapbox sin mekanisme for å angi at BBOX skal regnes ut av Mapbox selv.
 	
-[hydro_power_stations.html](hydro_power_stations.html)
+[hydro_power_stations.html](docs/hydro_power_stations.html)
 
 
 ## WMTS-lag
@@ -101,7 +101,7 @@ map.on('load', function () {
 
 Legg merke til hvordan x, y og z er angitt. z angir zoom-nivået. x- og y angir henholdsvis kolonne- og radnummer i den aktuelle *tilematrix*. Bortsett fra at WMTS-parametrene er annerledes, så er denne WMTS-koden bygd opp på samme måte som WMS-koden.
 
-[toporaster.html](toporaster.html)
+[toporaster.html](docs/toporaster.html)
 
 ## GeoJSON-fil - linje
 
@@ -139,7 +139,7 @@ map.on('load', function () {
 Legg merke til hvordan *type, source, layout og paint* er angitt her.
 GeoJSON-filen må ligge i samme mappe som javascript-filen.
 
-[fishfarm_trip.html](fishfarm_trip.html)
+[fishfarm_trip.html](docs/fishfarm_trip.html)
 
 ## GeoJSON-fil - flate
 
@@ -173,7 +173,7 @@ map.on('load', function () {
 ```
 Legg merke til forskjellen under *paint* mellom dette og foregående eksempel.
 
-[smart_aggregate.html](smart_aggregate.html)
+[smart_aggregate.html](docs/smart_aggregate.html)
 
 ## GeoJSON - punkt
 
@@ -217,7 +217,7 @@ map.on('load', function () {
 
 Legg merke til *data*-parameteren under *source*. Her er det ikke henvist til en ekstern fil, men det ligger GeoJSON-kode som beskriver kartobjektet, her et punkt, direkte i javascript-koden.
 
-[thon_hotel.html](thon_hotel.html)
+[thon_hotel.html](docs/thon_hotel.html)
 
 \
 *NTNU 11.02.2025 Sverre Stikbakke*

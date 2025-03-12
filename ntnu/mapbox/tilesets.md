@@ -13,7 +13,7 @@ MapBox sin introduksjon til Vector Tiles
 Eksempel på bruk av en Vector Tile-datakilde i MapBox
 
 - [Add a vector tile source](https://www.mapbox.com/mapbox-gl-js/example/vector-source/)
-- [Tilpasset eksempel med satellittbilder](koter.html)
+- [Tilpasset eksempel med satellittbilder](docs/koter.html)
 
 Mapbox sin ordbok
 

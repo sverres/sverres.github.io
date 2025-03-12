@@ -108,7 +108,7 @@ For å se denne meldingen trykker du *F12* og velger *console*-fanen.
 ### Oppgave
 
 1. Hent inn et komplett eksempel i nettleseren og kopier koden til en fil som du lagrer lokalt på egen PC:
-    - [mapbox-mini.html](mapbox-mini.html)
+    - [mapbox-mini.html](docs/mapbox-mini.html)
     (bruk Ctrl + U for å se koden for siden i nettleseren) 
 2. Bytt ut eventtypen *load* med en annen type event, og se om det blir skrevet ut noe når eventet inntreffer. Mulige eventtyper finner du under dokumentasjonen for Map-objektet i API-dokumentasjonen.
 3. Se kode-eksempel i [Mapbox events som returnerer data-objekt](mapbox-events-data.md), og skriv ut avgrensingen av kartet i nord, sør, øst og vest.
