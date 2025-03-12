@@ -86,16 +86,16 @@ Open Layers webkart for denne tjenesten  (Virker bare hvis du har tjenesten inst
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css"
     type="text/css">
     <style>
     .map {
         height: 800px;
         width: 100%;
-        border: 1px solid DarkSlateGray;
+        border:1px solid DarkSlateGray;
     }
     </style>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
     <title>Innlandet</title>
 </head>
 

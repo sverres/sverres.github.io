@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css"
+    type="text/css">
+  <style>
+    .map {
+      height: 800px;
+      width: 100%;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+  <title>OpenLayers example</title>
+</head>
+
+<body>
+  <h2>My Map</h2>
+  <div id="map" class="map"></div>
+  <script type="text/javascript">
+    var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
+    var extentInnlandet = [413293, 6637090, 706922, 6953227];
+    var extentGjovik = [586500,6735500,596500,6745500];
+
+    var projection = new ol.proj.Projection({
+      code: 'EPSG:25832',
+      extent: extentKartverketWMS25832
+    });
+
+    var topo = new ol.layer.Tile({
+      extent: extentInnlandet,
+      source: new ol.source.TileWMS({
+        url: 'https://wms.geonorge.no/skwms1/wms.topo?',
+        params: {
+          'LAYERS': 'topo',
+          'STYLES': 'default'
+        },
+      })
+    });
+
+    var map = new ol.Map({
+      layers: [topo],
+      target: 'map',
+      view: new ol.View({
+        projection: projection,
+        //extent: extentGjovik,
+        center: [591500, 6740500],
+        //minResolution: 2,
+        //maxResolution: 200,
+        //resolution: 20,
+        zoom: 2
+      })
+    });
+  </script>
+</body>
+
+</html>

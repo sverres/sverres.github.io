@@ -5,7 +5,8 @@
 - [WMTS](wmts/wmts)
 - [WFS](wfs/vannkraft)
 - [Mapserver](mapserver)
+- [OpenLayers](openlayers)
 - [GEOM2430 - smale temaer](GEOM2430)
 
 \
-*NTNU 10.03.2025 Sverre Stikbakke*
+*NTNU 12.03.2025 Sverre St1ikbakke*
