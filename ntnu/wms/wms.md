@@ -15,7 +15,7 @@
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6a3e363d-405a-4b0f-9c1f-acac01151eba&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-- [wms.pdf](wms.pdf)
+- [wms.pdf](docs/wms.pdf)
 
 ### Hvordan finne og utnytte WMS-tjenester
 
@@ -25,15 +25,15 @@ Videoene (fra 2017), viser en litt anderledes layout på geonorge.no. Topo2-tjen
 
 ### Praktiske oppgaver
 
-1. [test ut eksempler på WMS-kall mot topo-tjenesten](wms-kall.txt)
-1. gjør [ukeoppgave om WMS - python](ukeoppgave_wms_python.html)
-1. gjør [ukeoppgave om WMS - javascript](ukeoppgave_wms.html)
+1. [test ut eksempler på WMS-kall mot topo-tjenesten](docs/wms-kall.txt)
+1. gjør [ukeoppgave om WMS - python](ukeoppgave_wms_python.md)
+1. gjør [ukeoppgave om WMS - javascript](ukeoppgave_wms.md)
 1. begynn på Oblig 2
 
 
 ## Ressurser
 
-- [hurtigtaster](hurtigtaster.html)
+- [hurtigtaster](docs/hurtigtaster.html)
 
 ### WMS
 
