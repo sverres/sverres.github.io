@@ -2,9 +2,9 @@
 
 ## Introduksjon - hvordan lage enkle webkart
 
-- [Intro til Mapbox, med oppgave](docs/mapbox-intro.md)
+- [Intro til Mapbox, med oppgave](mapbox-intro.md)
 - [Enkelt Mapbox-kart](docs/mapbox-mini.html)
-- [Mapbox events som returnerer data-objekt](docs/mapbox-events-data.md)
+- [Mapbox events som returnerer data-objekt](mapbox-events-data.md)
 - [Flere kartlag i Mapbox](mapbox-layers.md)
 - [Mapbox Styles](https://docs.mapbox.com/api/maps/styles/#mapbox-styles)
 - [Projeksjoner i Mapbox](mapbox-projeksjoner.md)
