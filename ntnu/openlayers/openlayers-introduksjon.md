@@ -126,6 +126,9 @@ Kode-eksemplet nedenfor er fra [Quick Start](https://openlayers.org/en/latest/do
 </html>
 ```
 
+- [osm.html](docs/osm.html)
+
+
 ## Vi setter det hele sammen - Open Street Map - alternativ script-seksjon med samme funksjon
 
 Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
@@ -206,6 +209,8 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
 
 </html>
 ```
+
+- [gjovik.html](docs/gjovik.html)
 
 ## Oppgaver
 
