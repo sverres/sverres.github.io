@@ -78,9 +78,9 @@ var topo4 = new ol.layer.Tile({
     extent: extentKartverketWMS25832,
     source: new ol.source.TileWMS({
     attributions: [attribution],
-    url: 'http://openwms.statkart.no/skwms1/wms.topo4?',
+    url: 'https://wms.geonorge.no/skwms1/wms.topo?',
     params: {
-        'LAYERS': 'topo4_WMS',
+        'LAYERS': 'topo',
         'STYLES': 'default'
     },
     })
@@ -223,7 +223,7 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
 
 NB: Ikke gå inn på dette før du har prøvd å løse oppgavene selv
 
-- [OpenLayers kart med diverse resolutions- og extent-verdier](open_layers_l_forslag.md)
+- [OpenLayers kart med diverse resolutions- og extent-verdier](openlayers-l-forslag.md)
 
 
 _NTNU 09.01.2021 Sverre Stikbakke_\
