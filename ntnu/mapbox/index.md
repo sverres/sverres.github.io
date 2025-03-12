@@ -2,12 +2,12 @@
 
 ## Introduksjon - hvordan lage enkle webkart
 
-- [Intro til Mapbox, med oppgave](docs/mapbox-intro.html)
+- [Intro til Mapbox, med oppgave](docs/mapbox-intro.md)
 - [Enkelt Mapbox-kart](docs/mapbox-mini.html)
-- [Mapbox events som returnerer data-objekt](docs/mapbox-events-data.html)
-- [Flere kartlag i Mapbox](docs/mapbox-layers.html)
+- [Mapbox events som returnerer data-objekt](docs/mapbox-events-data.md)
+- [Flere kartlag i Mapbox](mapbox-layers.md)
 - [Mapbox Styles](https://docs.mapbox.com/api/maps/styles/#mapbox-styles)
-- [Projeksjoner i Mapbox](docs/mapbox-projeksjoner.md)
+- [Projeksjoner i Mapbox](mapbox-projeksjoner.md)
 
 ## Teori - og mer avanserte kart-løsninger
 
@@ -21,7 +21,7 @@
 
 ## Kartografi
 
-- [Polygon-kartografi](docs/mapbox-polygon-kartografi.md)
+- [Polygon-kartografi](mapbox-polygon-kartografi.md)
     - [naturtap.html](docs/naturtap.html)
     - [naturtap-interpolert.html](docs/naturtap-interpolert.html)
 - Eksempel på bruk av tekst på kart, og informasjon i popup-dialoger
@@ -29,7 +29,7 @@
 
 ## WMS GetfeatureInfo-kall fra Mapbox
 
-- [Om GetFeatureInfo-kallet](docs/getfeatureinfo.md)
+- [Om GetFeatureInfo-kallet](getfeatureinfo.md)
     - [Eksempel: Egenskapsdata for veier](docs/veier.html)
 
 ## OGC API
