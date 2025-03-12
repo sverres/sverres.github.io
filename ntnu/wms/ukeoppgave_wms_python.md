@@ -17,8 +17,8 @@ I denne oppgaven skal du spørre om et senterpunkt for bildet, og så ved hjelp 
 
 ## Eksempel-programmer
 
-- [eksempel 1](wms-1-minimal.html) (bruk som mal for oppgave 1 og 3)
-- [eksempel 2](wms-2-image-grid.html) (bruk som mal for oppgave 2)
+- [eksempel 1](docs/wms-1-minimal.html) (bruk som mal for oppgave 1 og 3)
+- [eksempel 2](docs/wms-2-image-grid.html) (bruk som mal for oppgave 2)
 
-_NTNU 10.01.2022 Sverre Stikbakke_<br>
+_NTNU 10.01.2022 Sverre Stikbakke_\
 _NTNU 23.01.2025 Endret oppgave 3, og eksempel-filer_

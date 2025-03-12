@@ -12,7 +12,7 @@
 
 ### Ressurser
 
-- [hurtigtaster i Windows, nettleser, VS Code](hurtigtaster.html)
+- [hurtigtaster i Windows, nettleser, VS Code](docs/hurtigtaster.html)
 
 
 *NTNU 22.01.2025 Sverre Stikbakke*

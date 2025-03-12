@@ -8,4 +8,4 @@
 - [GEOM2430](GEOM2430)
 
 \
-*NTNU 12.03.2025 Sverre St1ikbakke*
+*NTNU 12.03.2025 Sverre Stikbakke*

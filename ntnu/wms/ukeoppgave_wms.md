@@ -4,7 +4,7 @@
 
 WMS-tjenester og WMS-kall forutsettes kjent. Denne oppgaven går ut på å forenkle oppsett av WMS-kall ved hjelp av javascript-kode. 
 
-[wms-kall-problem.html](wms-kall-problem.html) inneholder delvis fungerende javascript-kode. Din oppgave er å legge til det som mangler. Se kommentarer i koden. 
+[wms-kall-problem.html](docs/wms-kall-problem.html) inneholder delvis fungerende javascript-kode. Din oppgave er å legge til det som mangler. Se kommentarer i koden. 
 Programmet bruker også en CSS-fil for utforming av siden.
 
 
