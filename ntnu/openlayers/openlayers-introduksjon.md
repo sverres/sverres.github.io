@@ -74,7 +74,7 @@ map.addLayer(osmLayer);
 ```
 
 ```javascript
-var topo4 = new ol.layer.Tile({
+var topo = new ol.layer.Tile({
     extent: extentKartverketWMS25832,
     source: new ol.source.TileWMS({
     attributions: [attribution],
@@ -210,9 +210,9 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
 ## Oppgaver
 
 - Lag egne filer og kopier inn de komplette eksemplene ovenfor. Sett inn dine egne senterkoordinater og zoom-nivåer. Lag filer for både OSM-eksemplet og topo-eksemplet.
-- Lag en ny fil som kombinerer OSM og topo . Du må da bruke to layers, og legge til begge lagene i view'et. OSM støtter ikke UTM, så du må lage dette som et Web Mercator-kart. UTM/projeksjonskoden fra Topo4-eksemplet må derfor fjernes.
+- Lag en ny fil som kombinerer OSM og topo . Du må da bruke to layers, og legge til begge lagene i view'et. OSM støtter ikke UTM, så du må lage dette som et Web Mercator-kart. UTM/projeksjonskoden fra topo-eksemplet må derfor fjernes.
 - Les om resolutions-egenskapene i dokumentasjonen, og bytt ut zoom-egenskapen med de nødvendige resolutions-egenskapene. Test ut effekten av ulike verdier på disse.
-- Test ut effekten av å bruke extent på både lag-nivå og i view'et i Topo4-eksemplet. Prøv å lage små extents - f.eks. for en kommune eller et fylke.
+- Test ut effekten av å bruke extent på både lag-nivå og i view'et i topo-eksemplet. Prøv å lage små extents - f.eks. for en kommune eller et fylke.
 
 ## Ressurser
 
