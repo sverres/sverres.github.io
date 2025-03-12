@@ -11,7 +11,7 @@
 
 ## Teori - og mer avanserte kart-løsninger
 
-- [Om vector tiles](docs/tilesets.html)
+- [Om vector tiles](tilesets.html)
 - [Add 3D terrain to a map](https://docs.mapbox.com/mapbox-gl-js/example/add-terrain/)
     - [Eksempel: Raubergstulen, Vågå](docs/raubergstulen.html)
     - [Eksempel: Lygna-Totenvika](docs/lygna-totenvika.html)
