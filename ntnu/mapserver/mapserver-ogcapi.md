@@ -4,7 +4,7 @@
 
 Mappe for demo-installasjon: `C:\ms4w\apps\local-demo`
 
-Mapfile: `C:\ms4w\apps\local-demo\local.map`.
+Mapfile: `C:\ms4w\apps\local-demo\local.map`
 
 Url til tjenesten finner vi under WEB-seksjonen under METADATA: 
 
@@ -30,7 +30,7 @@ Datakilder - se under Dokumentasjon og Iput (Vector Data)
 - [https://mapserver.org/documentation.html](https://mapserver.org/documentation.html)
 
 
-## Mapfile for demo-applikasjon som gir som setter opp OGC API-tjeneste
+## Mapfile for demo-applikasjon som setter opp OGC API-tjeneste
 
 Denne mapfila er svært omfattende, og setter også opp WMS og WFS i tillegg til OGC API. For å finne ut hva som kreves for bare OGC API, se dokumentasjonen for OGC API og eksempel på mapfile der.
 
