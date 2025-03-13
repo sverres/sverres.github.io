@@ -26,7 +26,7 @@ En del av denne addressen, `local-demo`, er et alias som er satt opp i fila `C:\
 Mapfile - se under Dokumentasjon og OGC (OGC API : Features)
 - [https://mapserver.org/documentation.html](https://mapserver.org/documentation.html)
 
-Datakilder - se under Dokumentasjon og Iput (Vector Data)
+Datakilder - se under Dokumentasjon og Input (Vector Data)
 - [https://mapserver.org/documentation.html](https://mapserver.org/documentation.html)
 
 
