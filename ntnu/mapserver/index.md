@@ -9,11 +9,13 @@
 
 ## Dokumentasjon - utvalgte temaer
 
+- [Mapserver Dokumentasjon hovedside](https://mapserver.org/documentation.html)
 - [Introduksjon til Mapserver - inkl. beskrivelse av mapfile](https://mapserver.org/introduction.html)
 - [Mapserver vektor-formater](https://mapserver.org/input/vector/index.html)
-- [Mapserver CLASS](https://mapserver.org/mapfile/class.html)
-- [Mapserver EXPRESSION](https://mapserver.org/mapfile/expressions.html)
-- [Mapserver STYLE](https://mapserver.org/mapfile/style.html)
+- Kartografi
+    - [Mapserver CLASS](https://mapserver.org/mapfile/class.html)
+    - [Mapserver EXPRESSION](https://mapserver.org/mapfile/expressions.html)
+    - [Mapserver STYLE](https://mapserver.org/mapfile/style.html)
 
 
 \

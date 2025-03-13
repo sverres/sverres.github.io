@@ -40,7 +40,7 @@ Du skal videre lage et webkart ved hjelp av Mapbox som viser innholdet i tjenest
 
 ## Ressurser
 
-- [Mapserver dokumtasjon](https://mapserver.org/documentation.html)
+- [Mapserver dokumentasjon](https://mapserver.org/documentation.html)
 - forelesningsopptak i Blackboard og [Mapserver ressursside](https://sverres.github.io/ntnu/mapserver/)
 - forelesningsopptak i Blackboard og [Mapbox ressursside](https://sverres.github.io/ntnu/mapbox/)
 - [OpenLayers ressursside](https://sverres.github.io/ntnu/openlayers/)
