@@ -13,22 +13,17 @@
 /*
  Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost (http://127.0.0.1)
  Author:       sverre.stikbakke@ntnu.no
- Last updated: 2025-03-10
+ Last updated: 2025-03-13
 */
 
 MAP
-NAME "innlandet"
-STATUS ON
-EXTENT -180 -90 180 90
-UNITS DD
 
-CONFIG "MS_ERRORFILE" "/ms4w/tmp/ms_error.txt"
-DEBUG 5
+NAME "innlandet"
 
 WEB
   METADATA
     "wms_title"                     "NTNU Demo WMS Server"
-    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ms4w/apps/innlandet/wms.map"
+    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map"
     "wms_srs"                       "EPSG:4326 EPSG:4269 EPSG:3857 EPSG:25832"
     "wms_feature_info_mime_type"    "text/plain"
     "wms_abstract"                  "Demo-WMS for NTNU, GEOM2430"
@@ -43,12 +38,11 @@ END
 LAYER
   NAME "kommune"
   METADATA
-    "wms_title"           "Innlandet kommuner"
-    "wms_include_items"   "all"
+    "wms_title"          "Innlandet kommuner"
+    "wms_include_items"  "all"
   END
   
   TYPE POLYGON
-  STATUS ON
   CONNECTIONTYPE ogr
   CONNECTION "/ms4w/apps/innlandet/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
   DATA "kommune"
@@ -60,14 +54,13 @@ LAYER
   CLASS
     NAME "kommune"
     STYLE
-      COLOR 200 255 0
+      COLOR 247 165 3
       OUTLINECOLOR 120 120 120
     END
   END
 END
 
 END
-
 ```
 
 WMS GetCapabilities-kall for denne tjenesten (Virker bare hvis du har tjenesten installert på samme måte på egen PC)
@@ -139,3 +132,4 @@ Open Layers webkart for denne tjenesten  (Virker bare hvis du har tjenesten inst
 \
 _NTNU 11.03.2025 Sverre Stikbakke_\
 _NTNU 11.03.2025 Rettet feil i url i mapfile-eksempel - manglet /ms4w/_
+_NTNU 13.03.2025 Forenklet mapfile - tatt bort noen linjer_
