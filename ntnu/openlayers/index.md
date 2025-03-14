@@ -4,6 +4,7 @@
 
 - [Introduksjon til OpenLayers - oppgaver](openlayers-introduksjon.md)
 - [Løsningsforslag](openlayers-l-forslag.md)
+- [WMTS-kart](openlayers-wmts.md)
 
 ## Dokumentasjon - utvalgte temaer
 
