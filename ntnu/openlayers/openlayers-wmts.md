@@ -6,6 +6,7 @@
 
 geonorge pr. 14.03.2025:
 > Cache-tjeneste med topografisk grunnkart. Tjenesten har 4 lag (layers):\
+\
 Topografisk norgeskart – «Topo (farge)» Ny tjeneste som har data fra N50 til N2000, FKB, matrikkel, høyde- og dybdedata. Kartografien er i farger og er tilpasset web.\
 \
 Topografisk gråtonekart – «Topo (gråtone)» Ny tjeneste som har det samme innholdet som «topo», men har en gråtone-basert kartografi.\
