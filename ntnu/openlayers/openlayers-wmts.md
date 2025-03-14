@@ -7,10 +7,15 @@
 geonorge pr. 14.03.2025:
 > Cache-tjeneste med topografisk grunnkart. Tjenesten har 4 lag (layers):\
 Topografisk norgeskart – «Topo (farge)» Ny tjeneste som har data fra N50 til N2000, FKB, matrikkel, høyde- og dybdedata. Kartografien er i farger og er tilpasset web.\
+\
 Topografisk gråtonekart – «Topo (gråtone)» Ny tjeneste som har det samme innholdet som «topo», men har en gråtone-basert kartografi.\
+\
 Topografisk rasterkart – «Topo (raster)» Ny tjeneste med innhold fra N50 til N2000 og N5.\
+\
 Sjøkart rasterformat - «Sjøkartraster» Ny tjeneste med sjødata fra overseilingskart, hovedkart, kystkart, havnekart samt Svalbardkart.\
+\
 Disse tjenestene er tilgjengelige i: «utm32n» (EPSG:25832), «utm33n» (EPSG:25833), «utm35n» (EPSG:25835) og «webmercator» (EPSG:3857).\
+\
 OBS! Vi har dessverre utfordringer knyttet til ytelse for tjenesten, noe som skyldes overgang til ny plattform. Tregheten er forventet å vare i en tid fremover. Vi beklager på det sterkeste ulempene dette medfører, og forsikrer om at vi jobber for å løse dette raskest mulig.
 
 ### Utdrag fra GetCapabilities-respons
