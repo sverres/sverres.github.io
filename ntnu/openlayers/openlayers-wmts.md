@@ -373,4 +373,4 @@ var map = new ol.Map({
 [naturvern.html](docs/naturvern.html)
 
 \
-_NTNU 10.02.2021 Sverre Stikbakke_
+_NTNU 14.03.2025 Sverre Stikbakke_
