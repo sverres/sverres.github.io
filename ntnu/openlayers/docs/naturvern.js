@@ -11,7 +11,7 @@ var projection = new ol.proj.Projection({
 });
 
 var resolutionsKartverket = [
-    21664,
+    21664, // tallet viser antall meter en pixel dekker i terrenget
     10832,
     5416,
     2708,

@@ -64,7 +64,6 @@ URL til tjenesten:
 Under `Layer`-elementet finner vi
 - navn på Layer (ows:Identifier) 
 - navn på TilematrixSet
-- navn på Tilematrix (ows:Identifier), et for hvert zoom-nivå
 
 ```xml
 <Layer>
@@ -301,8 +300,8 @@ var projection = new ol.proj.Projection({
     extent: extentKartverket
 });
 
-var resolutionsKartverket = [
-    21664,
+var resolutionsKartverket = [ 
+    21664, // tallet viser antall meter en pixel dekker i terrenget
     10832,
     5416,
     2708,
@@ -372,3 +371,6 @@ var map = new ol.Map({
 ```
 
 [naturvern.html](docs/naturvern.html)
+
+\
+_NTNU 10.02.2021 Sverre Stikbakke_
