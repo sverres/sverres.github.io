@@ -64,5 +64,5 @@ Besvarelsen skal bestå av:
 
 \
 _NTNU 13.03.2025 Sverre Stikbakke_\
-_NTNU 13.03.2025 kl.11.35 Oppdatert, men ikke helt ferdig enda_
+_NTNU 13.03.2025 kl.11.35 Oppdatert, men ikke helt ferdig enda_\
 _NTNU 14.03.2025 endelig versjon (med forbehold om mindre korreksjoner)_
