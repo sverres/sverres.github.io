@@ -2,6 +2,10 @@ const url = 'https://cache.kartverket.no/v1/wmts?';
 
 const layer = 'topograatone';
 
+// Se Zoomnivå på
+// https://www.geonorge.no/aktuelt/om-geonorge/slik-bruker-du-geonorge/bruke-tjenester-og-api-er/
+// Verdiene nedenfor er x/y min/max i fra tabellen der.
+
 const extentKartverket = [-2000000, 3500000, 3545984, 9045984];
 
 // Datum og projeksjon: EUREF89, UTM zone 32
@@ -9,6 +13,11 @@ const projection = new ol.proj.Projection({
     code: 'EPSG:25832',
     extent: extentKartverket
 });
+
+// Se Zoomnivå på
+// https://www.geonorge.no/aktuelt/om-geonorge/slik-bruker-du-geonorge/bruke-tjenester-og-api-er/
+// I tabellen der vises Tilestørelse x/y i meter. Disse verdiene deles med 256 for å få
+// verdiene nedenfor.
 
 const resolutionsKartverket = [
     21664, // tallet viser antall meter en pixel dekker i terrenget
@@ -31,7 +40,6 @@ const resolutionsKartverket = [
     0.165283203125,
     0.0826416015625
 ];
-
 
 const matrixSet = 'utm32n';
 const matrixIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
