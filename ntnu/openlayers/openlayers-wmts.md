@@ -296,11 +296,13 @@ For å lage WMTS-webkartet trenger vi
 - extent (utstrekning for kartflisene i kartprojeksjonens koordinatsystem)
 - resolution-verdier (antall meter en pixel dekker i terrenget)
 
-Disse verdiene finner vi under Zoomnivå på
+Disse verdiene finner vi under Zoomnivå på siden
 
-https://www.geonorge.no/aktuelt/om-geonorge/slik-bruker-du-geonorge/bruke-tjenester-og-api-er/
+[Bruke tjenester og API-er](https://www.geonorge.no/aktuelt/om-geonorge/slik-bruker-du-geonorge/bruke-tjenester-og-api-er/)
 
-I tabellen der vises Tilestørelse x/y i meter. Disse verdiene deles med 256 for å få resolutions-verdiene.
+I tabellen der vises `Tilestørelse` x/y i meter. Disse verdiene deles med 256 for å få resolutions-verdiene.
+
+Videre finner man utstrekning under `xmin, ymin, xmax, ymax` for hvert koordinatsystem.
 
 naturvern.js:
 
@@ -398,4 +400,4 @@ const map = new ol.Map({
 [naturvern.html](docs/naturvern.html)
 
 \
-_NTNU 14.03.2025 Sverre Stikbakke_
+_NTNU 17.03.2025 Sverre Stikbakke_
