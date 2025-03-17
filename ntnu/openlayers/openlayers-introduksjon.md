@@ -89,7 +89,7 @@ const topo = new ol.layer.Tile({
 
 ## Vi setter det hele sammen - Open Street Map
 
-Kode-eksemplet nedenfor er fra [Quick Start](https://openlayers.org/en/latest/doc/quickstart.html)-siden hos Open Layers.
+Kode-eksemplet nedenfor er fra [Quick Start](https://openlayers.org/doc/quickstart.html)-siden hos Open Layers, og tilpasset versjon 6.15.1.
 
 ```html
 <!doctype html>

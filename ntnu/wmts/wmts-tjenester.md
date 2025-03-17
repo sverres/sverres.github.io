@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/vs.min.css">
-    <link rel="stylesheet" href="./css/mdpublish.css" />
-    <title>WMTS-tjenester</title>
-</head>
-
-<body>
-    <div id="markdown">
-
 # Ukeoppgave: Oppsett og bruk av WMTS-tjenester på Mapserver
 
----
 
 ## Forutsetninger - bakgrunnskunnskaper
 
@@ -27,30 +12,6 @@
 ## Oppgave
 
 Ukeoppgaven består i å sette seg inn i hvordan WMTS-tjenester settes opp med Mapserver og Mapcache. Denne ukeoppgaven viser i detalj hvordan undertegnede har satt opp en WMTS-tjeneste. Din oppgave blir å gjenta dette på egen PC, og gjøre nødvendige endringer basert på forskjeller i datagrunnlag, filnavn, brukernavn, mappenavn, etc. Hvis alt går bra skal du få vist din WMTS-tjeneste på et Open Layers webkart. Oppgaven bygger i stor grad på forrige ukeoppgave.
-
-## CORS-oppsett for Apache
-
-CORS (Cross-Origin Resource Sharing) er en mekanisme som tillater en nettleser å hente inn ressurser fra flere kilder, til scriptene som kjøres på en nettside.
-
-I vår sammenheng er dette aktuelt hvis html-fila ligger i en mappe og hentes inn enten via direkte klikk i en mappe eller startes via en annen webserver enn der WMS/WMTS-tjenesten ligger. Scriptene, f.eks. Open Layers web-kart-script, vil da bli hentet fra der vi har html- og javascript-kodefilene. Når vi deretter kontakter WMS- eller WMTS-tjenestene som ligger under Apache web-serveren, vil vår nettleser merke at scriptene våre vil kontakte et annet nettsted enn der kodefilene ligger. Dette er i utgangspunktet ikke tillatt - av sikkerhets-hensyn. 
-
-Løsningen på dette er å få Apache til å legge inn en melding i sine HTTP Headers, som forteller vår nettleser at det er trygt å hente ressurser derfra likevel.
-Legg inn denne linjen i _C:\ms4w\Apache\conf\httpd.conf_, gjerne til slutt i fila.
-
-```ini
-Header set Access-Control-Allow-Origin "*"
-```
-Ta deretter en omstart av Apache.
-
-Hvis du vil vite mer kan du lese om CORS her: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-
-
-## Omstart av Apache
-
-Apache kan startes på nytt ved hjelp av _MS4W-Apache-Monitor_ (Windows startmeny, under MS4W). Programmet legger seg på oppgavelinjen i Windows ved oppstart.
-
-![Apache Monitor](img/apache-monitor.png)
-
 
 ## Video-gjennomgang av oppsettet
 
@@ -529,30 +490,6 @@ var map = new ol.Map({
 ```
 
 
+_NTNU 16.02.2021 Sverre Stikbakke_\
+_NTNU 18.02.2021 Endret versjonsnr. på Open Layers eksempler. V. 6.5.0 skapte problemer._
 
-        
-##
-
-*NTNU 16.02.2021 Sverre Stikbakke*<br>
-*NTNU 18.02.2021 Endret versjonsnr. på Open Layers eksempler. V. 6.5.0 skapte problemer.*
-
-
-    </div>
-    <div id="content">
-
-        <h3> ¯\_(ツ)_/¯ </h3>
-
-    </div>
-    <script
-        src="https://cdn.jsdelivr.net/gh/crookedneighbor/markdown-it-link-attributes@ccb21ca/dist/markdown-it-link-attributes.min.js">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-    <script src="./js/mdpublish.js"></script>
-    <script src="./js/mathjax-config.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
-
-</body>
-
-</html>
