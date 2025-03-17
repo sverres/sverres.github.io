@@ -4,16 +4,16 @@
 ## Forutsetninger - bakgrunnskunnskaper
 
 - Mapserver er installert (se ukeoppgave om dette)
-- Mapserver NTNU-oppsett er installert
-- Lærestoffet fra [WMS-forelesning](wms.html) er kjent
-- Lærestoffet fra [WMTS-forelesning](wmts.html) er kjent
-- Se også linker om WMS, WMTS og Geonorge-stoff under Oppsett og drift av WMS- og WMTS-tjenester
+- Lærestoffet fra [WMS-forelesning](../wms) er kjent
+- Lærestoffet fra [WMTS-forelesning](index.md) er kjent
 
 ## Oppgave
 
 Ukeoppgaven består i å sette seg inn i hvordan WMTS-tjenester settes opp med Mapserver og Mapcache. Denne ukeoppgaven viser i detalj hvordan undertegnede har satt opp en WMTS-tjeneste. Din oppgave blir å gjenta dette på egen PC, og gjøre nødvendige endringer basert på forskjeller i datagrunnlag, filnavn, brukernavn, mappenavn, etc. Hvis alt går bra skal du få vist din WMTS-tjeneste på et Open Layers webkart. Oppgaven bygger i stor grad på forrige ukeoppgave.
 
 ## Video-gjennomgang av oppsettet
+
+NB: Videoen er basert på et oppsett der alle konfigurasjonsfiler og datafiler installeres under mappen `C:\ntnugeo`. Filene nedenfor er basert på installasjon under `C:\ms4w\apps`, f.eks `C:\ms4w\apps\innlandet\innlandet`.
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1d02726a-144a-46d7-8dbe-acd100d857c2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
@@ -22,62 +22,65 @@ Ukeoppgaven består i å sette seg inn i hvordan WMTS-tjenester settes opp med M
 
 innlandet.map:
 
-```js
+```c
 /*
-    Description:  Simple WMS service to display on MS4W localhost ( http://127.0.0.1 )
-    Data source:  Innlandet fylke, in FGDB format.
-    Author:       sverre.stikbakke@ntnu.no
-    Last updated: 2021-02-13
+ Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost (http://127.0.0.1)
+ Author:       sverre.stikbakke@ntnu.no
+ Last updated: 2025-03-13
 */
 
 MAP
-    EXTENT 413293 6637090 706922 6953227
-    WEB
-        METADATA
-            "wms_title" "NTNU Demo WMS Server"
-            "wms_onlineresource" "http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map"
-            "wms_srs" "EPSG:4326 EPSG:4269 EPSG:3857 EPSG:25832"
-            "wms_feature_info_mime_type" "text/plain"
-            "wms_abstract" "Demo-WMS for NTNU, GEO3141 og GEOM2240"
-            "ows_enable_request" "*"
-        END
-    END
-    PROJECTION
-        "init=epsg:25832"
-    END
-    LAYER
-        NAME "kommune"
-        METADATA
-            "wms_title" "Innlandet"
-            "wms_include_items" "all"
-        END
-        TYPE POLYGON
-        STATUS ON
-        CONNECTIONTYPE OGR
-        CONNECTION "C:/ntnugeo/apps/sverrsti/innlandet/data/filegdb/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
-        DATA "kommune"
-        PROJECTION
-            "init=epsg:25832"
-        END
-        CLASSITEM "kommunenummer"
-        CLASS
-            NAME "Østre Toten"
-            EXPRESSION "3442"
-            COLOR 150 107 157
-            OUTLINECOLOR 231 207 188
-        END
-        CLASS
-            NAME "Hedmark"
-            EXPRESSION ( ( '[kommunenummer]' LT "3431" ) AND NOT ( '[kommunenummer]' IN "3407,3405" ) )
-            COLOR 201 134 134
-            OUTLINECOLOR 231 207 188
-        END
-        CLASS
-            NAME "Resten - dvs. Oppland unntatt Østre Toten"
-            COLOR 242 184 128
-            OUTLINECOLOR 231 207 188
-        END
-    END
+
+NAME "innlandet"
+
+WEB
+  METADATA
+    "wms_title"                     "NTNU Demo WMS Server"
+    "wms_onlineresource"            "http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map"
+    "wms_srs"                       "EPSG:4326 EPSG:4269 EPSG:3857 EPSG:25832"
+    "wms_feature_info_mime_type"    "text/plain"
+    "wms_abstract"                  "Demo-WMS for NTNU, GEOM2430"
+    "ows_enable_request"            "*"
+  END
+END
+
+PROJECTION
+  "init=epsg:25832"
+END
+
+LAYER
+  NAME "kommune"
+  METADATA
+    "wms_title"          "Innlandet kommuner"
+    "wms_include_items"  "all"
+  END
+  
+  TYPE POLYGON
+  CONNECTIONTYPE ogr
+  CONNECTION "/ms4w/apps/innlandet/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
+  DATA "kommune"
+  PROJECTION
+      "init=epsg:25832"
+  END
+  CLASSITEM "kommunenummer"
+  CLASS
+      NAME "Østre Toten"
+      EXPRESSION "3442"
+      COLOR 150 107 157
+      OUTLINECOLOR 231 207 188
+  END
+  CLASS
+      NAME "Hedmark"
+      EXPRESSION ( ( '[kommunenummer]' LT "3431" ) AND NOT ( '[kommunenummer]' IN "3407,3405" ) )
+      COLOR 201 134 134
+      OUTLINECOLOR 231 207 188
+  END
+  CLASS
+      NAME "Resten - dvs. Oppland unntatt Østre Toten"
+      COLOR 242 184 128
+      OUTLINECOLOR 231 207 188
+  END
+END
 END
 ```
 
@@ -85,7 +88,7 @@ GetCapabilities-kall mot denne tjenesten:
 
 ```ini
 http://127.0.0.1/cgi-bin/mapserv.exe
-?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map
+?MAP=/ms4w/apps/innlandet/wms.map
 &SERVICE=WMS
 &VERSION=1.3.0
 &REQUEST=GetCapabilities
@@ -95,7 +98,7 @@ GetMap-kall mot denne tjenesten:
 
 ```ini
 http://127.0.0.1/cgi-bin/mapserv.exe
-?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map
+?MAP=/ms4w/apps/innlandet/wms.map
 &VERSION=1.3.0
 &REQUEST=GetMap
 &CRS=EPSG:25832
