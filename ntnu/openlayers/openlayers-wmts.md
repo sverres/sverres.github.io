@@ -294,19 +294,19 @@ naturvern.html:
 naturvern.js:
 
 ```js
-var url = 'https://cache.kartverket.no/v1/wmts?';
+const url = 'https://cache.kartverket.no/v1/wmts?';
 
-var layer = 'topograatone';
+const layer = 'topograatone';
 
-var extentKartverket = [-2000000, 3500000, 3545984, 9045984];
+const extentKartverket = [-2000000, 3500000, 3545984, 9045984];
 
 // Datum og projeksjon: EUREF89, UTM zone 32
-var projection = new ol.proj.Projection({
+const projection = new ol.proj.Projection({
     code: 'EPSG:25832',
     extent: extentKartverket
 });
 
-var resolutionsKartverket = [ 
+const resolutionsKartverket = [
     21664, // tallet viser antall meter en pixel dekker i terrenget
     10832,
     5416,
@@ -326,16 +326,16 @@ var resolutionsKartverket = [
     0.33056640625,
     0.165283203125,
     0.0826416015625
-  ];
-  
+];
 
-var matrixSet = 'utm32n';
-var matrixIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 
-var center = [500000, 6777400]; // Easting, Northing
-var zoom = 5;
+const matrixSet = 'utm32n';
+const matrixIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 
-var topograatone = new ol.layer.Tile({
+const center = [500000, 6777400]; // Easting, Northing
+const zoom = 5;
+
+const topograatone = new ol.layer.Tile({
     opacity: 0.7,
     source: new ol.source.WMTS({
         url: url,
@@ -351,7 +351,7 @@ var topograatone = new ol.layer.Tile({
     })
 });
 
-var naturvern = new ol.layer.Tile({
+const naturvern = new ol.layer.Tile({
     extent: extentKartverket,
     source: new ol.source.TileWMS({
         url: 'https://kart.miljodirektoratet.no/arcgis/services/vern/MapServer/WmsServer',
@@ -363,7 +363,7 @@ var naturvern = new ol.layer.Tile({
     })
 });
 
-var map = new ol.Map({
+const map = new ol.Map({
     layers: [topograatone, naturvern],
     target: 'map',
     view: new ol.View({
