@@ -248,7 +248,7 @@ Kallet ovenfor gir dette bildet:
 </html>
 ```
 
-- [Innlandet kommuner - Mapbox/Web Marcator](docs/innlandet-webmercator.html)
+- [Innlandet kommuner - Mapbox/Web Mercator](docs/innlandet-webmercator.html)
 
 (Virker bare hvis du har tjenesten installert på samme måte på egen PC)
 
