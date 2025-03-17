@@ -255,29 +255,28 @@ Kallet ovenfor gir dette bildet:
 
 ## WMTS-tjenester med Mapcache (maxcache.xml)
 
-Oppsettet for cache-tjenesten ligger i fila
-_C:\ntnugeo\apps\sverrsti\mapcache\mapcache.xml_.
+Se forklaringer til oppsettet i `mapcache.xml` under [Mapcache-dokumentasjonen](https://mapserver.org/mapcache/config.html).
 
-Se forklaringer til oppsettet i [Mapcache-dokumentasjonen](https://mapserver.org/mapcache/config.html).
+Nedenfor vises en tilpasset versjon av `mapcache.xml`
 
 I oppsettet her kan man merke seg følgende:
 
 - det er bare én cache-type: _disk_
 - kilden (_source_ ) for kartflisene er WMS-tjenesten som er definert ovenfor.
 - det er definert et kartflis-skjema (_grid_ ): _UTM32EUREF89_
-- resolutions-verdiene for dette skjemaet er hentet fra Geonorge.no, se linken [eksakte "resolutions"](http://wms.geonorge.no/kr/koordsys_res.txt) under Zoom-nivå på denne siden: [Cache-tjenester (WMTS)](https://www.geonorge.no/aktuelt/om-geonorge/brukerveiledning/#!#cache_tjenester)
+- resolutions-verdiene for dette skjemaet er beregnet ut fra verdiene under Zoom-nivå på denne siden: [Bruke tjenester og API-er](https://www.geonorge.no/aktuelt/om-geonorge/slik-bruker-du-geonorge/bruke-tjenester-og-api-er/)<br/>
+I tabellen der vises `Tilestørelse` x/y i meter. Disse verdiene deles med 256 for å få resolutions-verdiene.
 - det er definert en utstrekning for dette skjemaet (_extent_ ) som dekker Innlandet fylke
 - det er brukt _origin: top-left_ som utgangspunkt for kartkoordinatene
 - det er definert ett _tileset_, 'innlandet', som bruker kartflis-skjemaet _UTM32EUREF89_.
 - levetiden for kartflisene er satt til 600 sekunder.
 
-```js
-<!--
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mapcache>
    <cache name="disk" type="disk">
-      <base>C:/ntnugeo/apps/sverrsti/tmp/cache</base>
+      <base>/ms4w/apps/innlandet/cache</base>
    </cache>
 
    <source name="innlandet" type="wms">
@@ -290,7 +289,7 @@ I oppsettet her kan man merke seg følgende:
       </getmap>
 
       <http>
-         <url>http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map</url>
+         <url>http://127.0.0.1/cgi-bin/mapserv.exe?MAP=/ms4w/apps/innlandet/wms.map</url>
       </http>
    </source>
 
@@ -334,11 +333,53 @@ I oppsettet her kan man merke seg følgende:
    <service type="demo" enabled="true"/>
 
    <errors>report</errors>
-   <lock_dir>C:/ntnugeo/apps/sverrsti/tmp/cache</lock_dir>
+   <lock_dir>/ms4w/apps/innlandet/cache</lock_dir>
 
 </mapcache>
--->
+
 ```
+
+## Alias for WMTS-tjenesten i Apache konfigursajonsfil
+
+For at Mapserver skal vite hvor oppsettet for WMTS-tjenesten ligger, må det legges inn et alias til aktuell mappe
+_C:\ms4w\Apache\conf\httpd.conf_.
+
+Ca. ved linje 412 vil du finne dette:
+
+```xml
+<IfModule mapcache_module>
+   <Directory "C:/ms4w/apps/mapcache/">
+      AllowOverride None
+      Options None
+      Require all granted
+   </Directory>
+   MapCacheAlias /mapcache "C:/ms4w/apps/mapcache/mapcache.xml"
+</IfModule>
+```
+
+Rett under disse linjene legger du inn ditt eget alias, f.eks. slik:
+
+```xml
+<IfModule mapcache_module>
+   <Directory "C:/ms4w/apps/innlandet/">
+      AllowOverride None
+      Options None
+      Require all granted
+   </Directory>
+   MapCacheAlias /innlandet "C:/ms4w/apps/innlandet/mapcache.xml"
+</IfModule>
+```
+
+Bildefilene skal lagres i en egen mappe som angitt i `mapcache.xml` under
+
+```xml
+   <cache name="disk" type="disk">
+      <base>/ms4w/apps/innlandet/cache</base>
+   </cache>
+```
+
+Denne mappen, `cache`, må opprettes manuelt.
+
 
 ## Aktivering av WMS- og WMTS-tjenester
 
@@ -350,14 +391,14 @@ Både WMS- og WMTS-tjenester er avhengige av Apache web-server for å kjøre.
 Etter omstart av Apache kan WMTS-tjenestene testes med GetCapabilities- og GetTile-kall:
 
 ```ini
-http://localhost/sverrsti/wmts
+http://localhost/innlandet/wmts
 ?SERVICE=WMTS
 &VERSION=1.0.0
 &REQUEST=GetCapabilities
 ```
 
 ```ini
-http://localhost/sverrsti/wmts
+http://localhost/innlandet/wmts
 ?SERVICE=WMTS
 &VERSION=1.0.0
 &REQUEST=GetTile
@@ -377,14 +418,13 @@ GetTile-kallet ovenfor gir dette bildet:
 
 innlandet_WMTHS.html:
 
-```ini
-<!--
+```html
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css"
     type="text/css">
   <style>
     #map {
@@ -400,32 +440,31 @@ innlandet_WMTHS.html:
 
   <div id="map"></div>
 
-  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
-  <script src="innlandet.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+  <script src="innlandet-wmts.js" type="text/javascript"></script>
 
 </body>
 
 </html>
--->
 ```
 
-innlandet.js:
+innlandet-wmts.js:
 
 ```js
-var url = 'http://localhost/sverrsti/wmts/?';
+const url = 'http://localhost/innlandet/wmts/?';
 
-var layer = 'innlandet';
+const layer = 'innlandet';
 
-var extentKartverket = [-2000000, 3500000, 3545984, 9045984];
-var extentInnlandet = [413293, 6637090, 706922, 6953227];
+const extentKartverket = [-2000000, 3500000, 3545984, 9045984];
+const extentInnlandet = [413293, 6637090, 706922, 6953227];
 
 // Datum og projeksjon: EUREF89, UTM zone 32
-var projection = new ol.proj.Projection({
+const projection = new ol.proj.Projection({
     code: 'EPSG:25832',
     extent: extentKartverket
 });
 
-var resolutionsKartverket = [
+const resolutionsKartverket = [
     21664,
     10832,
     5416,
@@ -448,13 +487,13 @@ var resolutionsKartverket = [
   ];
   
 
-var matrixSet = 'UTM32EUREF89';
-var matrixIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+const matrixSet = 'UTM32EUREF89';
+const matrixIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 
-var center = [500000, 6777400]; // Easting, Northing
-var zoom = 5;
+const center = [500000, 6777400]; // Easting, Northing
+const zoom = 5;
 
-var kommuner = new ol.layer.Tile({
+const kommuner = new ol.layer.Tile({
     opacity: 0.7,
     source: new ol.source.WMTS({
         url: url,
@@ -470,19 +509,19 @@ var kommuner = new ol.layer.Tile({
     })
 });
 
-var topo4 = new ol.layer.Tile({
+const topograatone = new ol.layer.Tile({
     extent: extentInnlandet,
     source: new ol.source.TileWMS({
-        url: 'https://openwms.statkart.no/skwms1/wms.topo4.graatone',
+        url: 'https://wms.geonorge.no/skwms1/wms.topograatone',
         params: {
-            'LAYERS': 'topo4graatone_WMS',
+            'LAYERS': 'topograatone',
             'STYLES': 'default'
         },
     })
 });
 
-var map = new ol.Map({
-    layers: [topo4, kommuner],
+const map = new ol.Map({
+    layers: [topograatone, kommuner],
     target: 'map',
     view: new ol.View({
         extent: extentKartverket,
@@ -494,7 +533,11 @@ var map = new ol.Map({
 });
 ```
 
+- [Innlandet kommuner - WMTS](docs/innlandet-wmts.html)
+
+(Virker bare hvis du har tjenesten installert på samme måte på egen PC)
+
 
 _NTNU 16.02.2021 Sverre Stikbakke_\
-_NTNU 18.02.2021 Endret versjonsnr. på Open Layers eksempler. V. 6.5.0 skapte problemer._
+_NTNU 17.03.2025 Forenklet oppsett med alle filer i /ms4w/apps/innlandet/_
 

@@ -6,6 +6,7 @@
 - [Introduksjon til Mapserver, installasjon](mapserver-introduksjon-installasjon.md)
 - [Ukeoppgave - lage egen WMS-tjeneste](mapserver-ukeoppgave.md)
 - [OGC API-oppsett](mapserver-ogcapi.md)
+- [WMTS-oppsett](mapserver-wmts.md)
 
 ## Dokumentasjon - utvalgte temaer
 
@@ -19,4 +20,4 @@
 
 
 \
-_NTNU 11.03.2025 Sverre Stikbakke_
+_NTNU 17.03.2025 Sverre Stikbakke_
