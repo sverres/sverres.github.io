@@ -257,7 +257,7 @@ Kallet ovenfor gir dette bildet:
 
 Se forklaringer til oppsettet i `mapcache.xml` under [Mapcache-dokumentasjonen](https://mapserver.org/mapcache/config.html).
 
-Nedenfor vises en tilpasset versjon av `mapcache.xml`
+Nedenfor vises en tilpasset versjon av `mapcache.xml`, som ligger i mappen `/ms4w/apps/innlandet`
 
 I oppsettet her kan man merke seg følgende:
 
