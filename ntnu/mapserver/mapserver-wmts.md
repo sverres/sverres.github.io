@@ -115,29 +115,32 @@ Kallet ovenfor gir dette bildet:
 ![innlandet.png](img/innlandet.png)
 
 
-## Open Layers-fil for WMS-tjeneste - UTM-projeksjon
+## Open Layers-fil for denne WMS-tjenesten - UTM-projeksjon
 
-```ini
-<!--
-<!DOCTYPE html>
-<html>
+(Virker bare hvis du har tjenesten installert på samme måte på egen PC)
+
+- [Innlandet kommuner](docs/innlandet.html)
+
+```html
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css"
     type="text/css">
     <style>
     .map {
         height: 800px;
         width: 100%;
-        border: 1px solid darkslategrey;
+        border:1px solid DarkSlateGray;
     }
     </style>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
-    <title>Mapserver WMS-tjeneste</title>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+    <title>Innlandet</title>
 </head>
 
 <body>
-    <h2>Innlandet fylke</h2>
+    <h2>Innlandet</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
     var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
@@ -147,13 +150,10 @@ Kallet ovenfor gir dette bildet:
         extent: extentKartverketWMS25832
     });
 
-    var wmsUrl = 'http://127.0.0.1/cgi-bin/mapserv.exe'
-                    + '?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map&';
-
-    var topo4 = new ol.layer.Tile({
+    var kommune = new ol.layer.Tile({
         extent: extentKartverketWMS25832,
         source: new ol.source.TileWMS({
-        url: wmsUrl,
+        url: 'http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/innlandet/wms.map?',
         params: {
             'LAYERS': 'kommune',
             'STYLES': 'default'
@@ -162,25 +162,24 @@ Kallet ovenfor gir dette bildet:
     });
 
     var map = new ol.Map({
-        layers: [topo4],
+        layers: [kommune],
         target: 'map',
         view: new ol.View({
         projection: projection,
-        center: [591500, 6792500],
-        zoom: 4
+        center: [591500, 6740500],
+        zoom: 3
         })
     });
     </script>
 </body>
 
 </html>
--->
 ```
 
-## Mapbox-fil for WMS-tjeneste - Web Mercator
 
-```ini
-<!--
+## Mapbox-fil for denne WMS-tjenesten - Web Mercator
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -225,7 +224,7 @@ Kallet ovenfor gir dette bildet:
                     'type': 'raster',
                     'tiles': [
                         'http://127.0.0.1/cgi-bin/mapserv.exe'
-                        + '?MAP=/ntnugeo/apps/sverrsti/innlandet/map/innlandet.map'
+                        + '?MAP=/ms4w/apps/innlandet/wms.map'
                         + '&bbox={bbox-epsg-3857}'
                         + '&format=image/png'
                         + '&service=WMS'
@@ -248,7 +247,6 @@ Kallet ovenfor gir dette bildet:
 </body>
 
 </html>
--->
 ```
 
 ## WMTS-tjenester med Mapcache (maxcache.xml)
