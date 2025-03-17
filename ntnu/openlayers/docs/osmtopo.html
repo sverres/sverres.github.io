@@ -19,7 +19,7 @@
   <div id="map" class="map"></div>
   <script type="text/javascript">
 
-    var topo = new ol.layer.Tile({
+    const topo = new ol.layer.Tile({
       source: new ol.source.TileWMS({
         url: 'https://wms.geonorge.no/skwms1/wms.topo?',
         params: {
@@ -29,11 +29,11 @@
       })
     });
 
-    var osm = new ol.layer.Tile({
+    const osm = new ol.layer.Tile({
       source: new ol.source.OSM()
     });
 
-    var map = new ol.Map({
+    const map = new ol.Map({
       layers: [osm, topo],
       target: 'map',
       view: new ol.View({

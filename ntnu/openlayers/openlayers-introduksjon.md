@@ -19,7 +19,7 @@ Map er objektet som kobler sammen HTML-koden og javascript-koden. Map-objektet m
 ```html
 <div id="map"></div>
 <script>
-    var map = new ol.Map({target: 'map'});
+    const map = new ol.Map({target: 'map'});
 </script>
 ```
 
@@ -57,7 +57,7 @@ Source-objektet angir ulike tjeneste-baserte datakilder for kartet. Egenskapene 
 - [ol.source.WMTS](https://openlayers.org/en/latest/apidoc/module-ol_source_WMTS-WMTS.html)
 
 ```javascript
-var osmSource = new ol.source.OSM();
+const osmSource = new ol.source.OSM();
 ```
 
 ## Layer
@@ -69,12 +69,12 @@ Vi bruker ol.layer.Tile for WMS-kart. Den viktigste og som regel eneste egenskap
 - [ol.layer.Tile](https://openlayers.org/en/latest/apidoc/module-ol_layer_Tile-TileLayer.html)
 
 ```javascript
-var osmLayer = new ol.layer.Tile({source: osmSource});
+const osmLayer = new ol.layer.Tile({source: osmSource});
 map.addLayer(osmLayer);
 ```
 
 ```javascript
-var topo = new ol.layer.Tile({
+const topo = new ol.layer.Tile({
     extent: extentKartverketWMS25832,
     source: new ol.source.TileWMS({
     attributions: [attribution],
@@ -109,7 +109,7 @@ Kode-eksemplet nedenfor er fra [Quick Start](https://openlayers.org/en/latest/do
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
-        var map = new ol.Map({
+        const map = new ol.Map({
         target: 'map',
         layers: [
             new ol.layer.Tile({
@@ -136,10 +136,10 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
 ```javascript
     <script>
         
-        var map = new ol.Map({});
-        var layer = new ol.layer.Tile({});
-        var source = new ol.source.OSM();
-        var view = new ol.View({});
+        const map = new ol.Map({});
+        const layer = new ol.layer.Tile({});
+        const source = new ol.source.OSM();
+        const view = new ol.View({});
         
         map.setLayerGroup(layer);
         map.setView(view);
@@ -177,14 +177,14 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
-    var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
+    const extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
 
-    var projection = new ol.proj.Projection({
+    const projection = new ol.proj.Projection({
         code: 'EPSG:25832',
         extent: extentKartverketWMS25832
     });
 
-    var topo = new ol.layer.Tile({
+    const topo = new ol.layer.Tile({
         extent: extentKartverketWMS25832,
         source: new ol.source.TileWMS({
         url: 'https://wms.geonorge.no/skwms1/wms.topo?',
@@ -195,7 +195,7 @@ Kan du beskrive hva som er forskjellen på denne versjonen og den ovenfor?
         })
     });
 
-    var map = new ol.Map({
+    const map = new ol.Map({
         layers: [topo],
         target: 'map',
         view: new ol.View({

@@ -18,14 +18,14 @@
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
-    var extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
+    const extentKartverketWMS25832 = [234068, 6338450, 1351516, 8051673];
 
-    var projection = new ol.proj.Projection({
+    const projection = new ol.proj.Projection({
         code: 'EPSG:25832',
         extent: extentKartverketWMS25832
     });
 
-    var topo = new ol.layer.Tile({
+    const topo = new ol.layer.Tile({
         extent: extentKartverketWMS25832,
         source: new ol.source.TileWMS({
         url: 'https://wms.geonorge.no/skwms1/wms.topo?',
@@ -36,7 +36,7 @@
         })
     });
 
-    var map = new ol.Map({
+    const map = new ol.Map({
         layers: [topo],
         target: 'map',
         view: new ol.View({
