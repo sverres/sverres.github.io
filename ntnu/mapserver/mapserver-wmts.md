@@ -117,10 +117,6 @@ Kallet ovenfor gir dette bildet:
 
 ## Open Layers-fil for denne WMS-tjenesten - UTM-projeksjon
 
-(Virker bare hvis du har tjenesten installert på samme måte på egen PC)
-
-- [Innlandet kommuner](docs/innlandet.html)
-
 ```html
 <!doctype html>
 <html lang="en">
@@ -176,6 +172,9 @@ Kallet ovenfor gir dette bildet:
 </html>
 ```
 
+- [Innlandet kommuner](docs/innlandet.html)
+
+(Virker bare hvis du har tjenesten installert på samme måte på egen PC)
 
 ## Mapbox-fil for denne WMS-tjenesten - Web Mercator
 
@@ -188,8 +187,8 @@ Kallet ovenfor gir dette bildet:
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css' rel='stylesheet' />
 
     <style>
         #map {
@@ -206,7 +205,7 @@ Kallet ovenfor gir dette bildet:
 
     <div id='map'></div>
     <script>
-        mapboxgl.accessToken = '<sett inn ditt eget access-token her';
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3ZlcnJlc3QiLCJhIjoiY2l1Y2VqcmRzMDAxMTJ0cGl6c3ZteGozMyJ9.ieY0kEubUisIWVVwjZiuBg';
 
         var map = new mapboxgl.Map({
             container: 'map',
@@ -240,7 +239,7 @@ Kallet ovenfor gir dette bildet:
                     'tileSize': 256
                 },
                 'layout': {},
-                'paint': {'raster-opacity': 0.70}
+                'paint': { 'raster-opacity': 0.70 }
             });
         });
     </script>
@@ -248,6 +247,11 @@ Kallet ovenfor gir dette bildet:
 
 </html>
 ```
+
+- [Innlandet kommuner - Mapbox/Web Marcator](docs/innlandet-webmercator.html)
+
+(Virker bare hvis du har tjenesten installert på samme måte på egen PC)
+
 
 ## WMTS-tjenester med Mapcache (maxcache.xml)
 
