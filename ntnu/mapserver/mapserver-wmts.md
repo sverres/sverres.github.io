@@ -5,7 +5,7 @@
 
 - Mapserver er installert (se ukeoppgave om dette)
 - Lærestoffet fra [WMS-forelesning](../wms) er kjent
-- Lærestoffet fra [WMTS-forelesning](index.md) er kjent
+- Lærestoffet fra [WMTS-forelesning](../wmts) er kjent
 
 ## Oppgave
 
@@ -390,14 +390,14 @@ Både WMS- og WMTS-tjenester er avhengige av Apache web-server for å kjøre.
 
 Etter omstart av Apache kan WMTS-tjenestene testes med GetCapabilities- og GetTile-kall:
 
-```ini
+```
 http://localhost/innlandet/wmts
 ?SERVICE=WMTS
 &VERSION=1.0.0
 &REQUEST=GetCapabilities
 ```
 
-```ini
+```
 http://localhost/innlandet/wmts
 ?SERVICE=WMTS
 &VERSION=1.0.0
@@ -416,7 +416,7 @@ GetTile-kallet ovenfor gir dette bildet:
 
 ## Open Layers-fil for WMTS-tjeneste
 
-innlandet_WMTHS.html:
+innlandet-wmts.html:
 
 ```html
 <!DOCTYPE html>
