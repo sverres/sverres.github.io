@@ -86,7 +86,7 @@ END
 
 GetCapabilities-kall mot denne tjenesten:
 
-```ini
+```html
 http://127.0.0.1/cgi-bin/mapserv.exe
 ?MAP=/ms4w/apps/innlandet/wms.map
 &SERVICE=WMS
@@ -96,7 +96,7 @@ http://127.0.0.1/cgi-bin/mapserv.exe
 
 GetMap-kall mot denne tjenesten:
 
-```ini
+```html
 http://127.0.0.1/cgi-bin/mapserv.exe
 ?MAP=/ms4w/apps/innlandet/wms.map
 &VERSION=1.3.0

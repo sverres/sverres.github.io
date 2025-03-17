@@ -107,7 +107,7 @@ En WMS-tjeneste er installert på denne adressen:
 
 Uten noen ekstra parametre vil WMS-url'en gi en feilmelding:
 
-```HTML
+```html
 mapserv(): Web application error. Traditional BROWSE mode requires a TEMPLATE in the WEB section, but none was provided. 
 ```
 
