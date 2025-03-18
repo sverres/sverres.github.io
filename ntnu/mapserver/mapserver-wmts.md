@@ -351,7 +351,7 @@ I tabellen der vises `Tilestørelse` x/y i meter. Disse verdiene deles med 256 f
 
 ## Alias for WMTS-tjenesten i Apache konfigursajonsfil
 
-For at Mapserver skal vite hvor oppsettet for WMTS-tjenesten ligger, må det legges inn et alias til aktuell mappe
+For at Mapserver skal vite hvor oppsettet for WMTS-tjenesten ligger, må det legges inn et alias til aktuell mappe i
 _C:\ms4w\Apache\conf\httpd.conf_.
 
 Ca. ved linje 412 vil du finne dette:

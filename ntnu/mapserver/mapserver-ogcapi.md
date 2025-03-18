@@ -36,7 +36,7 @@ Denne mapfila er svært omfattende, og setter også opp WMS og WFS i tillegg til
 
 Til info: Mapfila som vises her på denne siden virker uten modifikasjoner. Mapfila som vises i dokumentasjonen krever at det installeres ekstra filer i `apps\local-demo`-mappa.
 
-```html
+```c
 /*
  Description:  Simple map to display on MS4W localhost ( http://127.0.0.1 )
                Also configured for WMS, WFS, OGCAPI (Feature) services, and 
