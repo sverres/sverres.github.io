@@ -41,7 +41,7 @@ const center = [500000, 6777400]; // Easting, Northing
 const zoom = 5;
 
 const kommuner = new ol.layer.Tile({
-    opacity: 0.7,
+    opacity: 0.8,
     source: new ol.source.WMTS({
         url: url,
         layer: layer,
@@ -57,7 +57,7 @@ const kommuner = new ol.layer.Tile({
 });
 
 const topograatone = new ol.layer.Tile({
-    extent: extentInnlandet,
+    extent: extentKartverket,
     source: new ol.source.TileWMS({
         url: 'https://wms.geonorge.no/skwms1/wms.topograatone',
         params: {

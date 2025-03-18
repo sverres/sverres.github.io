@@ -25,8 +25,9 @@ innlandet.map:
 ```c
 /*
  Description:  NTNU Demo WMS Server WMS service to display on MS4W localhost (http://127.0.0.1)
+ Data source:  Innlandet fylke, in FGDB format.
  Author:       sverre.stikbakke@ntnu.no
- Last updated: 2025-03-13
+ Last updated: 2025-03-18
 */
 
 MAP
@@ -59,28 +60,37 @@ LAYER
   CONNECTIONTYPE ogr
   CONNECTION "/ms4w/apps/innlandet/Basisdata_34_Innlandet_25832_Kommuner_FGDB.gdb"
   DATA "kommune"
+
   PROJECTION
-      "init=epsg:25832"
+    "init=epsg:25832"
   END
+
   CLASSITEM "kommunenummer"
   CLASS
       NAME "Østre Toten"
       EXPRESSION "3442"
-      COLOR 150 107 157
-      OUTLINECOLOR 231 207 188
+	  STYLE
+        COLOR 255 110 41
+        OUTLINECOLOR 12 105 128
+	  END
   END
   CLASS
       NAME "Hedmark"
       EXPRESSION ( ( '[kommunenummer]' LT "3431" ) AND NOT ( '[kommunenummer]' IN "3407,3405" ) )
-      COLOR 201 134 134
-      OUTLINECOLOR 231 207 188
+	  STYLE
+        COLOR 0 168 168
+        OUTLINECOLOR 12 105 128
+	  END
   END
   CLASS
       NAME "Resten - dvs. Oppland unntatt Østre Toten"
-      COLOR 242 184 128
-      OUTLINECOLOR 231 207 188
+	  STYLE
+        COLOR 46 181 224
+        OUTLINECOLOR 12 105 128
+      END 
   END
 END
+
 END
 ```
 
@@ -494,7 +504,7 @@ const center = [500000, 6777400]; // Easting, Northing
 const zoom = 5;
 
 const kommuner = new ol.layer.Tile({
-    opacity: 0.7,
+    opacity: 0.8,
     source: new ol.source.WMTS({
         url: url,
         layer: layer,
@@ -510,7 +520,7 @@ const kommuner = new ol.layer.Tile({
 });
 
 const topograatone = new ol.layer.Tile({
-    extent: extentInnlandet,
+    extent: extentKartverket,
     source: new ol.source.TileWMS({
         url: 'https://wms.geonorge.no/skwms1/wms.topograatone',
         params: {
@@ -539,5 +549,5 @@ const map = new ol.Map({
 
 
 _NTNU 16.02.2021 Sverre Stikbakke_\
-_NTNU 17.03.2025 Forenklet oppsett med alle filer i /ms4w/apps/innlandet/_
+_NTNU 18.03.2025 Forenklet oppsett med alle filer i /ms4w/apps/innlandet/_
 
