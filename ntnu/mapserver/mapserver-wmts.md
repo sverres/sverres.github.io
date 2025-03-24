@@ -1,4 +1,4 @@
-# Ukeoppgave: Oppsett og bruk av WMTS-tjenester på Mapserver
+# Ukeoppgave: Oppsett og bruk av WMTS-tjenester på Mapserver<br/>(Ikke pensum i GEOM2430)
 
 
 ## Forutsetninger - bakgrunnskunnskaper
@@ -9,7 +9,7 @@
 
 ## Oppgave
 
-Ukeoppgaven består i å sette seg inn i hvordan WMTS-tjenester settes opp med Mapserver og Mapcache. Denne ukeoppgaven viser i detalj hvordan undertegnede har satt opp en WMTS-tjeneste. Din oppgave blir å gjenta dette på egen PC, og gjøre nødvendige endringer basert på forskjeller i datagrunnlag, filnavn, brukernavn, mappenavn, etc. Hvis alt går bra skal du få vist din WMTS-tjeneste på et Open Layers webkart. Oppgaven bygger i stor grad på forrige ukeoppgave.
+Ukeoppgaven består i å sette seg inn i hvordan WMTS-tjenester settes opp med Mapserver og Mapcache. Denne ukeoppgaven viser i detalj hvordan undertegnede har satt opp en WMTS-tjeneste. Din oppgave blir å gjenta dette på egen PC, og gjøre nødvendige endringer basert på forskjeller i datagrunnlag, filnavn, brukernavn, mappenavn, etc. Hvis alt går bra skal du få vist din WMTS-tjeneste på et Open Layers webkart. Oppgaven bygger i stor grad på forrige ukeoppgave (om WMS-oppsett).
 
 ## Video-gjennomgang av oppsettet
 
@@ -69,22 +69,22 @@ LAYER
   CLASS
       NAME "Østre Toten"
       EXPRESSION "3442"
-	  STYLE
+      STYLE
         COLOR 255 110 41
         OUTLINECOLOR 12 105 128
-	  END
+      END
   END
   CLASS
       NAME "Hedmark"
       EXPRESSION ( ( '[kommunenummer]' LT "3431" ) AND NOT ( '[kommunenummer]' IN "3407,3405" ) )
-	  STYLE
+      STYLE
         COLOR 0 168 168
         OUTLINECOLOR 12 105 128
-	  END
+      END
   END
   CLASS
       NAME "Resten - dvs. Oppland unntatt Østre Toten"
-	  STYLE
+      STYLE
         COLOR 46 181 224
         OUTLINECOLOR 12 105 128
       END 
@@ -349,9 +349,9 @@ I tabellen der vises `Tilestørelse` x/y i meter. Disse verdiene deles med 256 f
 
 ```
 
-## Alias for WMTS-tjenesten i Apache konfigursajonsfil
+## Alias for WMTS-tjenesten i Apache konfigurasjonsfil
 
-For at Mapserver skal vite hvor oppsettet for WMTS-tjenesten ligger, må det legges inn et alias til aktuell mappe i
+For at Mapserver skal vite hvor oppsettet for WMTS-tjenesten ligger, må det legges inn et alias til aktuell mappe i\
 _C:\ms4w\Apache\conf\httpd.conf_.
 
 Ca. ved linje 412 vil du finne dette:
