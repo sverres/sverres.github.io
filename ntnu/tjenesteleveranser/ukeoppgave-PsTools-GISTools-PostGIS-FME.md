@@ -67,11 +67,13 @@ Korrekt bestillingsbilde for SQL-generering (videoen ovenfor har feil avkryssing
 
 ### Lage workspace i FME Workbench for opplasting av data
 
+NB: Se også neste video (Kjøre workspace-fil med aktuelle data) for å få litt oppdatering på siste FME-versjon
+
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=eeee8836-6679-4da8-9232-ae5d00ce6acb&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### Kjøre workspace-fil med aktuelle data
 
-<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b3eaf7c1-5812-4a87-8d26-acee01304eb3&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7271baa3-6fe0-4729-98c9-b2ac00fad334&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="torsdag 11. april 2024 at 10:32:26" ></iframe>
 
 ### Sjekke innholdet i databasen med QGIS
 

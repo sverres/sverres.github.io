@@ -1,4 +1,4 @@
-# GEOM2430 Vår 2025 Oblig 5<br/>Tjenesteleveranser
+# GEOM2430 Vår 2025 Oblig 5<br/>Tjenesteleveranse med MDA-metoden
 
 
 ## Mål for oppgaven
