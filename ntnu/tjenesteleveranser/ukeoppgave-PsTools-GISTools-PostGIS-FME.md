@@ -2,7 +2,6 @@
 
 # Ukeoppgave om PSTools, GISTools,<br>Postgis og FME
 
-**NB! Denne er ikke helt oppdatert for 2025 enda - kommer innen 27.03**
 
 ## Mål for oppgaven
 
@@ -32,13 +31,13 @@ Les om Arealressurskart og AR5 spesielt her:
 
 ## Nødvendig programvare
 
-Linker for nedlasting ligger i programvaretabellen. Lisens-informasjon ligger i Blackboard/Programvare.
+Linker for nedlasting og lisens-informasjon ligger i Blackboard/Programvare.
 
 - PSTools  Brukernavn og passord - se Blackboard/Programvare
 - Sparx Enterprise Architect (EA) - Bruker lisensserver ved NTNU - krever VPN-oppkobling
 - GISTools (tillegg til EA) - se Blackboard/Programvare for lisenskode
 - 64-bit PostgreSQL/PostGIS
-- FME og GeoSOSI Professional - Bruker lisensserver ved NTNU - krever VPN-oppkobling
+- FME - studentlisenser tilgjengelig ved søknad til Safe Software
 
 ## Datafil
 
@@ -73,7 +72,7 @@ NB: Se også neste video (Kjøre workspace-fil med aktuelle data) for å få lit
 
 ### Kjøre workspace-fil med aktuelle data
 
-<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7271baa3-6fe0-4729-98c9-b2ac00fad334&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="torsdag 11. april 2024 at 10:32:26" ></iframe>
+<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7271baa3-6fe0-4729-98c9-b2ac00fad334&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### Sjekke innholdet i databasen med QGIS
 
@@ -82,6 +81,8 @@ NB: Se også neste video (Kjøre workspace-fil med aktuelle data) for å få lit
 
 Lykke til!
 
-
-_NTNU 17.03.2021 Sverre Stikbakke_
-_NTNU 19.03.2022 Oppdatert FME-video_
+\
+_NTNU 17.03.2021 Sverre Stikbakke_\
+_NTNU 19.03.2022 Oppdatert FME-video_\
+_NTNU 11.04.2024 Oppdatert FME-laste-video_\
+_NTNU 26.03.2025 Oppdatert linker m.m._
