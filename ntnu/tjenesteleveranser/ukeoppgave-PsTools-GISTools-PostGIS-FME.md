@@ -62,7 +62,7 @@ Linker for nedlasting og lisens-informasjon ligger i Blackboard/Programvare.
 
 Korrekt bestillingsbilde for SQL-generering (videoen ovenfor har feil avkryssing på _Generate NOT NULL constraints_ ):
 
-(Midlertidig løsning for 2025 med bruk av ogr2ogr-programmet, ikke FME for lasting til database: velg uuid med autogenerering som vist her: [uml_postgis_ogr2ogr.png](uml_postgis_ogr2ogr.png) )
+(Midlertidig løsning for 2025 med bruk av ogr2ogr-programmet, ikke FME for lasting til database: velg uuid med autogenerering som vist her: [uml_postgis_ogr2ogr.png](img/uml_postgis_ogr2ogr.png) )
 
 ![GISTools](img/uml_postgis.png)
 
