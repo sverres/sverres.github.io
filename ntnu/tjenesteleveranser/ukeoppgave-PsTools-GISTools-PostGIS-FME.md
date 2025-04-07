@@ -56,6 +56,12 @@ Linker for nedlasting og lisens-informasjon ligger i Blackboard/Programvare.
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b2005987-b6eb-4560-a2b7-acee012ea4c9&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+Kommandoer som skal kjøres i PgAdmin (kan kjrøes samtidig):
+```
+create extension postgis;
+create extension "uuid-ossp";
+```
+
 ### Lage SQL-script som kan opprette skjema i PostGIS-database
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=bb181aa7-ae85-4a52-8742-acee012e4053&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
@@ -69,6 +75,12 @@ Korrekt bestillingsbilde for SQL-generering (videoen ovenfor har feil avkryssing
 ### Lage workspace i FME Workbench for opplasting av data
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ea54926b-3ac3-42a7-bac5-b2b800c9a596&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Oppsett av dataflyt i FME Workbench" ></iframe>
+
+Format-spesifikasjon som skal legges inn i DateTimeConverter-transformeren:
+```
+Input Format:  %Y%m%d
+Output Format: %Y-%m-%d %H:%M:%S-00
+```
 
 ### Kjøre workspace-fil med aktuelle data
 
