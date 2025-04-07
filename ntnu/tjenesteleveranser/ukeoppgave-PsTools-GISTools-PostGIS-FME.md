@@ -37,6 +37,7 @@ Linker for nedlasting og lisens-informasjon ligger i Blackboard/Programvare.
 - Sparx Enterprise Architect (EA) - Bruker lisensserver ved NTNU - krever VPN-oppkobling
 - GISTools (tillegg til EA) - se Blackboard/Programvare for lisenskode
 - 64-bit PostgreSQL/PostGIS
+- ArcGIS Pro
 - FME - studentlisenser tilgjengelig ved søknad til Safe Software
 
 ## Datafil
