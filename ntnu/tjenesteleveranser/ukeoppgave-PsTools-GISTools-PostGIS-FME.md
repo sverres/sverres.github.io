@@ -56,7 +56,7 @@ Linker for nedlasting og lisens-informasjon ligger i Blackboard/Programvare.
 
 <iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b2005987-b6eb-4560-a2b7-acee012ea4c9&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-Kommandoer som skal kjøres i PgAdmin (kan kjrøes samtidig):
+Kommandoer som skal kjøres i PgAdmin (kan kjøres samtidig):
 ```
 create extension postgis;
 create extension "uuid-ossp";
