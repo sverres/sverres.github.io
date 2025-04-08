@@ -4,6 +4,7 @@
 
 - [Introduksjon til tjenesteleveranser - Teori, programvare, presentasjon av aktører](tjenesteleveranser-teori.md)
 - [Ukeoppgave - lage egen WFS-tjeneste etter SOSI/MDA-metoden](ukeoppgave-PsTools-GISTools-PostGIS-FME.md)
+- [Mapserver-oppsett for WFS-tjeneste](../mapserver/mapserver-wfs.md)
 
 ## Dokumentasjon - utvalgte temaer
 
@@ -14,4 +15,4 @@
 
 
 \
-_NTNU 25.03.2025 Sverre Stikbakke_
+_NTNU 08.04.2025 Sverre Stikbakke_
