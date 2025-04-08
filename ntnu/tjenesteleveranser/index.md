@@ -4,6 +4,7 @@
 
 - [Introduksjon til tjenesteleveranser - Teori, programvare, presentasjon av aktører](tjenesteleveranser-teori.md)
 - [Ukeoppgave - lage egen WFS-tjeneste etter SOSI/MDA-metoden](ukeoppgave-PsTools-GISTools-PostGIS-FME.md)
+- [Til ukeoppgave - lasting av data til PostGIS uten FME](ogr2ogr.md)
 - [Mapserver-oppsett for WFS-tjeneste](../mapserver/mapserver-wfs.md)
 
 ## Dokumentasjon - utvalgte temaer
