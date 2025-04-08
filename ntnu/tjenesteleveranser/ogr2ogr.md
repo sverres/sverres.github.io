@@ -32,8 +32,8 @@ Basisdata_1133_Hjelmeland_25832_FKB-AR5_FGDB.gdb ^
 
 ### Dokumentasjon for ogr2ogr
 
-- https://gdal.org/en/stable/programs/ogr2ogr.html
-- https://www.bostongis.com/printerfriendly.aspx?content_name=ogr_cheatsheet
+- [https://gdal.org/en/stable/programs/ogr2ogr.html](https://gdal.org/en/stable/programs/ogr2ogr.html)
+- [https://www.bostongis.com/printerfriendly.aspx?content_name=ogr_cheatsheet](https://www.bostongis.com/printerfriendly.aspx?content_name=ogr_cheatsheet)
 
 \
 _NTNU 08.04.2025 Sverre Stikbakke_\
