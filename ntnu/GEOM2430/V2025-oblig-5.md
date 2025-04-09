@@ -71,7 +71,7 @@ Norge Digitalt innebærer.
 
 Fra NTNU:
 
-- [Datafiler: oversikt over kommuner og arealtyper](geom2240-v2024-oblig-5-ar5-data.html)
+- Datafiler: oversikt over kommuner og arealtyper (Se Blackboard, under Datafiler i venstremenyen)
 - forelesninger, ukeoppgaver og instruksjonsvideoer
 
 Fra Norge Digitalt:
