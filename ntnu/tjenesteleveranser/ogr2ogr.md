@@ -18,16 +18,21 @@ Løsningen bygger på bruk av ogr2ogr-programmet som bl.a. følger med QGIS-inst
 1. Start OSGeo4W Shell fra Windows startmeny - under QGIS
 2. Naviger til mappe der du har fgdb-fil som skal lastes
 
-Gi kommandoen nedenfor - (sett riktig database-navn og passord)
+Gi kommandoen nedenfor - (sett riktig database-navn og passord) - `^`-tegnet gjør at alle linjene settes sammen til én kommando
 
-```
-ogr2ogr -f PostgreSQL PG:"dbname='t2501' host='localhost' port='5432' user='postgres' password='gulogulo'" ^
+```c
+ogr2ogr -f PostgreSQL ^
+PG:"dbname='t2501' host='localhost' port='5432' user='postgres' password='gulogulo'" ^
 Basisdata_1133_Hjelmeland_25832_FKB-AR5_FGDB.gdb ^
 -lco GEOMETRY_NAME=omraade ^
 -append ^
 -explodecollections ^
 -nln prodskog.arealressursflate ^
--sql "SELECT SHAPE,objtype,lokalid,datafangstdato,verifiseringsdato,oppdateringsdato,registreringsversjon,navnerom, versjonid,opphav,arealtype,treslag,skogbonitet,grunnforhold,klassifiseringsmetode FROM fkb_ar5_omrade WHERE arealtype = '30'"
+-sql "SELECT SHAPE, objtype, lokalid, datafangstdato, verifiseringsdato, ^
+oppdateringsdato, registreringsversjon, navnerom, versjonid, opphav, arealtype, ^
+treslag, skogbonitet, grunnforhold, klassifiseringsmetode ^
+FROM fkb_ar5_omrade ^
+WHERE arealtype = '30'"
 ```
 
 ### Dokumentasjon for ogr2ogr
