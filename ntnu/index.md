@@ -7,7 +7,8 @@
 - [Mapserver](mapserver)
 - [OpenLayers](openlayers)
 - [Tjenesteleveranser - SOSI/MDA-metoden](tjenesteleveranser)
+- [Metadata](metadata)
 - [GEOM2430](GEOM2430)
 
 \
-_NTNU 25.03.2025 Sverre Stikbakke_
+_NTNU 10.04.2025 Sverre Stikbakke_
