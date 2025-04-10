@@ -13,7 +13,7 @@
 ### Metadata og geoportaler
 
 - [Metadata-veileder fra Norge Digitalt](https://www.geonorge.no/Geodataarbeid/Levere-kartdata/veiledere/)
-- [OGC Catalogue Service](https://www.ogc.org/standards/cat)
+- [OGC Catalogue Service](https://www.ogc.org/publications/standard/cat/)
 - [Norsk profil av ISO 19115 Metadata](https://register.geonorge.no/register/versjoner/sosi-standarden/kartverket/metadata-norsk-profil-av-iso-19115)
 - [Utvikling av Geonorge](https://www.geonorge.no/aktuelt/om-geonorge/Utvikling-av-geonorge/)
 
