@@ -51,7 +51,7 @@ Komplett MAP-file:
 
 MAP
 
-  NAME "WMS_WFS_server"
+  NAME "WFS_server"
   EXTENT 326664 6547676 364267 6584572
 
   CONFIG "MS_ERRORFILE" "/ms4w/tmp/ms_error.txt"
