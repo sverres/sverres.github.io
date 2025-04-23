@@ -1,4 +1,4 @@
-# WFS-kart med Open Layers i UTM-projeksjon (WFS med GeoJSON-format)
+# WFS-kart med Open Layers i UTM-projeksjon<br/>(WFS med GeoJSON-format)
 
 
 ## Om utviklingsverktøy for Open Layers-applikasjoner
