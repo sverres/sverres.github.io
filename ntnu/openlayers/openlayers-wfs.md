@@ -39,7 +39,7 @@ Eksemplet viser arealressursflate fra WFS-tjeneste på localhost, og forutsetter
   END
 ```
 
-Komplett MAP-file>
+Komplett MAP-file:
 
 ```c
 /*
