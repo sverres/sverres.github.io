@@ -17,7 +17,7 @@ Installasjon av utviklingsmiljøet (inkludert Proj4js):
 
 ## Om eksempelet
 
-Eksemplet viser arealressursflater i Hjelmeland kommune fra WFS-tjeneste på localhost, og forutsetter at WFS-tjenesten kan levere data på GeoJSON-format. I mapbox-oppsettet må dette spesifiseres, slik:
+Eksemplet viser arealressursflater i Hjelmeland kommune fra WFS-tjeneste på localhost, og forutsetter at WFS-tjenesten kan levere data på GeoJSON-format. I mapserver-oppsettet må dette spesifiseres, slik:
 
 ```c
   WEB
@@ -42,6 +42,7 @@ Eksemplet viser arealressursflater i Hjelmeland kommune fra WFS-tjeneste på loc
 
 ## Referanser
 
+- [Proj4JS](http://proj4js.org/)
 - [Open Layers Quick start](https://openlayers.org/doc/quickstart.html)
 - [Example of using WFS with a BBOX strategy](https://openlayers.org/en/latest/examples/vector-wfs.html)
 - [OpenStreetMap Reprojection with ScaleLine Control](https://openlayers.org/en/latest/examples/scaleline-indiana-east.html)
