@@ -1,4 +1,4 @@
-# WFS-kart med Open Layers i UTM-projeksjon
+# WFS-kart med Open Layers i UTM-projeksjon (WFS med GeoJSON-format)
 
 
 ## Om utviklingsverktøy for Open Layers-applikasjoner
@@ -6,17 +6,18 @@
 I dette eksemplet bruker vi utviklingsverktøyene [Node.js](https://nodejs.org/en/about), [Vite](https://vite.dev/guide/) og [GIT](https://github.com/git-guides), slik det er presentert på [Open Layers Quick start](https://openlayers.org/doc/quickstart.html).
 (Andre eksempler på bruk av Open Layers presentert på disse sidene, er laget ved å kode alt direkte i HTML, CSS og javascript. Dette har fungert bra tidligere, men i de senere versjonene av Open Layers er alle kode-eksemplene i dokumentasjonen basert på bruk av disse utviklingsverktøyene.)
 
-Installasjon av utviklingsmiljøet:
+Installasjon av utviklingsmiljøet (inkludert Proj4js):
 
 1. Installer [Node.js](https://nodejs.org/en)
 1. Installer [GIT](https://github.com/git-guides/install-git)
 1. Fra Windows kommandolinje, i mappen der du vil utvikle applikasjonen: kjør kommandoen `npm create ol-app my-app`. Dette vil installere Vite, samt lage et rammeverk for en app i mappa my-app.
 1. Gi kommandoene `cd my-app`, `npm install proj4` og `npm start`.
 1. Bruk VS Code eller en annen teksts-editor for å redigere koden i `index.html` og `main.js`.
+1. Lag distribusjons-versjon med kommandoen `npm run build`. Filene havner i undermappe `dist`.
 
 ## Om eksempelet
 
-Eksemplet viser arealressursflate fra WFS-tjeneste på localhost, og forutsetter at WFS-tjenesten kan levere data på GeoJSON-format. I mapbox-oppsettet må dette spesifiseres, slik:
+Eksemplet viser arealressursflater i Hjelmeland kommune fra WFS-tjeneste på localhost, og forutsetter at WFS-tjenesten kan levere data på GeoJSON-format. I mapbox-oppsettet må dette spesifiseres, slik:
 
 ```c
   WEB
@@ -39,7 +40,16 @@ Eksemplet viser arealressursflate fra WFS-tjeneste på localhost, og forutsetter
   END
 ```
 
-Komplett MAP-file:
+## Referanser
+
+- [Open Layers Quick start](https://openlayers.org/doc/quickstart.html)
+- [Example of using WFS with a BBOX strategy](https://openlayers.org/en/latest/examples/vector-wfs.html)
+- [OpenStreetMap Reprojection with ScaleLine Control](https://openlayers.org/en/latest/examples/scaleline-indiana-east.html)
+- [Definisjon av projeksjon: https://epsg.io/25832 (se Proj4js)](https://epsg.io/25832)
+- [Mapserver OGR Output](https://mapserver.org/el/output/ogr_output.html)
+
+
+## Komplett mapserver MAP-file
 
 ```c
 /*
