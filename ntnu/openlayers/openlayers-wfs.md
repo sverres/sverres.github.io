@@ -87,10 +87,10 @@ MAP
         "gml_include_items"     "all"
         "gml_geometries"        "omraade"
         "gml_geom_type"         "polygon"
-        "gml_featureid"         "objid"         ## REQUIRED
+        "gml_featureid"         "objid"         # REQUIRED
 
-        "wfs_title"             "Prodskog WFS"  ## REQUIRED
-        "wfs_srs"               "EPSG:25832"    ## REQUIRED
+        "wfs_title"             "Prodskog WFS"  # REQUIRED
+        "wfs_srs"               "EPSG:25832"    # REQUIRED
         "wfs_enable_request"    "*"
     END
 
