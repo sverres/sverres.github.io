@@ -21,7 +21,7 @@ Etter at du har kjørt installasjonsprogrammet, åpner du kommandovinduet _Anaco
 
 Disse kommandoene installerer geopandas under oppsettet 'geo_env'. Ved å lage et eget oppsett for geopandas, kan du ha egne versjoner av programbiblioteker som ikke kommer i konflikt med andre versjoner i andre oppsett. Conda er et system for administrasjon av programpakker.
 
-```ini
+```
 conda create -n geo_env
 conda activate geo_env
 conda config --env --add channels conda-forge
@@ -31,7 +31,7 @@ conda install python=3 geopandas
 
 Deretter gis disse kommandoene som gir muligheter for kart-framstilling (matplotlib og descartes) samt bruk av notebooks i Jupyter Lab:
 
-```ini
+```
 conda install -c conda-forge matplotlib
 conda install -c conda-forge descartes
 conda install -c conda-forge jupyterlab
@@ -39,7 +39,7 @@ conda install -c conda-forge jupyterlab
 
 Installasjon av nødvendige pakker for å kommunisere med PostGIS-databaser:
 
-```ini
+```
 conda install -c conda-forge sqlalchemy
 conda install -c conda-forge geoalchemy2
 conda install -c conda-forge psycopg2
@@ -47,7 +47,7 @@ conda install -c conda-forge psycopg2
 
 Oppdatering til siste versjon av alle installerte pakker. Denne kan brukes, hvis man etter en tid har en god grunn for å oppdatere. Kommandoen ivaretar avhengigheter mellom pakker.
 
-```ini
+```
 conda update --all
 ```
 
@@ -56,7 +56,7 @@ conda update --all
 
 For å starte Jupyter Lab i mappen NTNU, gi disse kommandoene i kommandovinduet for _Anaconda Prompt_:
 
-```ini
+```
 cd \                    ; går til rotnivå på c-disken
 md NTNU                 ; lager mappen NTNU  (gjøres bare første gang)
 cd NTNU                 ; går ned i mappen
