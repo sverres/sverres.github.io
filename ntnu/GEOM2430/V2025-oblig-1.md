@@ -1,4 +1,4 @@
-# GEOM2430 Vår 2025 Oblig 1 - Geografiske databaser og GeoPandas
+# GEOM2430 Vår 2025 Oblig 1<br/>Geografiske databaser og GeoPandas
 
 
 ## Mål for oppgaven
