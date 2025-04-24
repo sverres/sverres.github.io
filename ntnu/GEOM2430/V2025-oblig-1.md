@@ -14,7 +14,7 @@ Oppgaven bygger på Ukeoppgave – PostGIS og teori om geografiske databaser fra
 
 samt teori og eksempler på bruk av python-programmering mot PostGIS-databaser fra 
 
-- [Geopandas ressursside](https://folk.ntnu.no/sverrsti/geopandas/)
+- [Geopandas ressursside](../geopandas/)
 
 og et Jupyter notebook-eksempel som viser hvordan man kan sette opp spørringer mot en PostGIS-database
 
