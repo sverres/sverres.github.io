@@ -1,0 +1,53 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "City Hall",
+                "Prosumer": "Public location",
+                "Solution": "PV, 20kWp",
+                "Location": "12 bis, Liberta' street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0239,
+                    40.765179
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Nursery School",
+                "Prosumer": "Public building",
+                "Solution": "PV, 20kWp",
+                "Location": "Liberta' street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.021144,
+                    40.764964
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Polifunctional centre",
+                "Prosumer": "Sport centre",
+                "Solution": "PV, 20kWp",
+                "Location": "6, Salette street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.012445,
+                    40.758899
+                ]
+            }
+        }
+    ]
+}

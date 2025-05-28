@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "SensorID": "5-PIE-002", "Primary Name": "Chiaiolella lifting plant", "North": 40.748384074397997, "East": 14.004059685775401 }, "geometry": { "type": "Point", "coordinates": [ 14.004059685775401, 40.748384074397997 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PIE-003", "Primary Name": "City Hall/Office building", "North": 40.765373333765901, "East": 14.0241827315597 }, "geometry": { "type": "Point", "coordinates": [ 14.0241827315597, 40.765373333765901 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PIE-007", "Primary Name": "Raia lifting plant", "North": 40.753383604851201, "East": 14.021749751370599 }, "geometry": { "type": "Point", "coordinates": [ 14.021749751370599, 40.753383604851201 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PIE-009", "Primary Name": "Pozzoveccio lifting plant", "North": 40.762817362268898, "East": 14.012116043867101 }, "geometry": { "type": "Point", "coordinates": [ 14.012116043867101, 40.762817362268898 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PPE-001", "Primary Name": "City Hall charger", "North": 40.765373333765901, "East": 14.0241827315597 }, "geometry": { "type": "Point", "coordinates": [ 14.0241827315597, 40.765373333765901 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PPE-002", "Primary Name": "Middle school parking charger", "North": 40.757706529864699, "East": 14.016725252022001 }, "geometry": { "type": "Point", "coordinates": [ 14.016725252022001, 40.757706529864699 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PPE-003", "Primary Name": "Harbour area charger", "North": 40.76551, "East": 14.029412 }, "geometry": { "type": "Point", "coordinates": [ 14.029412, 40.76551 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PIE-010", "Primary Name": "Tortora lifting plant", "North": 40.7462377656677, "East": 14.009676196081 }, "geometry": { "type": "Point", "coordinates": [ 14.009676196081, 40.7462377656677 ] } },
+{ "type": "Feature", "properties": { "SensorID": "5-PRE-CD-001", "Primary Name": "Li-ion battery City Hall", "North": 40.765038993625097, "East": 14.023858816036601 }, "geometry": { "type": "Point", "coordinates": [ 14.023858816036601, 40.765038993625097 ] } }
+]
+}

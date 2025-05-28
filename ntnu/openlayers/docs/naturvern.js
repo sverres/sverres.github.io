@@ -1,4 +1,4 @@
-const url = 'https://cache.kartverket.no/v1/wmts?';
+const url = 'https://cache.kartverket.no/v1/service?';
 
 const layer = 'topograatone';
 

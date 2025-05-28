@@ -1,0 +1,25 @@
+{
+    "mapmarkers_on_off": {
+        "layerId": "mapmarkers_on_off",
+        "menuText": "Demo Islands",
+        "targetMenu": "mapoptions",
+        "layerType": "marker",
+        "visible": "false"
+    },
+    "about": {
+        "layerId": "about",
+        "menuText": "About GIFT",
+        "targetMenu": "projectinfo",
+        "sectionId": "about",
+        "layerType": "section",
+        "visible": "false"
+    },
+    "version": {
+        "layerId": "version",
+        "menuText": "Version info",
+        "targetMenu": "projectinfo",
+        "sectionId": "version",
+        "layerType": "section",
+        "visible": "false"
+    }
+}

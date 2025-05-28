@@ -1,0 +1,223 @@
+{
+    "light-v10": {
+        "layerId": "light-v10",
+        "menuText": "map",
+        "targetMenu": "mapoptions",
+        "layerType": "style",
+        "visible": "true"
+    },
+    "outdoors-v11": {
+        "layerId": "outdoors-v11",
+        "menuText": "terrain",
+        "targetMenu": "mapoptions",
+        "layerType": "style",
+        "visible": "false"
+    },
+    "satellite-v9": {
+        "layerId": "satellite-v9",
+        "menuText": "satellite",
+        "targetMenu": "mapoptions",
+        "layerType": "style",
+        "visible": "false"
+    },
+    "mapbox_on_off": {
+        "layerId": "mapbox_on_off",
+        "menuText": "map",
+        "targetMenu": "mapoptions",
+        "layerType": "mapwindow",
+        "sectionsToShowHide": "map, baselayers, dsolayers",
+        "visible": "true"
+    },
+    "mapmarkers_on_off": {
+        "layerId": "mapmarkers_on_off",
+        "menuText": "Mjøsa POI",
+        "targetMenu": "mapoptions",
+        "layerType": "marker",
+        "visible": "false"
+    },
+    "norway_bg": {
+        "layerId": "norway_bg",
+        "layerUrl": "./site_mjosa/layers/norway_bg.js",
+        "layerType": "maplayer",
+        "menuText": "Basemap NO",
+        "targetMenu": "baselayers",
+        "queryable": "true",
+        "serviceUrl": "https://wms.geonorge.no/skwms1/wms.topo",
+        "layers": "topo",
+        "styles": "default",
+        "query_layers": "Bygninger,bygning",
+        "info_format": "text/plain"
+    },
+    "papermap_bg": {
+        "layerId": "papermap_bg",
+        "layerUrl": "./site_mjosa/layers/papermap_bg.js",
+        "layerType": "maplayer",
+        "menuText": "Papermap NO",
+        "targetMenu": "baselayers",
+        "queryable": "true",
+        "serviceUrl": "https://wms.geonorge.no/skwms1/wms.topo",
+        "layers": "topo",
+        "styles": "default",
+        "query_layers": "Bygninger,bygning",
+        "info_format": "text/plain"
+    },
+    "water_bodies": {
+        "layerId": "water_bodies",
+        "layerUrl": "./site_mjosa/layers/water_bodies.js",
+        "layerType": "maplayer",
+        "menuText": "Water bodies",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Innsjodatabase2/MapServer/WMSServer",
+        "layers": "Innsjodatabase",
+        "styles": "default",
+        "query_layers": "Innsjodatabase",
+        "info_format": "application/geo%2bjson"
+    },
+    "water_contours": {
+        "layerId": "water_depth",
+        "layerUrl": "./site_mjosa/layers/water_depth.js",
+        "layerType": "maplayer",
+        "menuText": "Water depth",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Innsjodatabase2/MapServer/WMSServer",
+        "layers": "DybdePunkt",
+        "styles": "default",
+        "query_layers": "DybdePunkt",
+        "info_format": "text/html"
+    },
+    "water_depth": {
+        "layerId": "water_contours",
+        "layerUrl": "./site_mjosa/layers/water_contours.js",
+        "layerType": "maplayer",
+        "menuText": "Contour lines",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Innsjodatabase2/MapServer/WMSServer",
+        "layers": "DybdeKurve",
+        "styles": "default",
+        "query_layers": "DybdeKurve",
+        "info_format": "text/html"
+    },
+    "watershed_regine": {
+        "layerId": "watershed_regine",
+        "layerUrl": "./site_mjosa/layers/watershed_regine.js",
+        "layerType": "maplayer",
+        "menuText": "Watershed",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nedborfelt1/MapServer/WMSServer",
+        "layers": "REGINE_enhet",
+        "styles": "default",
+        "query_layers": "REGINE_enhet",
+        "info_format": "application/geo%2bjson"
+    },
+    "rivers_main": {
+        "layerId": "rivers_main",
+        "layerUrl": "./site_mjosa/layers/rivers_main.js",
+        "layerType": "maplayer",
+        "menuText": "Rivers",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Elvenett1/MapServer/WMSServer",
+        "layers": "hovedelv",
+        "styles": "default",
+        "query_layers": "hovedelv",
+        "info_format": "text/html"
+    },
+    "water_intake": {
+        "layerId": "water_intake",
+        "layerUrl": "./site_mjosa/layers/water_intake.js",
+        "layerType": "maplayer",
+        "menuText": "Water supply",
+        "targetMenu": "waterlayers",
+        "queryable": "true",
+        "serviceUrl": "https://kart.mattilsynet.no/wmscache/service",
+        "layers": "Mattilsynet_Vannverk_Inntakspunkter",
+        "styles": "default",
+        "query_layers": "Mattilsynet_Vannverk_Inntakspunkter",
+        "info_format": "text/plain"
+    },
+    "submarin_cables": {
+        "layerId": "submarin_cables",
+        "layerUrl": "./site_mjosa/layers/submarin_cables.js",
+        "layerType": "maplayer",
+        "menuText": "Submarin cables",
+        "targetMenu": "dsolayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer",
+        "layers": "Sjokabler",
+        "styles": "default",
+        "query_layers": "Sjokabler",
+        "info_format": "application/geo%2bjson"
+    },
+    "distribution_grid": {
+        "layerId": "distribution_grid",
+        "layerUrl": "./site_mjosa/layers/distribution_grid.js",
+        "layerType": "maplayer",
+        "menuText": "Distribution grid",
+        "targetMenu": "dsolayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer",
+        "layers": "Distribusjonsnett",
+        "styles": "default",
+        "query_layers": "Distribusjonsnett",
+        "info_format": "application/geo%2bjson"
+    },
+    "region_grid": {
+        "layerId": "region_grid",
+        "layerUrl": "./site_mjosa/layers/region_grid.js",
+        "layerType": "maplayer",
+        "menuText": "Region grid",
+        "targetMenu": "dsolayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer",
+        "layers": "Distribusjonsnett",
+        "styles": "default",
+        "query_layers": "Regionalnett",
+        "info_format": "application/geo%2bjson"
+    },
+    "transmission_grid": {
+        "layerId": "transmission_grid",
+        "layerUrl": "./site_mjosa/layers/transmission_grid.js",
+        "layerType": "maplayer",
+        "menuText": "Transmission grid",
+        "targetMenu": "dsolayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer",
+        "layers": "Sentralnett",
+        "styles": "default",
+        "query_layers": "Sentralnett",
+        "info_format": "application/geo%2bjson"
+    },
+    "stations": {
+        "layerId": "stations",
+        "layerUrl": "./site_mjosa/layers/stations.js",
+        "layerType": "maplayer",
+        "menuText": "Stations",
+        "targetMenu": "dsolayers",
+        "queryable": "true",
+        "serviceUrl": "https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer",
+        "layers": "Transformatorstasjoner",
+        "styles": "default",
+        "query_layers": "Transformatorstasjoner",
+        "info_format": "application/geo%2bjson"
+    },
+    "about": {
+        "layerId": "about",
+        "menuText": "About GIFT",
+        "targetMenu": "projectinfo",
+        "sectionId": "about",
+        "layerType": "section",
+        "visible": "false"
+    },
+    "version": {
+        "layerId": "version",
+        "menuText": "Version info",
+        "targetMenu": "projectinfo",
+        "sectionId": "version",
+        "layerType": "section",
+        "visible": "false"
+    }
+}

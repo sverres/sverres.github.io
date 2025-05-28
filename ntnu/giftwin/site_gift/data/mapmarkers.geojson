@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "mapmarkers",
+"features": [
+{ "type": "Feature", "properties": { "Name": "Grytøya", "Prosumer": "DSO", "Solution": "Multiple", "Location": "Harstad municipality" }, "geometry": { "type": "Point", "coordinates": [ 16.567597, 68.875986 ] } },
+{ "type": "Feature", "properties": { "Name": "Procida", "Prosumer": "Municipality", "Solution": "Multiple", "Location": "Procida municipality" }, "geometry": { "type": "Point", "coordinates": [ 14.01422023773193, 40.75544960889313 ] } }
+]
+}

@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "mapmarkers",
+"features": [
+{ "type": "Feature", "properties": { "Name": "Lundenes barnehage", "Prosumer": "Public Building", "Solution": "FEMS", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.567597, 68.875986 ] } },
+{ "type": "Feature", "properties": { "Name": "Lunde Gartneri", "Prosumer": "Horticulture", "Solution": "FEMS, EV charger", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.587038, 68.88412 ] } },
+{ "type": "Feature", "properties": { "Name": "Jan-Olav Angell", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.61377, 68.89098 ] } },
+{ "type": "Feature", "properties": { "Name": "Dag Ivar\/Daniel Hansen", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.533743, 68.879131 ] } },
+{ "type": "Feature", "properties": { "Name": "Pål Alvereng", "Prosumer": "Household", "Solution": "FEMS", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.2849329, 68.9538091 ] } },
+{ "type": "Feature", "properties": { "Name": "Lundenes skole", "Prosumer": "Public Building", "Solution": "FEMS, EV charger", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.569293, 68.876682 ] } },
+{ "type": "Feature", "properties": { "Name": "Bjarkøy skole", "Prosumer": "Public Building", "Solution": "FEMS", "Location": "Bjarkøy" }, "geometry": { "type": "Point", "coordinates": [ 16.5290594, 69.0127161 ] } },
+{ "type": "Feature", "properties": { "Name": "Tor Frode Heimtun", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Grøtavær" }, "geometry": { "type": "Point", "coordinates": [ 16.1210197, 68.9631272 ] } },
+{ "type": "Feature", "properties": { "Name": "Grøtavær Brygge", "Prosumer": "Tourism", "Solution": "FEMS", "Location": "Grøtavær" }, "geometry": { "type": "Point", "coordinates": [ 16.267169, 68.969906 ] } },
+{ "type": "Feature", "properties": { "Name": "Lundenes Handel", "Prosumer": "Grocery Store", "Solution": "FEMS, EV charger", "Location": "Grytøya" }, "geometry": { "type": "Point", "coordinates": [ 16.569293, 68.876682 ] } },
+{ "type": "Feature", "properties": { "Name": "Ole Gjermund Berg", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Sandsøy" }, "geometry": { "type": "Point", "coordinates": [ 16.679173, 68.94285 ] } },
+{ "type": "Feature", "properties": { "Name": "Dale Salaks", "Prosumer": "Fish farm", "Solution": "FEMS", "Location": "Grytøya" }, "geometry": { "type": "Point", "coordinates": [ 16.3452, 68.92505 ] } },
+{ "type": "Feature", "properties": { "Name": "Norled (ferry)", "Prosumer": "Transport", "Solution": "FEMS", "Location": "Bjørnå" }, "geometry": { "type": "Point", "coordinates": [ 16.499276, 68.885126 ] } },
+{ "type": "Feature", "properties": { "Name": "Inge Mikal Pedersen", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Bjarkøy" }, "geometry": { "type": "Point", "coordinates": [ 16.4605045, 68.9850164 ] } },
+{ "type": "Feature", "properties": { "Name": "Karl Johan Mathisen", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Lundenes" }, "geometry": { "type": "Point", "coordinates": [ 16.5410026, 68.8880573 ] } },
+{ "type": "Feature", "properties": { "Name": "Leitmyra gård", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Grøtavær" }, "geometry": { "type": "Point", "coordinates": [ 16.261578, 68.960652 ] } },
+{ "type": "Feature", "properties": { "Name": "Trollstein gård", "Prosumer": "Farming", "Solution": "FEMS", "Location": "Grøtavær" }, "geometry": { "type": "Point", "coordinates": [ 16.291051, 68.95282 ] } }
+]
+}

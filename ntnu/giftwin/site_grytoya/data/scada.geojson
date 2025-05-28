@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "smartmeters",
+"features": [
+{ "type": "Feature", "properties": { "Kisok": "0290", "Number": "22", "Latitude": 68.924156401808204, "Longitude": 16.6183041349205, "SensorID": "A00034", "RegionName": "Grytoya" }, "geometry": { "type": "Point", "coordinates": [ 16.6183041349205, 68.924156401808204 ] } },
+{ "type": "Feature", "properties": { "Kisok": "0435", "Number": "22", "Latitude": 68.882568761711596, "Longitude": 16.469040695043901, "SensorID": "A00038", "RegionName": "Grytoya" }, "geometry": { "type": "Point", "coordinates": [ 16.469040695043901, 68.882568761711596 ] } },
+{ "type": "Feature", "properties": { "Kisok": "0400", "Number": "22", "Latitude": 68.876893607016797, "Longitude": 16.5695611686874, "SensorID": "A00036", "RegionName": "Grytoya" }, "geometry": { "type": "Point", "coordinates": [ 16.5695611686874, 68.876893607016797 ] } },
+{ "type": "Feature", "properties": { "Kisok": "0440", "Number": "22", "Latitude": 68.886538262167605, "Longitude": 16.4623082434758, "SensorID": "A00039", "RegionName": "Grytoya" }, "geometry": { "type": "Point", "coordinates": [ 16.4623082434758, 68.886538262167605 ] } },
+{ "type": "Feature", "properties": { "Kisok": "0380", "Number": "22", "Latitude": 68.883899183370602, "Longitude": 16.585868102039701, "SensorID": "A00035", "RegionName": "Grytoya" }, "geometry": { "type": "Point", "coordinates": [ 16.585868102039701, 68.883899183370602 ] } }
+]
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <title>GIFT Procida</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <h3>GIFT Site Procida</h3>
+                <nav id="mapoptions"></nav>
+                <nav id="dsolayers"></nav>
+                <nav id="giftlayersesb"></nav>
+                <nav id="giftlayers"></nav>
+                <nav id="projectinfo"></nav>
+            </div>
+            <div class="col-lg-10">
+                <div id="map"></div>
+                <div class="row cols-lg-12" id="main"></div>
+                <div class="row cols-lg-6" id="dashboard"></div>
+                <div class="row cols-lg-6" id="tables"></div>
+                <div class="row cols-lg-6" id="system">
+                    <div id="about" class="card large" style="display:none">
+                        <h2>GIFT</h2>
+                        <h3>Geographical Islands FlexibiliTy</h3>
+                        <p>
+                            This project has received funding from
+                            the European Union's Horizon 2020
+                            research and innovation program under
+                            grant agreement No 824410.
+                            <br><br>
+                            Part of deliverable D3.10 GIS digital twin
+                            <br><br>
+                            NTNU - Norway
+                        </p>
+                    </div>
+                    <div id="version" class="card large" style="display:none">
+                        <h3>Version</h3>
+                        <p>14.08.2024</p>
+                        <ul>
+                            <li>August 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./config/digitaltwinoptions.js"></script>
+        <script src="./config/mapboxoptions.js"></script>
+        <script type="module" src="./main.js"></script>
+
+        <script>
+
+            "use strict";
+            GIFTWIN.site = GIFTWIN.siteOptions["procida"];
+            var map = new mapboxgl.Map(GIFTWIN.mapboxSiteOptions["procida"]);
+
+        </script>
+
+        <script src="./config/mapboxcontrols.js"></script>
+        <!--
+        <script src="./config/layers/terrain.js"></script>
+        -->
+        <script src="./config/mapservices.js"></script>
+        <script src="./js/ogclayers.js"></script>
+        <script src="./js/addlayers.js"></script>
+        <script src="./js/maputils.js"></script>
+
+        <script src="./js/esbrequest.js"></script>
+        <script src="./js/esbplot.js"></script>
+        <script src="./js/xylineplot.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="./js/createtables.js"></script>
+        <script src="./esb/plot/lineplotpresentday.js"></script>
+        <script src="./esb/plot/barplotpresentday.js"></script>
+    </div>
+
+</body>
+
+</html>

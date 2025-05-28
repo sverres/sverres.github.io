@@ -1,0 +1,47 @@
+@media only screen and (max-height: 2160px) {
+    #map {
+        height: 1728px;
+    }
+}
+
+@media only screen and (max-height: 1536px) {
+    #map {
+        height: 1228px;
+    }
+}
+
+@media only screen and (max-height: 1440px) {
+    #map {
+        height: 1152px;
+    }
+}
+
+@media only screen and (max-height: 1125px) {
+    #map {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-height: 1080px) {
+    #map {
+        height: 864px;
+    }
+}
+
+@media only screen and (max-height: 1050px) {
+    #map {
+        height: 720px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    #map {
+        height: 640px;
+    }
+}
+
+@media only screen and (max-height: 768px) {
+    #map {
+        height: 614px;
+    }
+}

@@ -1,0 +1,61 @@
+#map {
+    width: 100%;
+}
+
+body {
+    color: #414042;
+}
+
+#mapoptions {
+    background-color: #F1F2F2;
+}
+
+#baselayers {
+    background-color: #FDE52F;
+}
+
+#dsolayers {
+    background-color: #8ED3D8;
+}
+
+#waterlayers {
+    background-color: #334975;
+    color: #FFFFFF;
+}
+
+#prosumerlayers {
+    background-color: #F1F2F2;
+}
+
+#giftlayersesb {
+    background-color: #4B5C79;
+    color: #FFFFFF;
+}
+
+#giftlayers {
+    background-color: #FDE52F;
+}
+
+#projectinfo {
+    background-color: #4B5C79;
+    color: #FFFFFF;
+}
+
+#dashboard table {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+}
+
+.main-svg {
+    box-sizing: border-box;
+    border: 1px solid #839788;
+}
+
+.mapboxgl-marker {
+    cursor: pointer;
+}
+
+.mapboxgl-plot-popup {
+    min-width: 1000px;
+}

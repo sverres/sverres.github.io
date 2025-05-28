@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <title>GIFT Sites</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <h3>GIFT Sites</h3>
+                <nav id="mapoptions"></nav>
+                <nav id="grytoya">
+                    <a href="./grytoya.html">Grytøya</a>
+                </nav>
+                <nav id="procida">
+                    <a href="./procida.html">Procida</a>
+                </nav>
+                <nav id="projectinfo"></nav>
+            </div>
+            <div class="col-lg-10 col-md-8 col-sm-12">
+                <div id="map"></div>
+                <div class="row cols-lg-10 row cols-md-12 row cols-sm-12" id="main"></div>
+                <div class="row cols-lg-5 row cols-md-12 row cols-sm-12" id="dashboard"></div>
+                <div class="row col-lg-8 row col-md-12 row col-sm-12" id="tables">
+                    <div id="elHub_l7"></div>
+                    <div id="about" class="card large" style="display:none">
+                        <h2>GIFT</h2>
+                        <h3>Geographical Islands FlexibiliTy</h3>
+                        <p>
+                            This project has received funding from
+                            the European Union's Horizon 2020
+                            research and innovation program under
+                            grant agreement No 824410.
+                            <br><br>
+                            Part of deliverable D3.10 GIS digital twin
+                            <br><br>
+                            NTNU - Norway
+                        </p>
+                    </div>
+                    <div id="version" class="card large" style="display:none">
+                        <h3>Version</h3>
+                        <p>14.08.2024</p>
+                        <ul>
+                            <li>August 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./config/digitaltwinoptions.js"></script>
+        <script src="./config/mapboxoptions.js"></script>
+        <script type="module" src="./main.js"></script>
+
+        <script>
+
+            "use strict";
+            GIFTWIN.site = GIFTWIN.siteOptions["gift"];
+            var map = new mapboxgl.Map(GIFTWIN.mapboxSiteOptions["gift"]);
+
+        </script>
+
+        <script src="./config/mapboxcontrols.js"></script>
+        <script src="./config/layers/terrain.js"></script>
+        <script src="./config/mapservices.js"></script>
+        <script src="./js/ogclayers.js"></script>
+        <script src="./js/addlayers.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>

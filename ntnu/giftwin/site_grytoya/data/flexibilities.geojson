@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "SensorID": "6-PIE-001", "Primary Name": "Lundenes School1 - boiler (6-PIE-001)", "North": 68.876952857566096, "East": 16.5703010559082 }, "geometry": { "type": "Point", "coordinates": [ 16.5703010559082, 68.876952857566096 ] } },
+{ "type": "Feature", "properties": { "SensorID": "6-PIE-002", "Primary Name": "Bjarkøy School2 - boiler (6-PIE-002)", "North": 68.994032850281897, "East": 16.5368700027465 }, "geometry": { "type": "Point", "coordinates": [ 16.5368700027465, 68.994032850281897 ] } },
+{ "type": "Feature", "properties": { "SensorID": "6-PIE-003", "Primary Name": "Kindergarten heating cables (6-PIE-003)", "North": 68.876189235779904, "East": 16.568831205367999 }, "geometry": { "type": "Point", "coordinates": [ 16.568831205367999, 68.876189235779904 ] } },
+{ "type": "Feature", "properties": { "SensorID": "1382", "Primary Name": "Wholesaler freezers", "North": 68.779251193129596, "East": 16.589248180389401 }, "geometry": { "type": "Point", "coordinates": [ 16.589248180389401, 68.779251193129596 ] } },
+{ "type": "Feature", "properties": { "SensorID": "1395", "Primary Name": "HLK boilers", "North": 68.783842878524794, "East": 16.5626943111419 }, "geometry": { "type": "Point", "coordinates": [ 16.5626943111419, 68.783842878524794 ] } },
+{ "type": "Feature", "properties": { "SensorID": "6-PPE-001", "Primary Name": "Lundenes School1 charger (6-PPE-001)", "North": 68.877109445107905, "East": 16.568635404109902 }, "geometry": { "type": "Point", "coordinates": [ 16.568635404109902, 68.877109445107905 ] } },
+{ "type": "Feature", "properties": { "SensorID": "6-PIE-002", "Primary Name": "Lundenes School1 charger (6-PIE-002)", "North": 68.877109445107905, "East": 16.568635404109902 }, "geometry": { "type": "Point", "coordinates": [ 16.568635404109902, 68.877109445107905 ] } },
+{ "type": "Feature", "properties": { "SensorID": "6-PPE-003", "Primary Name": "Private charger (6-PPE-003)", "North": 68.953902643666197, "East": 16.285214424133301 }, "geometry": { "type": "Point", "coordinates": [ 16.285214424133301, 68.953902643666197 ] } }
+]
+}

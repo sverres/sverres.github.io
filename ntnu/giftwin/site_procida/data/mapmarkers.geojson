@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "mapmarkers",
+"features": [
+{ "type": "Feature", "properties": { "Name": "City Hall", "Prosumer": "Public location", "Solution": "FEMS", "Location": "12 bis, Liberta' street" }, "geometry": { "type": "Point", "coordinates": [ 14.023900, 40.765179 ] } },
+{ "type": "Feature", "properties": { "Name": "Public buildings", "Prosumer": "Public location", "Solution": "FEMS", "Location": "13 bis, Liberta' street" }, "geometry": { "type": "Point", "coordinates": [ 14.024009, 40.765210 ] } },
+{ "type": "Feature", "properties": { "Name": "Campo Inglesi", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Campo Inglesi street" }, "geometry": { "type": "Point", "coordinates": [ 14.008856, 40.756116 ] } },
+{ "type": "Feature", "properties": { "Name": "Chaiolella", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Marina Chiaiolella street" }, "geometry": { "type": "Point", "coordinates": [ 14.003878, 40.747663 ] } },
+{ "type": "Feature", "properties": { "Name": "Corricella", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Marina Corricella street" }, "geometry": { "type": "Point", "coordinates": [ 14.030394, 40.761691 ] } },
+{ "type": "Feature", "properties": { "Name": "Pozzovecchio", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Cesare Battisti street" }, "geometry": { "type": "Point", "coordinates": [ 14.011726, 40.762914 ] } },
+{ "type": "Feature", "properties": { "Name": "Raia", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Raia street" }, "geometry": { "type": "Point", "coordinates": [ 14.021248, 40.753247 ] } },
+{ "type": "Feature", "properties": { "Name": "Tortora", "Prosumer": "Lifting plant", "Solution": "FEMS", "Location": "Raffaele Tortora street" }, "geometry": { "type": "Point", "coordinates": [ 14.009972, 40.745737 ] } },
+{ "type": "Feature", "properties": { "Name": "Vigna", "Prosumer": "Hotel", "Solution": "FEMS", "Location": "49, Principessa Margherita Street" }, "geometry": { "type": "Point", "coordinates": [ 14.034929, 40.763943 ] } },
+{ "type": "Feature", "properties": { "Name": "Crai", "Prosumer": "Supermarket", "Solution": "FEMS", "Location": "10, Pizzaco street" }, "geometry": { "type": "Point", "coordinates": [ 14.018790, 40.756466 ] } },
+{ "type": "Feature", "properties": { "Name": "Crescenzo", "Prosumer": "Hotel & Restaurant", "Solution": "FEMS", "Location": "33, Marina Chiaiolella street" }, "geometry": { "type": "Point", "coordinates": [ 14.005918, 40.749147 ] } },
+{ "type": "Feature", "properties": { "Name": "Sewage Treatment Plant", "Prosumer": "Public infrastructure", "Solution": "FEMS", "Location": "Roma street" }, "geometry": { "type": "Point", "coordinates": [ 14.032845, 40.765565 ] } },
+{ "type": "Feature", "properties": { "Name": "Gaetanina Scotto di Perrotolo", "Prosumer": "Hospital", "Solution": "FEMS", "Location": "24A, De Gasperi Street" }, "geometry": { "type": "Point", "coordinates": [ 14.013096, 40.749719 ] } },
+{ "type": "Feature", "properties": { "Name": "Echinoidea", "Prosumer": "Fishfarm", "Solution": "FEMS", "Location": "147, Roma street" }, "geometry": { "type": "Point", "coordinates": [ 14.024567, 40.765758 ] } },
+{ "type": "Feature", "properties": { "Name": "Linea Freddo", "Prosumer": "Storage frozen food", "Solution": "FEMS", "Location": "50, Libertà street" }, "geometry": { "type": "Point", "coordinates": [ 14.022401, 40.764860 ] } },
+{ "type": "Feature", "properties": { "Name": "Nursery School", "Prosumer": "Public building", "Solution": "FEMS", "Location": "Liberta' street" }, "geometry": { "type": "Point", "coordinates": [ 14.021144, 40.764964 ] } }
+]
+}

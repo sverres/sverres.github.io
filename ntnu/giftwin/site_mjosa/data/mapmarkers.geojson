@@ -1,0 +1,22 @@
+{
+    "type": "FeatureCollection",
+    "name": "mapmarkers",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Kapp stadion",
+                "Prosumer": "Soccer sports field",
+                "Solution": "Public health",
+                "Location": "Kapp"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.83296750,
+                    60.72003847
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "nettstasjon_g",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "gml_id": "id92abb718-a7fa-4cbf-b189-7d5b38d6f4bb", "datafangstdato": "2011\/06\/17", "oppdateringsdato": "2019\/08\/05 13:16:00", "produkt": "FKB", "versjon": "4.01", "versjonId": "2017\/09\/27 16:07:02" }, "geometry": { "type": "Point", "coordinates": [ 16.264767640079924, 68.95996233402866 ] } },
+{ "type": "Feature", "properties": { "gml_id": "id24642a8a-4afb-45c9-8b2f-709c0ac51b63", "datafangstdato": "2011\/06\/17", "oppdateringsdato": "2019\/08\/05 13:16:00", "produkt": "FKB", "versjon": "4.01", "versjonId": "2017\/09\/27 16:07:02" }, "geometry": { "type": "Point", "coordinates": [ 16.521138142823826, 68.880746839624621 ] } },
+{ "type": "Feature", "properties": { "gml_id": "id441ce7b1-e9ce-451f-b1b3-e18bf8c349ee", "datafangstdato": "2011\/06\/17", "oppdateringsdato": "2019\/08\/05 13:16:00", "produkt": "FKB", "versjon": "4.01", "versjonId": "2017\/09\/27 16:07:02" }, "geometry": { "type": "Point", "coordinates": [ 16.480778835116332, 68.882778745690629 ] } }
+]
+}
