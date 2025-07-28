@@ -13,7 +13,7 @@ map.on('load', function () {
     'source': {
       'type': 'raster',
       'tiles': [
-        'https://cache.kartverket.no/v1/wmts'
+        'https://cache.kartverket.no/v1/service'
         + '?Service=WMTS'
         + '&Version=1.0.0'
         + '&Request=GetTile'
