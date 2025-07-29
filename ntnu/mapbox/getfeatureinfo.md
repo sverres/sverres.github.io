@@ -12,7 +12,7 @@ https://wms.geonorge.no/skwms1/wms.topo
 &format=image/png
 &service=WMS
 &version=1.3.0
-&request=GetMap 
+&request=GetMap
 &crs=EPSG:3857
 &width=256
 &height=256
