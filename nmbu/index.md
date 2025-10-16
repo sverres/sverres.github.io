@@ -4,7 +4,7 @@
 - [MLA210 Kompendium](https://mla210-7e7329.gitlab.io/)
 - [Julia programming language](julia.md)
 - [Python xrange](xrange.html)
-- [Python rekursjon](snowflake=recursion.html)
+- [Python rekursjon](snowflake-recursion.html)
 
 \
 _NMBU 16.10.2025 Sverre Stikbakke_
