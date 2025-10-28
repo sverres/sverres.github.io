@@ -130,7 +130,7 @@ Since they are scalar multiples of each other, they point in the same (or exactl
     * To normalize it, Julia divides the vector by its norm: $\frac{1}{\sqrt{5}} \langle -2, 0, 1 \rangle$.
     * This results in the unit vector $\langle -2/\sqrt{5}, 0, 1/\sqrt{5} \rangle$, which is what you saw.
 
-**In summary: Both answers are 100% correct.** I chose the simplest integer vector. Julia chose the standard unit vector. They both describe the exact same nullspace. 👍
+**In summary: Both answers are 100% correct.** I chose the simplest integer vector. Julia chose the standard unit vector. They both describe the exact same nullspace. 
 
 # Q:
 
@@ -314,7 +314,7 @@ The very property that distinguishes a **vector subspace** (like a nullspace or 
 * A line $y = 2x$ in $\mathbb{R}^2$ **is** a subspace. It passes through $(0,0)$.
 * A line $y = 2x + 1$ in $\mathbb{R}^2$ **is not** a subspace. It's a "shifted" subspace (an affine space), and it can't be the column space of any matrix.
 
-So, there is no difference to describe, because all matrices fall into the first category. ✅
+So, there is no difference to describe, because all matrices fall into the first category. 
 
 
 # Q:
@@ -577,7 +577,7 @@ In your Dimension Reduction explanation you explain the vector b as a data point
 
 ## A:
 
-You are absolutely right. That is a perfect and, in fact, the standard way to interpret this problem in statistics and machine learning. 🤖
+You are absolutely right. That is a perfect and, in fact, the standard way to interpret this problem in statistics and machine learning.
 
 My previous explanation came from a "pure" linear algebra perspective (the "column picture"). Your description is the "data science" perspective (the "row picture").
 
@@ -682,7 +682,7 @@ So, you are actually saying that Column Space and Image is the same concept?
 
 ## A: 
 
-Yes, they are **exactly the same concept**. 👍
+Yes, they are **exactly the same concept**. 
 
 They're just two different names for the same set of vectors, coming from two different perspectives:
 
