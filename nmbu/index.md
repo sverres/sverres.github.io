@@ -3,6 +3,7 @@
 
 ## MLA210
 - [MLA210 Kompendium](https://mla210-7e7329.gitlab.io/)
+  - [9.5 Lampestyrke](9_5.html)
 - [Boyd lærebok](https://web.stanford.edu/~boyd/vmls/)
 - [Boyd videoer](https://www.youtube.com/playlist?list=PLoROMvodv4rMz-WbFQtNUsUElIh2cPmN9)
 - [Julia programming language](julia.md)
