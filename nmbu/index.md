@@ -10,6 +10,7 @@
 - [Julia programming language](julia.md)
 - Gemini-dialoger
   - [Om nullspace og andre spacer](nullspace.pdf)
+  - [Om Gram-matriser](gram-matrix.pdf)
   - [Pseudo-inverse](pseudo-inverse.pdf)
 
 ## INF201
@@ -18,4 +19,4 @@
 - [Python xrange](xrange.html)
 
 \
-_NMBU 07.11.2025 Sverre Stikbakke_
+_NMBU 08.11.2025 Sverre Stikbakke_
