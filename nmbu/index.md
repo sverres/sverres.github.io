@@ -12,6 +12,7 @@
   - [Om nullspace og andre spacer](nullspace.pdf)
   - [Om Gram-matriser](gram-matrix.pdf)
   - [Pseudo-inverse](pseudo-inverse.pdf)
+  - [Regularisering](regularization.pdf)
 
 ## INF201
 - [INF201 course-materials](https://gitlab.com/nmbu.no/emner/inf201/h2025/inf201-course-materials)
@@ -19,4 +20,4 @@
 - [Python xrange](xrange.html)
 
 \
-_NMBU 08.11.2025 Sverre Stikbakke_
+_NMBU 09.11.2025 Sverre Stikbakke_
