@@ -21,4 +21,4 @@
 - [Python xrange](xrange.html)
 
 \
-_NMBU 09.11.2025 Sverre Stikbakke_
+_NMBU 14.11.2025 Sverre Stikbakke_
