@@ -15,7 +15,7 @@
   - [Om RMS, standardavvik og Julia multiple dispatch](rms_stdev.pdf)
   - [Pseudo-inverse](pseudo-inverse.pdf)
   - [Regularisering](regularization.pdf)
-  - [Regularisering med spektroskopi-data](spectrometry.pdf)
+  - [Regularisering med spektroskopi-data](spectroscopy.pdf)
 
 ## INF201
 - [INF201 course-materials](https://gitlab.com/nmbu.no/emner/inf201/h2025/inf201-course-materials)
@@ -23,4 +23,4 @@
 - [Python xrange](xrange.html)
 
 \
-_NMBU 18.11.2025 Sverre Stikbakke_
+_NMBU 25.11.2025 Sverre Stikbakke_
