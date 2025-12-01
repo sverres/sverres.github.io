@@ -9,6 +9,7 @@
 - [Standard Library](https://docs.julialang.org/en/v1/stdlib/ArgTools/)
     - [Linear Algebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/)
     - [Special matrices/operations/factorizations](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#Special-matrices)
+- [jlhub: function reference](https://www.jlhub.com/julia/manual/en/function-reference)
 
 \
-_NMBU 03.10.2025 Sverre Stikbakke_
+_NMBU 01.12.2025 Sverre Stikbakke_
