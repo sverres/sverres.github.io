@@ -23,7 +23,8 @@
 - [Python xrange](xrange.html)
 
 ## INF221
-- [Merge-sort](merge_sort.html)
+- [recursive_find_smallest](recursive_find_smallest.html)
+- [merge-sort](merge_sort.html)
 
 \
 _NMBU 24.02.2026 Sverre Stikbakke_
