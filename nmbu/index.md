@@ -22,5 +22,8 @@
 - [Python rekursjon](snowflake-recursion.html)
 - [Python xrange](xrange.html)
 
+## INF221
+- [Merge-sort](merge_sort.html)
+
 \
-_NMBU 25.11.2025 Sverre Stikbakke_
+_NMBU 24.02.2026 Sverre Stikbakke_
