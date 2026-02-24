@@ -25,6 +25,7 @@
 ## INF221
 - [recursive_find_smallest](recursive_find_smallest.html)
 - [merge-sort](merge_sort.html)
+- [string_to_number](string_to_number.html)
 
 \
 _NMBU 24.02.2026 Sverre Stikbakke_
