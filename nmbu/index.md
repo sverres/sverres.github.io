@@ -28,4 +28,4 @@
 - [string_to_number](string_to_number.html)
 
 \
-_NMBU 24.02.2026 Sverre Stikbakke_
+_NMBU 26.02.2026 Sverre Stikbakke_
