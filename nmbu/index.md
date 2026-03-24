@@ -27,5 +27,9 @@
 - [merge-sort](merge_sort.html)
 - [string_to_number](string_to_number.html)
 
+## MATH285
+- [Lagrange 4D](lagrange4d.html)
+
 \
-_NMBU 26.02.2026 Sverre Stikbakke_
+_NMBU 24.03.2026 Sverre Stikbakke_
+
